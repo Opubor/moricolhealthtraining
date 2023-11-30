@@ -42,7 +42,7 @@ model Enrollment {
   email        String
   user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   course       String
-  date         DateTime  @default(now())
+  date         String
   status       String
   amount       BigInt
   Payment      Payment[]
@@ -53,7 +53,7 @@ model Payment {
   userId        String
   user          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
   course        String
-  date          DateTime   @default(now())
+  date          String
   amount        BigInt
   paymentStatus String
   paymentId     String

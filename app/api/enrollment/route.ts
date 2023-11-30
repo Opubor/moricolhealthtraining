@@ -41,7 +41,8 @@ export async function POST(req: NextRequest) {
         phone: result?.data?.phone,
         status: "Pending",
         userId: result?.data?.userId,
-        amount: Number(amount) * 100
+        amount: Number(amount) * 100,
+        date: date.toString()
       },
     });
     console.log(enrollment);
@@ -56,6 +57,7 @@ export async function POST(req: NextRequest) {
         course: result?.data?.course,
         enrollmentId: enrollment?.id,
         userId: result?.data?.userId,
+        date: date.toString()
       },
     });
 
