@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id         String       @id @default(uuid())
+  name       String
+  email      String       @unique
+  role       String
+  password   String
+  gender     String
+  phone      String
+  address    String
+  // accountStatus            String?
+  // resetPasswordToken       String?           @unique
+  // resetPasswordTokenExpiry DateTime?
+  // emailVerified            Boolean           @default(false)
+  // emailVerificationToken   String?           @unique
+  Enrollment Enrollment[]
+  Payment    Payment[]
+}
+
+model Enrollment {
+  id           String    @id @default(uuid())
+  enrollmentId String
+  userId       String
+  phone        String
+  email        String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course       String
+  date         DateTime  @default(now())
+  status       String
+  amount       BigInt
+  Payment      Payment[]
+}
+
+model Payment {
+  id            String     @id @default(uuid())
+  userId        String
+  user          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course        String
+  date          DateTime   @default(now())
+  amount        BigInt
+  paymentStatus String
+  paymentId     String
+  enrollmentId  String
+  enrollment    Enrollment @relation(fields: [enrollmentId], references: [id], onDelete: Cascade)
+}
+
+model Course {
+  id           String  @id @default(uuid())
+  title        String
+  price        BigInt
+  lessons      String
+  description1 String
+  description2 String?
+  duration     String
+  category     String
+}
+
+model CourseContent {
+  id       String  @id @default(uuid())
+  content  String
+  duration String?
+}
