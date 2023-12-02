@@ -5,7 +5,7 @@ import SignOut from "./SignOut";
 import Link from "next/link";
 import prisma from "@/lib/prisma-client";
 
-export const getUser = async (id) => {
+const getUser = async (id) => {
   return await prisma.user.findFirst({
     where: { id: id },
     include: { Enrollment: true, Payment:true },

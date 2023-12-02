@@ -6,7 +6,7 @@ import prisma from "@/lib/prisma-client";
 import Layout from "@/component/layout/Layout";
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 
-export const getEnrolledCourses = async (id: string) => {
+const getEnrolledCourses = async (id: string) => {
   const courses = await prisma.enrollment.findMany({
     where: { userId: id },
     include: { user: true, Payment: true },

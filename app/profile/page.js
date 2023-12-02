@@ -13,7 +13,7 @@ export const metadata = {
   description: "Developed by Azizur Rahman",
 };
 
-export const getUser = async (id) => {
+const getUser = async (id) => {
   return await prisma.user.findFirst({
     where: { id: id.toString() },
     include: { Enrollment: true, Payment:true },
