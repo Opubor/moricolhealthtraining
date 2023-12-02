@@ -1,5 +1,4 @@
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
-import AllCourseSection from "@/component/course/AllCourseSection";
 import AllELearningSection from "@/component/eLearning/AllELearningSection";
 import Layout from "@/component/layout/Layout";
 export const metadata = {

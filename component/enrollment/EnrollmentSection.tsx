@@ -5,7 +5,7 @@ import { useForm, FieldValues } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { courseDataArray, eLearningCourses } from "@/data/Data";
+import { bundles, courseDataArray, eLearningCourses } from "@/data/Data";
 
 interface Props {
   courseId: number;
@@ -17,6 +17,7 @@ function EnrollmentSection({ courseId }: Props) {
   const { push } = useRouter();
 
   const [course, setCourse] = useState("");
+  const [amount, setAmount] = useState("");
 
   const { data: session } = useSession();
   const {
@@ -52,39 +53,41 @@ function EnrollmentSection({ courseId }: Props) {
     if (courseType === "inclass") {
       const courseDesc = courseDataArray.find(
         (item) => item.id === Number(courseId)
-      ); // Use 'slug' here
+      );
       let courseName = courseDesc?.title;
+      setAmount(courseDesc?.price as string);
       return setCourse(courseName as string);
     } else if (courseType === "eLearningCourse") {
       const courseDesc = eLearningCourses.find(
         (item) => item.id === Number(courseId)
-      ); // Use 'slug' here
+      );
       let courseName = courseDesc?.title;
+      setAmount(courseDesc?.price as string);
+      return setCourse(courseName as string);
+    } else if (courseType === "bundle") {
+      const courseDesc = bundles.find((item) => item.id === Number(courseId));
+      let courseName = courseDesc?.title;
+      setAmount(courseDesc?.price as string);
       return setCourse(courseName as string);
     }
   }, []);
 
   return (
     <>
+      <h5 className="text- mt-2 fw-bold">
+        {course} - ${amount}
+      </h5>
+      <div className="d-flex align-items-left justify-items-left mt-4 row">
+        <p>Please enter your details below as part of the enrolment process</p>
+      </div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {/* <input
-          // type="hidden"
-          value={course}
-          {...register("course", { required: true })}
-        />
-        <input
-          // type="hidden"
-          value={amount}
-          {...register("amount", { required: true })}
-        /> */}
         {errors.course && (
           <p className="text-danger text-sm">Course is required.</p>
-        )}{" "}
-       
+        )}
         <div className="row">
           <div className="col-xl-12">
             <div className="tf__login_imput">
-              <label>email</label>
+              <label>Email</label>
               <input
                 type="email"
                 placeholder="Email"
@@ -96,9 +99,9 @@ function EnrollmentSection({ courseId }: Props) {
             </div>
           </div>
 
-          <div className="col-xl-12">
+          <div className="col-xl-12 mt-4">
             <div className="tf__login_imput">
-              <label>phone number</label>
+              <label>Phne number</label>
               <input
                 type="text"
                 placeholder="Phone Number"
@@ -111,16 +114,16 @@ function EnrollmentSection({ courseId }: Props) {
           </div>
 
           <div className="col-xl-12">
-            <div className="tf__login_imput">
+            <div className="d-flex align-items-center justify-items-center w-100 mt-3">
               <button
                 onClick={() => {
                   setValue("userId", session?.user.id),
                     setValue("course", course);
                 }}
                 type="submit"
-                className="common_btn"
+                className="btn btn-success w-100"
               >
-                {loading ? "Loading" : "Sign Up"}
+                {loading ? "Loading" : "Enroll"}
               </button>
             </div>
           </div>

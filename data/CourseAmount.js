@@ -110,6 +110,31 @@ const courseAmount = [
     title: "Health & Safety Essentials",
     price: "2000",
   },
+  {
+    id: 22,
+    title: "Bundle 1",
+    price: "299300",
+  },
+  {
+    id: 23,
+    title: "Bundle 2",
+    price: "400000",
+  },
+  {
+    id: 24,
+    title: "Bundle 3",
+    price: "100000",
+  },
+  {
+    id: 25,
+    title: "Bundle 4",
+    price: "30000",
+  },
+  {
+    id: 26,
+    title: "Bundle 5",
+    price: "120000",
+  },
 
 ];
 

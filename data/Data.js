@@ -789,7 +789,7 @@ const courseDataContents = [
 const eLearningCourses = [
   {
     id: 0,
-    imgSrc: "images/core.jpg",
+    imgSrc: "images/certificate.jpg",
     color: "orange",
     slug: "care-certificate",
     title: "The Care Certificate",
@@ -914,24 +914,6 @@ const eLearningCourses = [
   },
   {
     id: 7,
-    imgSrc: "images/safeguarding.jpg",
-    color: "orange",
-    slug: "safeguarding-adults",
-    title: "Safeguarding Adults",
-    category: "E-Learning",
-    price: "2000",
-    instructor: "Sarah Johnson",
-    lessons: "3 Objectives",
-    description:
-      "To ensure care and support workers can identify abuse and respond appropriately to situations where abuse may occur and work in a person centred way that promotes rights, inclusion",
-    rating: 4,
-    students: "1 Hour",
-    instructorImg: "images/team_5.jpg",
-    review: 37,
-    date: "14 Jan 2023",
-  },
-  {
-    id: 8,
     imgSrc: "images/dysphagia.jpg",
     color: "orange",
     slug: "dysphagia-awareness",
@@ -949,7 +931,7 @@ const eLearningCourses = [
     date: "14 Jan 2023",
   },
   {
-    id: 9,
+    id: 8,
     imgSrc: "images/epilepsy.jpg",
     color: "orange",
     slug: "epilepsy-and-emergency-medication",
@@ -967,8 +949,8 @@ const eLearningCourses = [
     date: "14 Jan 2023",
   },
   {
-    id: 10,
-    imgSrc: "images/healthsafety.jpg",
+    id: 9,
+    imgSrc: "images/equality.jpg",
     color: "orange",
     slug: "equality-diversity-and-inclusion",
     title: "Equality, Diversity & Inclusion",
@@ -985,7 +967,7 @@ const eLearningCourses = [
     date: "14 Jan 2023",
   },
   {
-    id: 11,
+    id: 10,
     imgSrc: "images/covid.jpg",
     color: "orange",
     slug: "covid19-ipic",
@@ -1004,7 +986,7 @@ const eLearningCourses = [
   },
   {
     id: 11,
-    imgSrc: "images/healthsafety.jpg",
+    imgSrc: "images/dataprotection.jpg",
     color: "orange",
     slug: "GDPR",
     title: "General Data Protection Regulation (GDPR)",
@@ -1022,7 +1004,7 @@ const eLearningCourses = [
   },
   {
     id: 12,
-    imgSrc: "images/healthsafety.jpg",
+    imgSrc: "images/harzardous.jpg",
     color: "orange",
     slug: "handling-harzadous-substances",
     title: "Handling Hazardous Substances (COSHH)",
@@ -1076,7 +1058,7 @@ const eLearningCourses = [
   },
   {
     id: 15,
-    imgSrc: "images/healthsafety.jpg",
+    imgSrc: "images/health.jpg",
     color: "orange",
     slug: "Health-and-Safety-Essentials",
     title: "Health & Safety Essentials",
@@ -1700,7 +1682,7 @@ const activitiesData = [
 const bundles = [
   {
     id: 0,
-    imgSrc: "images/core.jpg",
+    imgSrc: "images/bundle.jpg",
     color: "orange",
     slug: "bundle-1",
     title: "Bundle 1",
@@ -1712,7 +1694,7 @@ const bundles = [
   {
     id: 1,
     name: "Bundle 2",
-    imgSrc: "images/core.jpg",
+    imgSrc: "images/bundle.jpg",
     color: "orange",
     slug: "bundle-2",
     title: "Bundle 2",
@@ -1723,7 +1705,7 @@ const bundles = [
   {
     id: 2,
     name: "Bundle 3",
-    imgSrc: "images/core.jpg",
+    imgSrc: "images/bundle.jpg",
     color: "orange",
     slug: "bundle-3",
     title: "Bundle 3",
@@ -1733,7 +1715,7 @@ const bundles = [
     description: "Care Certificate + Online Course - Tier-2-Visa - Hotel Accomodation - Induction & Orientation ...",  },
   {
     id: 3,
-    imgSrc: "images/core.jpg",
+    imgSrc: "images/bundle.jpg",
     color: "orange",
     slug: "bundle-4",
     title: "Bundle 4 (Stand Alone Course)",
@@ -1743,17 +1725,631 @@ const bundles = [
     description: "LEVEL 2 Courses + LEVEL 3 Courses, Duty of Care - Medications Competency MGT ...",
   },
   {
-    id: 5,
+    id: 4,
     name: "Bundle 5",
-    imgSrc: "images/core.jpg",
+    imgSrc: "images/bundle.jpg",
     color: "orange",
     slug: "bundle-5",
-    title: "Bundle 5",
+    title: "Bundle 5 (Online Course)",
     category: "Bundle 5",
     price: "13,000",
     lessons: "20 packages",
     description: "Care Certificate Course - GDPR - Tier-2-Visa - Hotel Accomodation - Induction & Orientation ...",
   },
+]
+
+const bundleContents = [
+  {
+    id: 0,
+    bundleDataId: 0,
+    content: "Care Certificate course",
+    style: "fw-bold"
+  }, 
+  {
+    id: 1,
+    bundleDataId: 0,
+    content: "Induction And Orientation(Extensive 1 day Visual Course)",
+    style: "fw-bold"
+  }, 
+  {
+    id: 2,
+    bundleDataId: 0,
+    content: "Basic life support (level 2)",
+  }, 
+  {
+    id: 3,
+    bundleDataId: 0,
+    content: "Infection, prevention and Control (level 2)",
+  }, 
+  {
+    id: 4,
+    bundleDataId: 0,
+    content: "Safe Guarding Children (level 2)",
+  }, 
+  {
+    id: 5,
+    bundleDataId: 0,
+    content: "Safe Guarding Children (level 2)",
+  }, 
+  {
+    id: 6,
+    bundleDataId: 0,
+    content: "Food safety (level 3)",
+  }, 
+  {
+    id: 7,
+    bundleDataId: 0,
+    content: "First Aid At work (level 3)",
+  }, 
+  {
+    id: 8,
+    bundleDataId: 0,
+    content: "Tier -2- Visa",
+  }, 
+  {
+    id: 9,
+    bundleDataId: 0,
+    content: "Brunch/ lunch",
+  }, 
+  {
+    id: 10,
+    bundleDataId: 0,
+    content: "Hotel Accommodation",
+  }, 
+  {
+    id: 11,
+    bundleDataId: 0,
+    content: "Health, Safety, Fire (level 2)",
+  }, 
+  {
+    id: 12,
+    bundleDataId: 0,
+    content: "Equality, Diversity And Inclusion (level 2)",
+  }, 
+  {
+    id: 13,
+    bundleDataId: 1,
+    content: "Autism spectrum (level 2)",
+  }, 
+  {
+    id: 14,
+    bundleDataId: 1,
+    content: "Diabetes Awareness (level 2)",
+  }, 
+  {
+    id: 15,
+    bundleDataId: 1,
+    content: "Epilepsy and Emergency medication Awareness (level 2)",
+  }, 
+  {
+    id: 16,
+    bundleDataId: 1,
+    content: "Learning Disability (level 2)",
+  }, 
+  {
+    id: 17,
+    bundleDataId: 1,
+    content: "Basic clinical observation (level 2)",
+  }, 
+  {
+    id: 18,
+    bundleDataId: 1,
+    content: "Dementia (level 3)",
+  }, 
+  {
+    id: 19,
+    bundleDataId: 1,
+    content: "ILS (level 3)",
+  }, 
+  {
+    id: 20,
+    bundleDataId: 1,
+    content: "Stroke Awareness (level 2)",
+  }, 
+  {
+    id: 21,
+    bundleDataId: 1,
+    content: "Online Training Courses",
+    style: "fw-bold"
+  }, 
+  {
+    id: 22,
+    bundleDataId: 1,
+    content: "Induction And Orientation (Extensive 1 day visual Course)",
+    style: "fw-bold"
+  }, 
+  {
+    id: 23,
+    bundleDataId: 1,
+    content: "Tier -2- Visa ",
+  }, 
+  {
+    id: 24,
+    bundleDataId: 1,
+    content: "Brunch/ Lunch",
+  }, 
+  {
+    id: 25,
+    bundleDataId: 1,
+    content: "Hotel Accommodation",
+  }, 
+  {
+    id: 26,
+    bundleDataId: 2,
+    content: "Medications competency and management (level 3)",
+  }, 
+  {
+    id: 27,
+    bundleDataId: 2,
+    content: "Managing Risk Assessment in care (level 3)",
+  }, 
+  {
+    id: 28,
+    bundleDataId: 2,
+    content: "Understanding mental health (level 2)",
+  }, 
+  {
+    id: 29,
+    bundleDataId: 2,
+    content: "Moving, Assisting and Hosting (level 2)",
+  }, 
+  {
+    id: 30,
+    bundleDataId: 2,
+    content: "Stroke Awareness (level 2)",
+  }, 
+  {
+    id: 31,
+    bundleDataId: 2,
+    content: "Diabetes Awareness (level 2)",
+  }, 
+  {
+    id: 32,
+    bundleDataId: 2,
+    content: "Epilepsy and Emergency medication Awareness (level 2)",
+  }, 
+  {
+    id: 33,
+    bundleDataId: 2,
+    content: "Autism spectrum (level 2)",
+  }, 
+  {
+    id: 34,
+    bundleDataId: 2,
+    content: "Care certificate course + online course",
+    style: "fw-bold"
+  }, 
+  {
+    id: 35,
+    bundleDataId: 2,
+    content: "Induction And Orientation (Extensive 1 day Visual course)",
+    style: "fw-bold"
+  }, 
+  {
+    id: 36,
+    bundleDataId: 2,
+    content: "Tier -2- Visa",
+  }, 
+  {
+    id: 37,
+    bundleDataId: 2,
+    content: "Brunch/ Lunch",
+  }, 
+  {
+    id: 38,
+    bundleDataId: 2,
+    content: "Hotel Accommodation",
+  }, 
+  {
+    id: 39,
+    bundleDataId: 2,
+    content: "Moricol Quality Service",
+  }, 
+  {
+    id: 40,
+    bundleDataId: 4,
+    content: "Principles of moving and assisting",
+  }, 
+  {
+    id: 41,
+    bundleDataId: 4,
+    content: "Safe handling of medication.",
+  }, 
+  {
+    id: 42,
+    bundleDataId: 4,
+    content: "Dementia Awareness ",
+  }, 
+  {
+    id: 43,
+    bundleDataId: 4,
+    content: "Injection control",
+  }, 
+  {
+    id: 44,
+    bundleDataId: 4,
+    content: "Food safety principles    ",
+  }, 
+  {
+    id: 45,
+    bundleDataId: 4,
+    content: "Safe Guarding Adults    ",
+  }, 
+  {
+    id: 46,
+    bundleDataId: 4,
+    content: "Dysphagia Awareness",
+  }, 
+  {
+    id: 47,
+    bundleDataId: 4,
+    content: "Epilepsy and Emergency Medication",
+  }, 
+  {
+    id: 48,
+    bundleDataId: 4,
+    content: "Equality, Diversity and Inclusion ",
+  }, 
+  {
+    id: 49,
+    bundleDataId: 4,
+    content: "Covid-19 injection, prevention, identification and control",
+  }, 
+  {
+    id: 50,
+    bundleDataId: 4,
+    content: "General data protection regulation (GDPR)",
+  }, 
+  {
+    id: 51,
+    bundleDataId: 4,
+    content: "Handling hazardous substance (COSHH)    ",
+  }, 
+  {
+    id: 52,
+    bundleDataId: 4,
+    content: "First aid principles",
+  }, 
+  {
+    id: 53,
+    bundleDataId: 4,
+    content: "Role of a fire marshall",
+  }, 
+  {
+    id: 54,
+    bundleDataId: 4,
+    content: "Health and safety essentials",
+  }, 
+  {
+    id: 55,
+    bundleDataId: 4,
+    content: "Care certificate course",
+    style: "fw-bold"
+  }, 
+  {
+    id: 56,
+    bundleDataId: 4,
+    content: "Induction and orientation (Extensive 1-day Training/ Visual course).",
+    style: "fw-bold"
+  }, 
+  {
+    id: 57,
+    bundleDataId: 4,
+    content: "Tier -2-Visa",
+  }, 
+  {
+    id: 58,
+    bundleDataId: 4,
+    content: "Bruch/Lunch",
+  }, 
+  {
+    id: 59,
+    bundleDataId: 4,
+    content: "Hotel Accommodation.",
+  }, 
+  {
+    id: 60,
+    bundleDataId: 3,
+    content: "Level 2",
+    style: "fw-bold text-decoration-underline"
+  }, 
+  {
+    id: 61,
+    bundleDataId: 3,
+    content: "Duty of care",
+  }, 
+  {
+    id: 62,
+    bundleDataId: 3,
+    content: "Effective Communication",
+  }, 
+  {
+    id: 63,
+    bundleDataId: 3,
+    content: "Food, safety, Nutrition and Hydration.",
+  }, 
+  {
+    id: 64,
+    bundleDataId: 3,
+    content: "Safe Handling And Medication",
+  }, 
+  {
+    id: 65,
+    bundleDataId: 3,
+    content: "Handling And Recording information.",
+  }, 
+  {
+    id: 66,
+    bundleDataId: 3,
+    content: "Mental Capacity Act (inc. Dols)",
+  }, 
+  {
+    id: 67,
+    bundleDataId: 3,
+    content: "Oral Health",
+  }, 
+  {
+    id: 68,
+    bundleDataId: 3,
+    content: "Person centred care And support",
+  }, 
+  {
+    id: 69,
+    bundleDataId: 3,
+    content: "Promoting Dignity in care",
+  }, 
+  {
+    id: 70,
+    bundleDataId: 3,
+    content: "Role of care worker and personal Development",
+  }, 
+  {
+    id: 71,
+    bundleDataId: 3,
+    content: "Automated External Defibrillation",
+  }, 
+  {
+    id: 72,
+    bundleDataId: 3,
+    content: "Basic Paediatric first Aid",
+  }, 
+  {
+    id: 73,
+    bundleDataId: 3,
+    content: "Emergency Paediatric first Aid",
+  }, 
+  {
+    id: 74,
+    bundleDataId: 3,
+    content: "Fire safety Awareness",
+  }, 
+  {
+    id: 75,
+    bundleDataId: 3,
+    content: "First aid Awareness ",
+  }, 
+  {
+    id: 76,
+    bundleDataId: 3,
+    content: "Anaphylaxis and Emergency Medication Awareness",
+  }, 
+  {
+    id: 77,
+    bundleDataId: 3,
+    content: "Catheter care",
+  }, 
+  {
+    id: 78,
+    bundleDataId: 3,
+    content: "Inhalers And Nebulizers",
+  }, 
+  {
+    id: 79,
+    bundleDataId: 3,
+    content: "Oxygen Therapy",
+  }, 
+  {
+    id: 80,
+    bundleDataId: 3,
+    content: "PEG Feeding Awareness(2/3)",
+  }, 
+  {
+    id: 81,
+    bundleDataId: 3,
+    content: "Stoma care Awareness ",
+  }, 
+  {
+    id: 82,
+    bundleDataId: 3,
+    content: "Boundaries And Good Practice ",
+  }, 
+  {
+    id: 83,
+    bundleDataId: 3,
+    content: "Care  Planning ",
+  }, 
+  {
+    id: 84,
+    bundleDataId: 3,
+    content: "Customer Service And Complaints",
+  }, 
+  {
+    id: 85,
+    bundleDataId: 3,
+    content: "Drug And Alcohol Abuse Awareness",
+  }, 
+  {
+    id: 86,
+    bundleDataId: 3,
+    content: "Dysphagia Awareness",
+  }, 
+  {
+    id: 87,
+    bundleDataId: 3,
+    content: "End of life care",
+  }, 
+  {
+    id: 88,
+    bundleDataId: 3,
+    content: "Epilepsy And Bucal Midazolam",
+  }, 
+  {
+    id: 89,
+    bundleDataId: 3,
+    content: "Loss and Bereavement",
+  }, 
+  {
+    id: 90,
+    bundleDataId: 3,
+    content: "Mental health",
+  }, 
+  {
+    id: 91,
+    bundleDataId: 3,
+    content: "People Hoisting ",
+  }, 
+  {
+    id: 92,
+    bundleDataId: 3,
+    content: "Personal care ",
+  }, 
+  {
+    id: 93,
+    bundleDataId: 3,
+    content: "Pressure Care management ",
+  }, 
+  {
+    id: 94,
+    bundleDataId: 3,
+    content: "Prevention of Trips, slips and falls",
+  }, 
+  {
+    id: 95,
+    bundleDataId: 3,
+    content: "Professional Relationships and Boundaries",
+  }, 
+  {
+    id: 96,
+    bundleDataId: 3,
+    content: "The introduction of positive behaviour support",
+  }, 
+  {
+    id: 97,
+    bundleDataId: 3,
+    content: "Understanding the Behaviour that challenge.",
+  }, 
+  {
+    id: 98,
+    bundleDataId: 3,
+    content: "Food safety principles",
+  }, 
+  {
+    id: 99,
+    bundleDataId: 3,
+    content: "Lone working Awareness",
+  }, 
+  {
+    id: 100,
+    bundleDataId: 3,
+    content: "Managing personal stress",
+  }, 
+  {
+    id: 101,
+    bundleDataId: 3,
+    content: "Managing stress in the work place",
+  }, 
+  {
+    id: 102,
+    bundleDataId: 3,
+    content: "Manual Handling",
+  }, 
+  {
+    id: 103,
+    bundleDataId: 3,
+    content: "Risk Assessment in care",
+  }, 
+  {
+    id: 104,
+    bundleDataId: 3,
+    content: "LEVEL 3",
+    style: "fw-bold text-decoration-underline"
+  }, 
+  {
+    id: 105,
+    bundleDataId: 3,
+    content: "Medications, competency MGT.",
+  }, 
+  {
+    id: 106,
+    bundleDataId: 3,
+    content: "Positive behaviour support.",
+  }, 
+  {
+    id: 107,
+    bundleDataId: 3,
+    content: "Managing and supervising safety.",
+  }, 
+  {
+    id: 108,
+    bundleDataId: 3,
+    content: "Managing risk assessment in care management.",
+  }, 
+  {
+    id: 109,
+    bundleDataId: 3,
+    content: "Food safety",
+  }, 
+  {
+    id: 110,
+    bundleDataId: 3,
+    content: "Assessing competency in moving and assisting.",
+  }, 
+  {
+    id: 111,
+    bundleDataId: 3,
+    content: "Tracheostomy",
+  }, 
+  {
+    id: 112,
+    bundleDataId: 3,
+    content: "PEG Feeding",
+  }, 
+  {
+    id: 113,
+    bundleDataId: 3,
+    content: "Medication competency and management",
+  }, 
+  {
+    id: 114,
+    bundleDataId: 3,
+    content: "Role of a fire marshall",
+  }, 
+  {
+    id: 115,
+    bundleDataId: 3,
+    content: "Paediatric First Aid",
+  }, 
+  {
+    id: 116,
+    bundleDataId: 3,
+    content: "First Aid at work",
+  }, 
+  {
+    id: 117,
+    bundleDataId: 3,
+    content: "ILS",
+  }, 
+  {
+    id: 118,
+    bundleDataId: 3,
+    content: "Food",
+  }, 
+  {
+    id: 119,
+    bundleDataId: 3,
+    content: "Safe Guarding Adults.",
+  }, 
+  
 ]
 
 export {
@@ -1770,5 +2366,6 @@ export {
   allFaqData,
   eLearningCourses,
   eLearningCoursesContents,
-  bundles
+  bundles,
+  bundleContents
 };

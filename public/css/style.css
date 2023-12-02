@@ -319,7 +319,7 @@ button {
   background-size: cover !important;
   padding-top: 245px;
   padding-bottom: 180px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/healthtraining.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/orangegradbg.jpg);
 }
 
 .tf__breadcrumb .container {
@@ -785,7 +785,7 @@ button {
 }
 
 .tf__single_category_text {
-  background: url(../images/categiry_bg.png);
+  background: url(../images/education.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1171,8 +1171,7 @@ button {
   background-image: url(../images/faq_bg.png);
 }
 .tf__banner_3 .tf__banner_text::after,
-.tf__faq::after,
-.tf__about::after {
+.tf__faq::after{
   position: absolute;
   content: "";
   background: url(../images/book_shapes.png);
@@ -1188,8 +1187,7 @@ button {
   -webkit-animation: banner_animi_2 linear 3s infinite alternate;
 }
 
-.tf__faq::before,
-.tf__about::before {
+.tf__faq::before{
   position: absolute;
   content: "";
   background: url(../images/pen_shapes.png);
@@ -2214,7 +2212,7 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/healthtraining.jpg);
+  background-image: url(../images/orangegradbg.jpg);
 }
 
 .tf__footer_overlay {
@@ -3731,7 +3729,13 @@ button {
   justify-content: space-between;
 } */
 .e_learning {
-  background-color: #f8f9fa;
+  background-color: #f4f1f1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.time_table {
+  background-color: rgb(255, 255, 255);
+  border-top: 2px solid rgb(238, 238, 238);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -4352,7 +4356,7 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/healthtraining.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/orangegradbg.jpg);
 }
 
 .tf__banner_2_text {
@@ -5056,7 +5060,7 @@ button {
   margin: 0;
   height: auto;
   background-position: center top !important;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/healthtraining.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/orangegradbg.jpg);
 }
 
 .home_3 .tf__banner_text {
@@ -6104,7 +6108,7 @@ select.select_js.form-select {
     SIGNIN START
 =================================== */
 .tf__login_area {
-  background: rgb(233, 247, 250);
+  background: #ff9100;
   padding: 50px;
   overflow: hidden;
   border-radius: 5px;
@@ -10183,4 +10187,92 @@ section.tf__counter_3 {
 
 .registration {
   max-height: 100vh;
+}
+
+
+/* ========ENROLLMENT======= */
+.enrollment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.enrollment img{
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+}
+.orderStatus{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.profileBody {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.profileContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profileCard {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  /* text-align: center; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.username {
+  font-size: 18px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.tagline,
+.description {
+  color: #555;
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }

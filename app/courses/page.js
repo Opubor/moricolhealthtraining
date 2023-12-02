@@ -8,7 +8,7 @@ export const metadata = {
 export default function Courses() {
     return (
         <Layout>
-            <BreadcrumbSection header='All Course' title='All Course'/>
+            <BreadcrumbSection header='In Class Courses' title='In Class Courses'/>
             <AllCourseSection/>
         </Layout>
     )

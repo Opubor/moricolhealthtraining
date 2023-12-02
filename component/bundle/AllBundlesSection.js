@@ -45,11 +45,11 @@ const AllBundlesSection = () => {
                   </li>
                 </ul>
                 <div className="tf__single_courses_text">
-                  <Link className="title" href={`/courses/${item.slug}`}>
+                  <Link className="title" href={`/bundles/${item.slug}`}>
                     {item.title}
                   </Link>
                   <p className="description">{item.description}</p>
-                  <Link className="title text-primary small" href={`/bundle/${item?.slug}`}>
+                  <Link className="title text-primary small" href={`/bundles/${item?.slug}`}>
                   View bundle
                 </Link>
                   <ul>

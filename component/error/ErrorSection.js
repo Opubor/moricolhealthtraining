@@ -10,7 +10,7 @@ const ErrorSection = ({ type }) => {
             <div className="tf__error_text">
               <div className="img">
                 <img
-                  src="/images/error_img.png"
+                  src="/images/pagenotfound.jpg"
                   alt="error"
                   className="img-fluid w-100"
                 />

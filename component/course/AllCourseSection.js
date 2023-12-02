@@ -34,7 +34,7 @@ const AllCourseSection = () => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  <span>{item.price}</span>
+                  <span>&#8358;{item.price}</span>
                 </div>
                 <ul className="tf__single_course_header">
                   {/* <li>

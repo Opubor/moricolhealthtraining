@@ -16,7 +16,7 @@ const ContactSection = () => {
                 />
               </div>
               <div className="text">
-                <h4>Study Off Flexibly</h4>
+                <h4>Moricol Health Care Training</h4>
                 <p>
                 We pride ourselves on offering cutting-edge curriculum and staying at the forefront of health education. Our courses are designed with innovation in mind, incorporating the latest research and technology to enhance your learning experience.
                 </p>

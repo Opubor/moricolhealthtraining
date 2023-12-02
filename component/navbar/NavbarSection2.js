@@ -46,7 +46,7 @@ const NavbarSection2 = () => {
           <Link className="navbar-brand" href="/">
             <img
               src="images/moricollogo.JPEG"
-              alt="Eduor"
+              alt="Moricol"
               className="img-fluid w-100"
             />
           </Link>

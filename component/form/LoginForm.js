@@ -28,7 +28,6 @@ const LoginForm = (props) => {
         redirect: false,
         callbackUrl: props.callbackUrl ?? "/",
       });
-      console.log(res.status)
 
       if (res?.ok) {
         return router.push("/");

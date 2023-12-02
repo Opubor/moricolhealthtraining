@@ -10,7 +10,7 @@ function BundleSection() {
         <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto">
           <div className="tf__heading_area mb_20">
             <h5 className="mt_50">BUNDLE COURSES</h5>
-            <h2>Enroll in Knowledge-Packed Courses.</h2>
+            <h2>Moricol Training Course Modules for Delegates</h2>
           </div>
         </div>
       </div>
@@ -38,11 +38,11 @@ function BundleSection() {
                 </li>
               </ul>
               <div className="tf__single_courses_text">
-                <Link className="title" href={`/bundle/${item?.slug}`}>
+                <Link className="title" href={`/bundles/${item?.slug}`}>
                   {item?.title}
                 </Link>
                 <p className="description">{item?.description}</p>
-                <Link className="title text-primary small" href={`/bundle/${item?.slug}`}>
+                <Link className="title text-primary small" href={`/bundles/${item?.slug}`}>
                   View bundle
                 </Link>
                 <ul>

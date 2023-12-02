@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Tab, Nav } from "react-bootstrap";
 
-const CourseDetailTabContent = ({ courseData, courseContents }) => {
+const BundleDetailTabContent = ({ courseData, courseContents }) => {
   const [activeKey, setActiveKey] = useState("overview");
 
   const handleSelect = (key) => {
@@ -20,6 +20,7 @@ const CourseDetailTabContent = ({ courseData, courseContents }) => {
           <Nav.Item>
             <Nav.Link eventKey="overview">Overview</Nav.Link>
           </Nav.Item>
+         
         </Nav>
       </div>
       <Tab.Content id="pills-tabContent">
@@ -28,24 +29,20 @@ const CourseDetailTabContent = ({ courseData, courseContents }) => {
             <h3>Description</h3>
             <p>{courseData?.description}</p>
             <p>{courseData?.description2}</p>
-
+           
             <h3>Course Features:</h3>
             <ul>
               {courseContents.map((data) => (
-                <li>
-                  {data?.content} -{" "}
-                  <span className="text-warning">
-                    <i className="fa-solid fa-clock"></i>
-                  </span>{" "}
-                  {data?.time}
-                </li>
+              <li className={`${data?.style}`}>- {data?.content}</li>
               ))}
             </ul>
+         
           </div>
         </Tab.Pane>
+       
       </Tab.Content>
     </Tab.Container>
   );
 };
 
-export default CourseDetailTabContent;
+export default BundleDetailTabContent;
