@@ -49,21 +49,27 @@ export async function POST(
          paymentStatus: "Success"
        }
     })
+
+    resend.emails.send({
+        from: "Moricol <onboarding@resend.dev>",
+        to: "opubortony@gmail.com",
+        subject: "Success Payment Messasge",
+        html: "hello payment success",
+    });
     
 
     return new Response(JSON.stringify("Payment Updated"), {
       status: 200,
     });
   } catch (error) {
-    if(error instanceof Error){
     resend.emails.send({
         from: "Moricol <onboarding@resend.dev>",
         to: "opubortony@gmail.com",
         subject: "Error Messasge",
-        react: error.message,
-      });
-    }
+        html: JSON.stringify(error),
+    });
     
+
     if(error instanceof AppException){
         return new Response(JSON.stringify(error.message), { status: 400 });
     }
