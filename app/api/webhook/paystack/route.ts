@@ -12,79 +12,75 @@ export async function POST(
 ): Promise<any> {
   try {
     const secretKey = `${process.env.SECRET_KEY}`;
+    const event: PaystackEventResponse = await req.json();
 
     const hash = crypto
       .createHmac("sha512", secretKey)
-      .update(JSON.stringify(await req.json()))
+      .update(JSON.stringify(event))
       .digest("hex");
-
 
     if (hash !== req.headers.get("x-paystack-signature")) {
       throw new AppException("sorry request is invalid");
     }
-
-    const event: PaystackEventResponse = await req.json();
 
     if (event?.event !== "charge.success") {
       throw new AppException("unknown event");
     }
 
     // check if amount paid is same price for course
-   
 
     const enrollment = await prisma.enrollment.update({
-        where: {
-          id: event.data.metadata.enrollmentId,
-        },
-        data: {
-          status: "Success",
-        }
-      });
+      where: {
+        id: event.data.metadata.enrollmentId,
+      },
+      data: {
+        status: "Success",
+      },
+    });
 
     const paymentUpdate = await prisma.payment.update({
-       where:{
-         id: event.data.metadata.paymentId
-       },
-       data: {
-         paymentStatus: "Success"
-       }
-    })
+      where: {
+        id: event.data.metadata.paymentId,
+      },
+      data: {
+        paymentStatus: "Success",
+      },
+    });
 
     resend.emails.send({
-        from: "Moricol <onboarding@resend.dev>",
-        to: "opubortony@gmail.com",
-        subject: "Success Payment Messasge",
-        html: "hello payment success",
+      from: "Moricol <onboarding@resend.dev>",
+      to: "opubortony@gmail.com",
+      subject: "Success Payment Messasge",
+      html: "hello payment success",
     });
-    
 
     return new Response(JSON.stringify("Payment Updated"), {
       status: 200,
     });
   } catch (error) {
     resend.emails.send({
+      from: "Moricol <onboarding@resend.dev>",
+      to: "opubortony@gmail.com",
+      subject: "Error Messasge",
+      html: JSON.stringify(error),
+    });
+
+    if (error instanceof Error) {
+      resend.emails.send({
         from: "Moricol <onboarding@resend.dev>",
         to: "opubortony@gmail.com",
         subject: "Error Messasge",
-        html: JSON.stringify(error),
-    });
-    
-
-    if(error instanceof Error){
-        resend.emails.send({
-            from: "Moricol <onboarding@resend.dev>",
-            to: "opubortony@gmail.com",
-            subject: "Error Messasge",
-            html: JSON.stringify(error?.message),
-        });
+        html: JSON.stringify(error?.message),
+      });
     }
 
-
-    if(error instanceof AppException){
-        return new Response(JSON.stringify(error.message), { status: 400 });
+    if (error instanceof AppException) {
+      return new Response(JSON.stringify(error.message), { status: 400 });
     }
 
     console.log(error);
-    return new Response(JSON.stringify("Something went wrong"), { status: 400 });
+    return new Response(JSON.stringify("Something went wrong"), {
+      status: 400,
+    });
   }
 }
