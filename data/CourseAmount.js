@@ -524,6 +524,16 @@ const courseAmount = [
     title: "All E-Learning Courses",
     price: "200000",
   },
+  {
+    id: 102,
+    title: "Full Online Package",
+    price: "200000",
+  },
+  {
+    id: 104,
+    title: "Full Online Package + Care Certificate",
+    price: "300000",
+  },
 
 ];
 

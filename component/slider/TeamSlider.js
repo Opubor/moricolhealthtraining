@@ -46,7 +46,7 @@ const TeamSlider = () => {
         },
       ]}
     >
-      {teamData.slice(0, 4).map((item) => (
+      {teamData.map((item) => (
         <div className="col-xl-4 wow fadeInUp" key={item.id}>
           <div className="tf__single_team">
             <div className="tf__single_team_img">

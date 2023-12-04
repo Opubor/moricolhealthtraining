@@ -84,13 +84,13 @@ function EnrollmentSection({ courseId }: Props) {
         </h5>
       )}
 
-      <div className="d-flex align-items-left justify-items-left mt-4 row">
+      <div className="d-flex align-items-left justify-items-left mt-4 row overflow-hidden">
         <p>Please enter your details below as part of the enrolment process</p>
       </div>
       {courseType === "inclass" && (
-        <>
+        <div className="p-2">
           <select
-            className="p-2 rounded border-success w-25 mt-2"
+            className="p-2 rounded border-success w-100 mt-2"
             {...register("course", { required: true })}
           >
             <option value={""}>
@@ -105,7 +105,7 @@ function EnrollmentSection({ courseId }: Props) {
           {errors.course && (
             <p className="text-danger text-sm">Course is required.</p>
           )}
-        </>
+        </div>
       )}
 
       <form onSubmit={handleSubmit(onSubmit)}>

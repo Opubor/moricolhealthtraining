@@ -80,6 +80,7 @@ const FooterSection2 = ({ style }) => {
                       <a href="tel:09124460695"> Phone: 09124460695</a>
                     </p>
                     <p>
+                      <a href="mailto:infomoricolhealthcare@gmail.com">Email: infomoricolhealthcare@gmail.com </a>
                       <a href="mailto:moricolhealth@qualityservice.com">Email: moricolhealth@qualityservice.com </a>
                       <span>Website: moricolhealthtraining.com</span>
                     </p>

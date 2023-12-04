@@ -32,7 +32,9 @@ async function Page() {
         <BreadcrumbSection header={"My Courses"} title={"My Courses"} />
 
         <div className="container mt_50 mb_95">
-          <h2 className="fw-bold text-success text-decoration-underline">Registered Courses</h2>
+          <h2 className="fw-bold text-success text-decoration-underline mb-4">
+            Registered Courses
+          </h2>
           <table className="table">
             <thead>
               <tr>
@@ -57,8 +59,24 @@ async function Page() {
                   <td>{data?.phone}</td>
                   <td>{data?.course}</td>
                   <td>{data?.date.slice(0, -37)}</td>
-                  <td>&#8358;{Number(data?.amount) /100}</td>
-                  <td>{data?.status}</td>
+                  <td>&#8358;{Number(data?.amount) / 100}</td>
+                  <td>
+                    {data?.status === "Pending" && (
+                      <p className="bg-warning small text-white p-2 rounded">
+                        {data?.status}
+                      </p>
+                    )}{" "}
+                    {data?.status === "Failed" && (
+                      <p className="bg-danger small text-white p-2 rounded">
+                        {data?.status}
+                      </p>
+                    )}
+                    {data?.status === "Success" && (
+                      <p className="bg-success small text-white p-2 rounded">
+                        {data?.status}
+                      </p>
+                    )}
+                  </td>
                 </tr>
               ))}
             </tbody>

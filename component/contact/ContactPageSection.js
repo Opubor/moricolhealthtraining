@@ -38,7 +38,8 @@ const ContactPageSection = () => {
                 </div>
                 <div className="text">
                   <h3>mail</h3>
-                  <a href="mailto:moricolhealth@qualityservice.com">Email: moricolhealth@qualityservice.com </a>
+                  <a href="mailto:infomoricolhealthcare@gmail.com">infomoricolhealthcare@gmail.com </a>
+                  <a href="mailto:moricolhealth@qualityservice.com">moricolhealth@qualityservice.com </a>
                 </div>
               </div>
               <div className="tf__contact_single">
@@ -47,7 +48,7 @@ const ContactPageSection = () => {
                 </div>
                 <div className="text">
                   <h3>address</h3>
-                  <p>Head Quarter: Road 4,House 2 .Abraham Adesanya Estate, Ajah Lagos</p>
+                  <p>Headquarter: Road 4,House 2 .Abraham Adesanya Estate, Ajah Lagos</p>
                   <p>Branch Office: 27, Reuben Agho Avenue, off 2nd Ugobest road, GRA, Benin City, Edo state</p>
                 </div>
               </div>

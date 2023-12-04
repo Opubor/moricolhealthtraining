@@ -5,6 +5,9 @@ import { PaystackEventResponse } from "@/lib/types";
 import { AppException } from "@/exceptions";
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
+import React from "react";
+import NewRegistrationMail from "@/email/new-registration";
+import StudentRegEmail from "@/email/studentRegEmail";
 
 export async function POST(
   req: NextRequest,
@@ -47,11 +50,34 @@ export async function POST(
       },
     });
 
+    const newEnrollment = await prisma.enrollment.findFirst({
+      where: {id: event.data.metadata.enrollmentId }, include: {user: true}
+    })
+
     resend.emails.send({
       from: "Moricol <onboarding@resend.dev>",
       to: "opubortony@gmail.com",
-      subject: "Success Payment Messasge",
-      html: "hello payment success",
+      // to: "infomoricolhealthcare@gmail.com",
+      subject: "New Course Enrollment",
+      react: React.createElement(NewRegistrationMail, {
+        courseName: newEnrollment?.course as string,
+        studentName: newEnrollment?.user?.name as string,
+        studentEmail: newEnrollment?.email as string,
+        studentPhoneNumber: newEnrollment?.phone as string,
+        registrationDate: newEnrollment?.date as string,
+      }),
+    });
+    resend.emails.send({
+      from: "Moricol <onboarding@resend.dev>",
+      to: newEnrollment?.email as string,
+      // to: "infomoricolhealthcare@gmail.com",
+      subject: "New Course Enrollment",
+      react: React.createElement(StudentRegEmail, {
+        customerName: newEnrollment?.user?.name as string,
+        enrollmentId: newEnrollment?.enrollmentId as string,
+        courseName: newEnrollment?.course as string,
+        registrationDate: newEnrollment?.date as string,
+      }),
     });
 
     return new Response(JSON.stringify("Payment Updated"), {
