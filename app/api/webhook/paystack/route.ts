@@ -13,7 +13,7 @@ export async function POST(
 
     const hash = crypto
       .createHmac("sha512", secretKey)
-      .update(JSON.stringify(req.body))
+      .update(JSON.stringify(await req.json()))
       .digest("hex");
 
 
