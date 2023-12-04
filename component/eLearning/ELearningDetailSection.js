@@ -32,7 +32,7 @@ const ELearningDetailSection = ({ courseData, courseContents }) => {
               <div className="tf__courses_details_header d-flex flex-wrap align-items-center">
                 <div className="img">
                   <img
-                    src={"/images/moricollogo.JPEG"}
+                    src={"/images/moricollogo.jpeg"}
                     alt="instuuctor"
                     className="img-fluid w-100"
                   />
