@@ -37,7 +37,6 @@ async function Page() {
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">UserID</th>
                 <th scope="col">EnrollmentID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
@@ -52,7 +51,6 @@ async function Page() {
               {enrolledCourses.map((data: any, i: any) => (
                 <tr>
                   <th scope="row">{i + 1}</th>
-                  <td>{data?.user?.userId}</td>
                   <td>{data?.enrollmentId}</td>
                   <td>{data?.user?.name}</td>
                   <td>{data?.email}</td>

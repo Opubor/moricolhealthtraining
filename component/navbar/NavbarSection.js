@@ -44,7 +44,7 @@ const NavbarSection = ({ style }) => {
       <div className="container">
         <Link className="navbar-brand" href="/">
           <img
-            src="/images/moricollogo.JPEG"
+            src="/images/moricollogo.jpeg"
             alt="Moricol"
             className="img-fluid"
           />
