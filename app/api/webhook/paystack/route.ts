@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 import { PaystackEventResponse } from "@/lib/types";
 import { AppException } from "@/exceptions";
+import { Resend } from "resend";
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(
   req: NextRequest,
@@ -28,6 +30,7 @@ export async function POST(
     }
 
     // check if amount paid is same price for course
+   
 
     const enrollment = await prisma.enrollment.update({
         where: {
@@ -52,6 +55,15 @@ export async function POST(
       status: 200,
     });
   } catch (error) {
+    if(error instanceof Error){
+    resend.emails.send({
+        from: "Moricol <onboarding@resend.dev>",
+        to: "opubortony@gmail.com",
+        subject: "Error Messasge",
+        react: error.message,
+      });
+    }
+    
     if(error instanceof AppException){
         return new Response(JSON.stringify(error.message), { status: 400 });
     }
