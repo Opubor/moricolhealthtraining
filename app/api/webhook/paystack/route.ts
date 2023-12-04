@@ -70,6 +70,16 @@ export async function POST(
     });
     
 
+    if(error instanceof Error){
+        resend.emails.send({
+            from: "Moricol <onboarding@resend.dev>",
+            to: "opubortony@gmail.com",
+            subject: "Error Messasge",
+            html: JSON.stringify(error?.message),
+        });
+    }
+
+
     if(error instanceof AppException){
         return new Response(JSON.stringify(error.message), { status: 400 });
     }
