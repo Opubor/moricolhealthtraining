@@ -33,11 +33,11 @@ const CourseDetailTabContent = ({ courseData, courseContents }) => {
             <ul>
               {courseContents.map((data) => (
                 <li>
-                  {data?.content} -{" "}
-                  <span className="text-warning">
+                  {data?.content} - <span className="text-success fw-bold">&#8358;{data?.price}</span>
+                  {/* <span className="text-warning">
                     <i className="fa-solid fa-clock"></i>
                   </span>{" "}
-                  {data?.time}
+                  {data?.time} */}
                 </li>
               ))}
             </ul>

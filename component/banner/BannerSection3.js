@@ -11,13 +11,15 @@ const BannerSection3 = () => {
         <div className="row">
           <div className="col-xl-8 col-md-10 col-lg-8">
             <div className="tf__banner_text wow fadeInUp">
-              <h5 className="text-white">Empower Your Wellness Journey: Elevate Your Health with Expert Training</h5>
+              <h5 className="text-white">
+                Nurturing Excellence in Healthcare: Explore Specialized Courses
+                Now!
+              </h5>
               <h1 className="text-white">
-              Health <span>Training</span> For a better you.
+                Health <span>Training</span> For a better you.
               </h1>
               <p className="text-white">
-              Empowering individuals to embrace a healthier lifestyle through comprehensive and personalized health training programs
-
+                Empowering Health Professionals: Elevate Your Expertise Here!
               </p>
               <ul className="d-flex flex-wrap align-items-center">
                 <li>

@@ -13,7 +13,7 @@ const RegisterSection = () => {
               <div className="enrollmentlogo">
                 <img src="/images/moricollogo.jpeg" />
               </div>
-              <h2 className="text-center">Health Care Training</h2>
+              <h2 className="text-center mt-2">Health Care Training</h2>
               <p className="text-center">Register now and kickstart your training journey!</p>
               <RegisterForm />
 

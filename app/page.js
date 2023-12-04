@@ -34,11 +34,11 @@ export default function Home3() {
       <AboutSection />
       {/* <CounterSection /> */}
       <TeamSection style="tf__team_3 pt_100 pb_100" />
-      <FaqSection img="images/education.png"/>
+      <FaqSection img="/images/education.png"/>
       {/* <ContactSection2 /> */}
       {/* <ActivitySection2 style="tf__activities_3 tf__activities_slider_area mt_100 pt_95 pb_100" /> */}
       {/* <BlogSection2 /> */}
-      <FooterSection2 style="tf__footer_3" logo="images/moricollogo.jpeg" />
+      <FooterSection2 style="tf__footer_3" />
       {/* <VideoModal /> */}
       <ScrollToTopButton style="style-3" />
     </div>

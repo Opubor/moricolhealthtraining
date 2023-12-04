@@ -10,7 +10,7 @@ const CourseSection2 = () => {
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_20">
               <h5 className="mt_50">IN-CLASS COURSE PROGRAMS</h5>
-              <h2>Enroll in Knowledge-Packed Courses.</h2>
+              <h2>Explore Knowledge: Dive into a World of Courses</h2>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ const CourseSection2 = () => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  <span>&#8358;{item.price}</span>
+                  <span>{item.price}</span>
                 </div>
                 <ul className="tf__single_course_header">
                   {/* <li>
@@ -51,7 +51,7 @@ const CourseSection2 = () => {
                       <i className="far fa-star"></i>
                       <span>(0{item.rating})</span>
                     </li> */}
-                    <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li>
+                    {/* <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li> */}
                   </ul>
                 </div>
               </div>

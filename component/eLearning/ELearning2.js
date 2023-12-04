@@ -9,8 +9,8 @@ const ELearning2 = () => {
         <div className="row wow fadeInUp">
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_20">
-              <h5 className="">IN-CLASS COURSE PROGRAMS</h5>
-              <h2>Enroll in Knowledge-Packed Courses.</h2>
+              <h5 className="">E-LEARNING COURSE PROGRAMS</h5>
+              <h2>Empowering Health Workers: Specialized Training Courses Await!</h2>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ const ELearning2 = () => {
                       <i className="far fa-star"></i>
                       <span>(0{item.rating})</span>
                     </li> */}
-                    <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li>
+                    {/* <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li> */}
                   </ul>
                 </div>
               </div>

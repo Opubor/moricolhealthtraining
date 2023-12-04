@@ -11,13 +11,13 @@ const AllELearningSection = () => {
     totalELearningPages
   } = useEduorContext();
   return (
-    <section className="tf__courses_page mt_190 xs_mt_95">
+    <section className="tf__courses_page mt_60">
       <div className="container">
         <div className="row wow fadeInUp">
           <div className="col-xl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_15">
               <h5>OUR E-LEARNING COURSES</h5>
-              <h2>Educational For Students Popular Courses.</h2>
+              <h2>Empowering Health Workers: Specialized Training Courses Await!</h2>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ const AllELearningSection = () => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  <span>{item.price}</span>
+                  <span>&#8358;{item.price}</span>
                 </div>
                 <ul className="tf__single_course_header">
                   {/* <li>
@@ -58,7 +58,7 @@ const AllELearningSection = () => {
                       <i className="far fa-star"></i>
                       <span>(0{item.rating})</span>
                     </li> */}
-                    <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li>
+                    {/* <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li> */}
                   </ul>
                 </div>
               </div>

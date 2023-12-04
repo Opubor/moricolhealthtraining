@@ -1,16 +1,18 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
-import { eLearningCourses } from '@/data/Data';
+import { eLearningCourses } from "@/data/Data";
 
 function ELearning() {
   return (
-<section className="tf__courses_2 tf__courses_3 e_learning mt-4">
+    <section className="tf__courses_2 tf__courses_3 e_learning mt-4">
       <div className="container">
         <div className="row wow fadeInUp">
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_20">
               <h5 className="mt-4">E-LEARNING COURSE PROGRAMS</h5>
-              <h2>Enroll in Knowledge-Packed Courses.</h2>
+              <h2>
+                Empowering Health Workers: Specialized Training Courses Await!
+              </h2>
             </div>
           </div>
         </div>
@@ -30,9 +32,6 @@ function ELearning() {
                   <span>&#8358;{item.price}</span>
                 </div>
                 <ul className="tf__single_course_header">
-                  {/* <li>
-                    <i className="fas fa-user"></i> {item.instructor}
-                  </li> */}
                   <li>
                     <i className="fas fa-folder-open"></i> {item.lessons}
                   </li>
@@ -43,23 +42,21 @@ function ELearning() {
                   </Link>
                   <p className="description">{item.description}</p>
                   <ul>
-                    {/* <li>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
-                      <i className="far fa-star"></i>
-                      <span>(0{item.rating})</span>
+                    {/* <li className="d-flex align-items-center gap-2">
+                      <i className="fa-solid fa-clock"></i>
+                      {item.students}
                     </li> */}
-                    <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li>
                   </ul>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        <Link className="px-4 py-1 bg-warning rounded text-white mt-2" href={"/eLearning"}>
+        View All</Link>
       </div>
-    </section>  )
+    </section>
+  );
 }
 
-export default ELearning
+export default ELearning;

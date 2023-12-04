@@ -10,7 +10,6 @@ const getEnrolledCourses = async (id: string) => {
   const courses = await prisma.enrollment.findMany({
     where: { userId: id },
     include: { user: true, Payment: true },
-    orderBy: { id: "asc" },
   });
 
   JSON.stringify(courses, (key, value) => {
@@ -33,10 +32,12 @@ async function Page() {
         <BreadcrumbSection header={"My Courses"} title={"My Courses"} />
 
         <div className="container mt_50 mb_95">
+          <h2 className="fw-bold text-success text-decoration-underline">Registered Courses</h2>
           <table className="table">
             <thead>
               <tr>
                 <th scope="col">#</th>
+                <th scope="col">UserID</th>
                 <th scope="col">EnrollmentID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
@@ -51,6 +52,7 @@ async function Page() {
               {enrolledCourses.map((data: any, i: any) => (
                 <tr>
                   <th scope="row">{i + 1}</th>
+                  <td>{data?.user?.userId}</td>
                   <td>{data?.enrollmentId}</td>
                   <td>{data?.user?.name}</td>
                   <td>{data?.email}</td>

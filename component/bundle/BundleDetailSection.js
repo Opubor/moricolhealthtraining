@@ -1,10 +1,21 @@
 "use client";
 import { courseDataArray, bundles } from "../../data/Data";
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import BundleDetailTabContent from "./BundleDetailTabContent";
+import { useSession } from "next-auth/react";
+import RegPrompter from "../RegPrompter";
 
 const BundleDetailSection = ({ courseData, courseContents }) => {
+  const { data: session } = useSession();
+  const [error, setError] = useState(false);
+
+  const promptRegistration = async () => {
+    setError(true);
+    return setTimeout(() => {
+      setError(false);
+    }, 9000);
+  };
   return (
     <section className="tf__courses_details mt_195 xs_mt_100">
       <div className="container">
@@ -38,12 +49,23 @@ const BundleDetailSection = ({ courseData, courseContents }) => {
                     <p>&#8358;{courseData.price}</p>
                   </li>
                   <li>
-                    <Link
-                      className="common_btn"
-                      href={`/enrollment/${courseData?.id}?type=bundle`}
-                    >
-                      enrole
-                    </Link>
+                    {session?.user ? (
+                      <Link
+                        className="common_btn"
+                        href={`/enrollment/${courseData?.id}?type=bundle`}
+                      >
+                        enrol
+                      </Link>
+                    ) : (
+                      <div
+                        onClick={() => promptRegistration()}
+                        className="common_btn"
+                        href={`/enrollment/${courseData?.id}?type=bundle`}
+                      >
+                        enrol
+                      </div>
+                    )}
+                    {error && <RegPrompter />}
                   </li>
                 </ul>
               </div>
@@ -73,8 +95,6 @@ const BundleDetailSection = ({ courseData, courseContents }) => {
                         />
                       </div>
                       <div className="text">
-                        
-                     
                         <Link href={`/bundles/${item.slug}`}>{item.title}</Link>
                       </div>
                     </li>

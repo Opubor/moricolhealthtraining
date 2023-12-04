@@ -45,7 +45,7 @@ const NavbarSection2 = () => {
         <div className="main_menu_2_area">
           <Link className="navbar-brand" href="/">
             <img
-              src="images/moricollogo.JPEG"
+              src="/images/moricollogo.jpeg"
               alt="Moricol"
               className="img-fluid w-100"
             />

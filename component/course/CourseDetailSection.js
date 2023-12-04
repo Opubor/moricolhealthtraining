@@ -1,10 +1,21 @@
 "use client";
 import { courseDataArray } from "@/data/Data";
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import CourseDetailTabContent from "./CourseDetailTabContent";
+import { useSession } from "next-auth/react";
+import RegPrompter from "../RegPrompter";
 
 const CourseDetailSection = ({ courseData, courseContents }) => {
+  const { data: session } = useSession();
+  const [error, setError] = useState(false);
+
+  const promptRegistration = async () => {
+    setError(true);
+    return setTimeout(() => {
+      setError(false);
+    }, 9000);
+  };
   return (
     <section className="tf__courses_details mt_195 xs_mt_100">
       <div className="container">
@@ -34,16 +45,27 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
                   </li>
 
                   <li>
-                    <h4>price</h4>
-                    <p>&#8358;{courseData.price}</p>
+                    <h4>Level</h4>
+                    <p>{courseData.price}</p>
                   </li>
                   <li>
-                    <Link
-                      className="common_btn"
-                      href={`/enrollment/${courseData?.id}?type=inclass`}
-                    >
-                      enrole
-                    </Link>
+                    {session?.user ? (
+                      <Link
+                        className="common_btn"
+                        href={`/enrollment/${courseData?.id}?type=inclass`}
+                      >
+                        enrol
+                      </Link>
+                    ) : (
+                      <div
+                        onClick={() => promptRegistration()}
+                        className="common_btn"
+                        href={`/enrollment/${courseData?.id}?type=inclass`}
+                      >
+                        enrol
+                      </div>
+                    )}
+                    {error && <RegPrompter />}
                   </li>
                 </ul>
               </div>
@@ -60,14 +82,6 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
           </div>
           <div className="col-xl-4 col-lg-4">
             <div className="tf__sidebar" id="sticky_sidebar">
-              {/* <div className="tf__sidebar_search">
-                <form>
-                  <input type="text" placeholder="Search..." />
-                  <button type="submit">
-                    <i className="far fa-search"></i>
-                  </button>
-                </form>
-              </div> */}
               <div className="tf__sidebar_blog sidebar_item">
                 <h3>popular courses</h3>
                 <ul>
@@ -82,14 +96,11 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
                       </div>
                       <div className="text">
                         {/* <p>
-                          <i className="fa fa-calendar-alt"></i> {item.date}
-                        </p> */}
-                        <p>
                           <span className="text-warning">
                             <i className="fa-solid fa-clock"></i>
                           </span>{" "}
                           {item?.students}
-                        </p>
+                        </p> */}
 
                         <Link href={`/courses/${item.slug}`}>{item.title}</Link>
                       </div>
@@ -97,47 +108,6 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
                   ))}
                 </ul>
               </div>
-              {/* <div className="tf__sidebar_category sidebar_item">
-                <h3>Categories</h3>
-                <ul>
-                  <li>
-                    <a href="#">
-                      {" "}
-                      Business <span>(08)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      {" "}
-                      Maintenance <span>(14)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      {" "}
-                      Professional <span>(20)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      {" "}
-                      Technology<span>(29)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      {" "}
-                      Single-Business<span>(32)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      {" "}
-                      Innovation <span>(22)</span>
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
             </div>
           </div>
         </div>

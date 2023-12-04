@@ -12,26 +12,24 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  url      = env("POSTGRES_PRISMA_URL") // uses connection pooling
   // directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
 model User {
-  id         String       @id @default(uuid())
-  name       String
-  email      String       @unique
-  role       String
-  password   String
-  gender     String
-  phone      String
-  address    String
-  // accountStatus            String?
-  // resetPasswordToken       String?           @unique
-  // resetPasswordTokenExpiry DateTime?
-  // emailVerified            Boolean           @default(false)
-  // emailVerificationToken   String?           @unique
-  Enrollment Enrollment[]
-  Payment    Payment[]
+  id                       String       @id @default(uuid())
+  name                     String
+  email                    String       @unique
+  role                     String
+  password                 String
+  gender                   String
+  phone                    String
+  address                  String
+  userId                   String 
+  resetPasswordToken       String?      @unique
+  resetPasswordTokenExpiry DateTime?
+  Enrollment               Enrollment[]
+  Payment                  Payment[]
 }
 
 model Enrollment {
@@ -60,4 +58,3 @@ model Payment {
   enrollmentId  String
   enrollment    Enrollment @relation(fields: [enrollmentId], references: [id], onDelete: Cascade)
 }
-

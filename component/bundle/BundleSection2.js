@@ -10,7 +10,7 @@ const BundleSection2 = () => {
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_20">
               <h5 className="">BUNDLE PROGRAMS</h5>
-              <h2>Enroll in Knowledge-Packed Courses.</h2>
+              <h2>Elevate Your Expertise: Unleash the Power of Health Training Bundles!</h2>
             </div>
           </div>
         </div>

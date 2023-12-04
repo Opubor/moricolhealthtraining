@@ -83,7 +83,7 @@ const CourseSlider = () => {
                   <i className="far fa-star"></i>
                   <span>(0{item.rating})</span>
                 </li> */}
-                <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li>
+                {/* <li className="d-flex align-items-center gap-2"><i className="fa-solid fa-clock"></i>{item.students}</li> */}
               </ul>
             </div>
           </div>

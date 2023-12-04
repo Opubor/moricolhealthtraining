@@ -10276,3 +10276,12 @@ section.tf__counter_3 {
 .button:hover {
   background-color: #0056b3;
 }
+
+.dashboard{
+  display: flex;
+  align-items:  center;
+  gap: 10px;
+}
+.subDashboard{
+  width: 200px;
+}

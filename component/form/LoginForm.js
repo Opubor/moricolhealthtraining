@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { signIn } from "next-auth/react";
+import Link from "next/link";
 
 const LoginForm = (props) => {
 
@@ -78,7 +79,7 @@ const LoginForm = (props) => {
         <div className="col-xl-12">
           <div className="tf__login_imput tf__login_check_area">
          
-            <a href="#">Forget Password ?</a>
+            <Link href="/forgotPassword">Forget Password ?</Link>
           </div>
         </div>
         <div className="col-xl-12">

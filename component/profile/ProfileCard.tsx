@@ -50,6 +50,13 @@ function ProfileCard({ user }: Props) {
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
+          <div className="col-xl-12">
+              <div className="tf__login_imput mt-3">
+                <label>User ID</label>
+                <p className="text-black p-2 border">{user?.userId}</p>
+
+              </div>
+            </div>
             <div className="col-xl-12">
               <div className="tf__login_imput mt-3">
                 <label>name</label>

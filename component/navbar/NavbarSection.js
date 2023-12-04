@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import NavigationSection from "./NavigationSection";
 
-const NavbarSection = ({ style, logo }) => {
+const NavbarSection = ({ style }) => {
   const {
     isHeaderFixed,
     handleMobileNavOpen,
@@ -44,7 +44,7 @@ const NavbarSection = ({ style, logo }) => {
       <div className="container">
         <Link className="navbar-brand" href="/">
           <img
-            src="images/moricollogo.JPEG"
+            src="/images/moricollogo.JPEG"
             alt="Moricol"
             className="img-fluid"
           />

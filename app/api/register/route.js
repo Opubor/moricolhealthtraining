@@ -24,6 +24,9 @@ export async function POST(req, res) {
   //   );
   // }
 
+  const date = new Date();
+  let userId = "MOR" + date.getDate() + randomBytes(3).toString("hex");
+
   const salt = 10;
 
   try {
@@ -47,6 +50,7 @@ export async function POST(req, res) {
           address: result.address,
           gender: result.gender,
           password: hash,
+          userId: userId
         },
       });
 
