@@ -29,23 +29,14 @@ declare module "next-auth/jwt" {
 }
 
 type PaystackEventData = {
-  id: string;
-  domain: string;
-  type: string;
-  data: {
-    domain: string;
-    status: string;
-    gateway_response: string;
-    message: string;
-    channel: string;
-    metadata: Record<string, any>;
-    log: string;
-    fees: number;
-    created_at: string;
-    transaction_date: string;
-    transaction_id: string;
-  };
-  created_at: string;
+  id: number,
+  amount: number,
+  status: string,
+  reference: string,
+  metadata: Record<string, any>,
+  paid_at: string,
+  created_at: string,
+  currency: 'NGN' | 'USD' | 'EUR'
 };
 
 type PaystackEventResponse = {

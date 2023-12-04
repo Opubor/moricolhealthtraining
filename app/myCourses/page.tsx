@@ -56,7 +56,7 @@ async function Page() {
                   <td>{data?.email}</td>
                   <td>{data?.phone}</td>
                   <td>{data?.course}</td>
-                  <td>{data?.date.slice(0, -36)}</td>
+                  <td>{data?.date.slice(0, -37)}</td>
                   <td>&#8358;{Number(data?.amount) /100}</td>
                   <td>{data?.status}</td>
                 </tr>

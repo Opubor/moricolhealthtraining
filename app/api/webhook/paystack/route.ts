@@ -27,12 +27,11 @@ export async function POST(
       throw new AppException("unknown event");
     }
 
-
     // check if amount paid is same price for course
-    
+
     const enrollment = await prisma.enrollment.update({
         where: {
-          id: event.data.data.metadata.enrollmentId,
+          id: event.data.metadata.enrollmentId,
         },
         data: {
           status: "Success",
@@ -41,7 +40,7 @@ export async function POST(
 
     const paymentUpdate = await prisma.payment.update({
        where:{
-         id: event.data.data.metadata.paymentId
+         id: event.data.metadata.paymentId
        },
        data: {
          paymentStatus: "Success"

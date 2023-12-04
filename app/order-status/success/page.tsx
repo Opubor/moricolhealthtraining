@@ -24,7 +24,7 @@ async function Page() {
       <p className="mt-2 text-center">
         You will receive a follow-up shortly to commence your classes.
       </p>
-      <div className="mt-4">
+      <div className="mt-4 mb-4">
         <Link href={"/"} className="bg-success text-white p-2 rounded">
           Back to Home page
         </Link>
