@@ -15,7 +15,6 @@ import ScrollToTopButton from "@/component/utils/ScrollToTopButton";
 import FaqSection from "@/component/faq/FaqSection";
 import InductionSection from "@/component/induction/InductionSection";
 import VideoModal from "@/component/modal/VideoModal";
-import VideoSection from "@/component/video/VideoSection";
 
 export const metadata = {
   title: "Moricol Health Training",
@@ -25,9 +24,9 @@ export default function Home3() {
   return (
     <div className="home_3">
       <TopbarSection style="tf__topbar tf__topbar_2" />
-      <NavbarSection style="main_menu_3"/>
+      <NavbarSection style="main_menu_3" />
       <BannerSection3 />
-      <CategorySection3 /> 
+      <CategorySection3 />
       <AboutSection3 style="about_3" />
       <CourseSection2 />
       <ELearning />
@@ -36,13 +35,10 @@ export default function Home3() {
       <BundleSection />
       <CategorySection />
       <AboutSection />
-      {/* <CounterSection /> */}
       <TeamSection style="tf__team_3 pt_100 pb_100" />
-      <FaqSection img="/images/education.png"/>
-      {/* <ContactSection2 /> */}
-      {/* <ActivitySection2 style="tf__activities_3 tf__activities_slider_area mt_100 pt_95 pb_100" /> */}
-      {/* <BlogSection2 /> */}
-      {/* <VideoSection /> */}
+      <FaqSection img="/images/education.png" />
+
+      {/* <VideoModal /> */}
 
       <FooterSection2 style="tf__footer_3" />
       <ScrollToTopButton style="style-3" />

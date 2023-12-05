@@ -4,9 +4,7 @@ import bcrypt from "bcrypt";
 import { TLoginUserSchema, loginUserSchema } from "../../../schema/userSchema";
 
 export async function POST(req: NextRequest, res: NextResponse) {
-    console.log("a")
   const body: TLoginUserSchema = await req.json();
-  console.log("b")
   const result = loginUserSchema.safeParse(body);
   if (!result.success) {
     return new Response(
@@ -17,7 +15,6 @@ export async function POST(req: NextRequest, res: NextResponse) {
     );
   }
 
-  console.log(result)
   const user = await prisma.user.findFirst({
     where: { email: result?.data?.email },
   });
@@ -37,7 +34,6 @@ export async function POST(req: NextRequest, res: NextResponse) {
       });
     }
   } else {
-    console.log("User not found");
     return new Response(JSON.stringify("User not found"), {
       status: 404,
     });

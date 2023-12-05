@@ -19,6 +19,8 @@ interface Props {
   courseName: string;
   registrationDate: string;
   enrollmentId: string;
+  courseAmount: number;
+  paidAmount: number;
 }
 
 function StudentRegEmail({
@@ -26,6 +28,8 @@ function StudentRegEmail({
   courseName,
   registrationDate,
   enrollmentId,
+  courseAmount,
+  paidAmount
 }: Props) {
   return (
     <Html>
@@ -46,6 +50,8 @@ function StudentRegEmail({
               <Text>Course Name: {courseName}</Text>
               <Text>Registration Date: {registrationDate}</Text>
               <Text>Enrollment ID: {enrollmentId}</Text>
+              <Text>Course Amount: {courseAmount}</Text>
+              <Text>Amount Paid: {paidAmount}</Text>
               <Text>
                 Our team is working diligently to finalize the details, and you
                 can expect to be contacted shortly with further instructions.

@@ -27,10 +27,25 @@ export async function POST(
     }
 
     if (event?.event !== "charge.success") {
+      const enrollment = await prisma.enrollment.update({
+        where: {
+          id: event.data.metadata.enrollmentId,
+        },
+        data: {
+          status: "Failed",
+        },
+      });
+
+      const paymentUpdate = await prisma.payment.update({
+        where: {
+          id: event.data.metadata.paymentId,
+        },
+        data: {
+          paymentStatus: "Failed",
+        },
+      });
       throw new AppException("unknown event");
     }
-
-    // check if amount paid is same price for course
 
     const enrollment = await prisma.enrollment.update({
       where: {
@@ -51,12 +66,18 @@ export async function POST(
     });
 
     const newEnrollment = await prisma.enrollment.findFirst({
-      where: {id: event.data.metadata.enrollmentId }, include: {user: true}
-    })
+      where: { id: event.data.metadata.enrollmentId },
+      include: { user: true },
+    });
+
+    // check if amount paid is same price for course
+    let courseAmount = newEnrollment?.amount;
+    let paidAmount = event.data.amount;
 
     resend.emails.send({
       from: "Moricol <onboarding@resend.dev>",
-      to: "infomoricolhealthcare@gmail.com",
+      to: "opubortony@gmail.com",
+      // to: "infomoricolhealthcare@gmail.com",
       subject: "New Course Enrollment",
       react: React.createElement(NewRegistrationMail, {
         courseName: newEnrollment?.course as string,
@@ -64,6 +85,8 @@ export async function POST(
         studentEmail: newEnrollment?.email as string,
         studentPhoneNumber: newEnrollment?.phone as string,
         registrationDate: newEnrollment?.date as string,
+        courseAmount: Number(courseAmount) /100,
+        paidAmount: Number(paidAmount) /100
       }),
     });
     resend.emails.send({
@@ -75,6 +98,8 @@ export async function POST(
         enrollmentId: newEnrollment?.enrollmentId as string,
         courseName: newEnrollment?.course as string,
         registrationDate: newEnrollment?.date as string,
+        courseAmount: Number(courseAmount) /100,
+        paidAmount: Number(paidAmount) /100
       }),
     });
 
@@ -103,6 +128,7 @@ export async function POST(
     }
 
     console.log(error);
+
     return new Response(JSON.stringify("Something went wrong"), {
       status: 400,
     });
