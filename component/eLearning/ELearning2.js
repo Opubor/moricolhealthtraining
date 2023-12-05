@@ -38,7 +38,7 @@ const ELearning2 = () => {
                   </li>
                 </ul>
                 <div className="tf__single_courses_text">
-                  <Link className="title" href={`/courses/${item.slug}`}>
+                  <Link className="title" href={`/eLearning/${item.slug}`}>
                     {item.title}
                   </Link>
                   <p className="description">{item.description}</p>

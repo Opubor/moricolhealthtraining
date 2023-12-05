@@ -26,11 +26,13 @@ const AllCourseSection = () => {
             <div className="col-xl-4 col-md-6 wow fadeInUp" key={item.id}>
               <div className="tf__single_courses">
                 <div className="tf__single_courses_img">
-                  <img
-                    src={item.imgSrc}
-                    alt="courses"
-                    className="img-fluid w-100"
-                  />
+                  <Link className="title" href={`/courses/${item.slug}`}>
+                    <img
+                      src={item.imgSrc}
+                      alt="courses"
+                      className="img-fluid w-100"
+                    />
+                  </Link>
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>

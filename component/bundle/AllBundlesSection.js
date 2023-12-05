@@ -8,7 +8,7 @@ const AllBundlesSection = () => {
     currentBundleItems,
     totalBundlePages,
     handleBundlePageChange,
-    CurrentBundlePage
+    CurrentBundlePage,
   } = useEduorContext();
   return (
     <section className="tf__courses_page mt_60">
@@ -17,7 +17,10 @@ const AllBundlesSection = () => {
           <div className="col-xl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_15">
               <h5>OUR BUNDLE COURSES</h5>
-              <h2>Elevate Your Expertise: Unleash the Power of Health Training Bundles!</h2>
+              <h2>
+                Elevate Your Expertise: Unleash the Power of Health Training
+                Bundles!
+              </h2>
             </div>
           </div>
         </div>
@@ -26,11 +29,13 @@ const AllBundlesSection = () => {
             <div className="col-xl-4 col-md-6 wow fadeInUp" key={item.id}>
               <div className="tf__single_courses">
                 <div className="tf__single_courses_img">
-                  <img
-                    src={item.imgSrc}
-                    alt="courses"
-                    className="img-fluid w-100"
-                  />
+                  <Link className="title" href={`/bundles/${item.slug}`}>
+                    <img
+                      src={item.imgSrc}
+                      alt="courses"
+                      className="img-fluid w-100"
+                    />
+                  </Link>
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
@@ -49,9 +54,12 @@ const AllBundlesSection = () => {
                     {item.title}
                   </Link>
                   <p className="description">{item.description}</p>
-                  <Link className="title text-primary small" href={`/bundles/${item?.slug}`}>
-                  View bundle
-                </Link>
+                  <Link
+                    className="title text-primary small"
+                    href={`/bundles/${item?.slug}`}
+                  >
+                    View bundle
+                  </Link>
                   <ul>
                     {/* <li>
                       <i className="fas fa-star"></i>

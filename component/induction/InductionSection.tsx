@@ -11,7 +11,8 @@ function InductionSection() {
             <div className="tf__heading_area mb_20">
               <h5 className="mt-4">INDUCTION AND ORIENTATION COURSE</h5>
               <h2>
-              Introducing candidates to healthcare and other fields of employment overseas
+                Introducing candidates to healthcare and other fields of
+                employment overseas
               </h2>
             </div>
           </div>
@@ -21,11 +22,13 @@ function InductionSection() {
             <div className=" wow fadeInUp" key={item.id}>
               <div className="tf__single_courses">
                 <div className="tf__single_courses_img">
-                  <img
-                    src={item.imgSrc}
-                    alt={item.title}
-                    className="img-fluid w-100"
-                  />
+                  <Link className="title" href={`/induction`}>
+                    <img
+                      src={item.imgSrc}
+                      alt={item.title}
+                      className="img-fluid w-100"
+                    />
+                  </Link>
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
@@ -52,7 +55,6 @@ function InductionSection() {
             </div>
           ))}
         </div>
-      
       </div>
     </section>
   );

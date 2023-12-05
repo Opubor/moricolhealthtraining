@@ -8,7 +8,7 @@ const AllELearningSection = () => {
     currentELearningItems,
     currentELearningPage,
     handleELearningPageChange,
-    totalELearningPages
+    totalELearningPages,
   } = useEduorContext();
   return (
     <section className="tf__courses_page mt_60">
@@ -17,7 +17,9 @@ const AllELearningSection = () => {
           <div className="col-xl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_15">
               <h5>OUR E-LEARNING COURSES</h5>
-              <h2>Empowering Health Workers: Specialized Training Courses Await!</h2>
+              <h2>
+                Empowering Health Workers: Specialized Training Courses Await!
+              </h2>
             </div>
           </div>
         </div>
@@ -26,11 +28,13 @@ const AllELearningSection = () => {
             <div className="col-xl-4 col-md-6 wow fadeInUp" key={item.id}>
               <div className="tf__single_courses">
                 <div className="tf__single_courses_img">
-                  <img
-                    src={item.imgSrc}
-                    alt="courses"
-                    className="img-fluid w-100"
-                  />
+                  <Link className="title" href={`/eLearning/${item.slug}`}>
+                    <img
+                      src={item.imgSrc}
+                      alt="courses"
+                      className="img-fluid w-100"
+                    />{" "}
+                  </Link>
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
@@ -98,7 +102,9 @@ const AllELearningSection = () => {
                   <li className="page-item">
                     <a
                       className={`page-link ${
-                        currentELearningPage === totalELearningPages ? "disabled" : ""
+                        currentELearningPage === totalELearningPages
+                          ? "disabled"
+                          : ""
                       }`}
                       aria-label="Next"
                       onClick={() =>
