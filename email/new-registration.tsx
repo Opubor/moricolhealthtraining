@@ -44,8 +44,8 @@ function NewRegistrationMail({ courseName, studentName, studentEmail, studentPho
               <Text>Contact Number: <a href={`tel:${studentPhoneNumber}`}>{studentPhoneNumber}</a></Text>
               <Text>Course Selected: {courseName}</Text>
               <Text>Registration Date: {registrationDate}</Text>
-              <Text>Course Amount: {courseAmount}</Text>
-              <Text>Amount Paid: {paidAmount}</Text>
+              <Text>Course Amount: &#8358;{courseAmount}</Text>
+              <Text>Amount Paid: &#8358;{paidAmount}</Text>
             </Section>
           </Container>
         </Body>

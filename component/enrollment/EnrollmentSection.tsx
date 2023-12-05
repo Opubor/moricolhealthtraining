@@ -132,7 +132,7 @@ function EnrollmentSection({ courseId }: Props) {
 
           <div className="col-xl-12 mt-4">
             <div className="tf__login_imput">
-              <label>Phne number</label>
+              <label>Phone number</label>
               <input
                 type="text"
                 placeholder="Phone Number"
