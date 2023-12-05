@@ -1,7 +1,7 @@
 import prisma from "@/lib/prisma-client";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcrypt";
-import crypto from "crypto";
+import crypto, { randomBytes } from "crypto";
 import { Resend } from "resend";
 import React from "react";
 import { registerUserSchema } from "@/schema/userSchema";
