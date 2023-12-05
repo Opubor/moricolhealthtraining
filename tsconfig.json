@@ -57,6 +57,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/enrollment/[slug]/page.tsx", "component/Sidebar.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/enrollment/[slug]/page.tsx", "component/Sidebar.js", "component/induction/InductionDetailTabSection.js"],
   "exclude": ["node_modules"]
 }

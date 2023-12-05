@@ -10,6 +10,7 @@ import {
   courseDataArray,
   courseDataContents,
   eLearningCourses,
+  inductionOrientation,
 } from "@/data/Data";
 
 interface Props {
@@ -70,6 +71,11 @@ function EnrollmentSection({ courseId }: Props) {
       return setCourse(courseName as string);
     } else if (courseType === "bundle") {
       const courseDesc = bundles.find((item) => item.id === Number(courseId));
+      let courseName = courseDesc?.title;
+      setAmount(courseDesc?.price as string);
+      return setCourse(courseName as string);
+    } else if(courseType === "induction"){
+      const courseDesc = inductionOrientation.find((item) => item?.id === 0)
       let courseName = courseDesc?.title;
       setAmount(courseDesc?.price as string);
       return setCourse(courseName as string);

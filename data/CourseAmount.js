@@ -534,6 +534,11 @@ const courseAmount = [
     title: "Full Online Package + Care Certificate",
     price: "300000",
   },
+  {
+    id: 105,
+    title: "Induction and Orientation",
+    price: "100000",
+  },
 
 ];
 

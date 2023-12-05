@@ -45,7 +45,7 @@ function StudentRegEmail({
               <Text>Here are some details about your enrollment:</Text>
               <Text>Course Name: {courseName}</Text>
               <Text>Registration Date: {registrationDate}</Text>
-              <Text>Enrolement ID Date: {enrollmentId}</Text>
+              <Text>Enrollment ID: {enrollmentId}</Text>
               <Text>
                 Our team is working diligently to finalize the details, and you
                 can expect to be contacted shortly with further instructions.

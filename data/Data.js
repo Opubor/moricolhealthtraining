@@ -672,21 +672,21 @@ const courseDataContents = [
     courseDataId: 0,
     content: "Level 2 Award in Basic Life Support",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 1,
     courseDataId: 0,
     content: "Level 2 Award in Duty of Care",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 2,
     courseDataId: 0,
     content: "Level 2 Award in Effective Communication ",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 3,
@@ -699,546 +699,548 @@ const courseDataContents = [
     courseDataId: 0,
     content: "Level 2 Award in Food Safety, Nutrition and Hydration",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 5,
     courseDataId: 0,
     content: "Level 2 Award in Safe Handling and Medication ",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 6,
     courseDataId: 0,
     content: "Level 2 Award in Handling and Recording Information",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 7,
     courseDataId: 0,
     content: "Level 2 Award in Health, Safety and Fire",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 8,
     courseDataId: 0,
     content: "Level 2 Award in Infection Prevention and Control ",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 9,
     courseDataId: 0,
     content: "Level 2 Award in Mental Capacity Act (Inc. DoLS)",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 10,
     courseDataId: 0,
     content: "Level 2 Award in Moving and Assisting ",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 11,
     courseDataId: 0,
     content: "Level 2 Award in Moving, Assisting and Hoisting ",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 12,
     courseDataId: 0,
     content: "Level 2 Award in Oral Health",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 13,
     courseDataId: 0,
     content: "Level 2 Award in Person-Centred Care and Support ",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 14,
     courseDataId: 0,
     content: "Level 2 Award in Promoting Dignity in Care ",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 15,
     courseDataId: 0,
-    content: "Level 2 Award in Role of the Care Worker and Personal Development",
+    content:
+      "Level 2 Award in Role of the Care Worker and Personal Development",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 16,
     courseDataId: 0,
     content: "Level 2 Award in Safeguarding Adults",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 17,
     courseDataId: 0,
     content: "Level 2 Award in Safeguarding Children",
     time: "3 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 18,
     courseDataId: 1,
     content: "Level 2 Award in Automated External Defibrillation",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 19,
     courseDataId: 1,
     content: "Level 2 Award in Basic Life Support ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 20,
     courseDataId: 1,
     content: "Level 2 Award in Basic Paediatric First Aid",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 21,
     courseDataId: 1,
     content: "Level 2 Award in Emergency Paediatric First Aid",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 22,
     courseDataId: 1,
     content: "Level 2 Award in Fire Safety Awareness",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 23,
     courseDataId: 1,
     content: "Level 2 Award in First Aid Awareness ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 24,
     courseDataId: 1,
     content: "Level 3 Award in Emergency First Aid at Work",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 25,
     courseDataId: 1,
     content: "Level 3 Award in First Aid at Work",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 26,
     courseDataId: 1,
     content: "Level 3 Award in First Aid at Work Requal ",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 27,
     courseDataId: 1,
     content: "Level 3 Award in ILS ",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 28,
     courseDataId: 1,
     content: "Level 3 Award in Paediatric First Aid",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 29,
     courseDataId: 1,
     content: "Level 3 Award in the Role of the Fire Marshal ",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 30,
     courseDataId: 2,
     content: "Level 2 Award in Anaphylaxis and Emergency Medication Awareness",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 31,
     courseDataId: 2,
     content: "Level 2 Award in Basic Clinical Observations",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 32,
     courseDataId: 2,
     content: "Level 2 Award in Catheter Care",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 33,
     courseDataId: 2,
     content: "Level 2 Award in Diabetes Awareness ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 34,
     courseDataId: 2,
     content: "Level 2 Award in Epilepsy and Emergency Medication Awareness",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 35,
     courseDataId: 2,
     content: "Level 2 Award in Epilepsy Awareness",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 36,
     courseDataId: 2,
     content: "Level 2 Award in Inhalers and Nebulizers",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 37,
     courseDataId: 2,
     content: "Level 2 Award in Oxygen Therapy",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 38,
     courseDataId: 2,
     content: "Level 2 Award in PEG Feeding Awareness ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 39,
     courseDataId: 2,
     content: "Level 2 Award in Stoma Care Awareness",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 40,
     courseDataId: 2,
     content: "Level 3 Award in PEG Feeding",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 41,
     courseDataId: 2,
     content: "Level 3 Award in Tracheostomy",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 42,
     courseDataId: 3,
     content: "Level 2 Award in Autism Spectrum",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 43,
     courseDataId: 3,
     content: "Level 2 Award in Boundaries and Good Practice ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 44,
     courseDataId: 3,
     content: "Level 2 Award in Care Planning",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 45,
     courseDataId: 3,
     content: "Level 2 Award in Customer Service & Complaints Management",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 46,
     courseDataId: 3,
     content: "Level 2 Award in Dementia",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 47,
     courseDataId: 3,
     content: "Level 2 Award in Drug & Alcohol Abuse Awareness",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 48,
     courseDataId: 3,
     content: "Level 2 Award in Dysphagia Awareness",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 49,
     courseDataId: 3,
     content: "Level 2 Award in Dysphagia Awareness ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 50,
     courseDataId: 3,
     content: "Level 2 Award in End of Life Care",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 51,
     courseDataId: 3,
     content: "Level 2 Award in Epilepsy & Buccal Midazolam",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 52,
     courseDataId: 3,
     content: "Level 2 Award in Learning Disability",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 53,
     courseDataId: 3,
     content: "Level 2 Award in Loss and Bereavement",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 54,
     courseDataId: 3,
     content: "Level 2 Award in Mental Health",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 55,
     courseDataId: 3,
     content: "Level 2 Award in People Hoisting",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 56,
     courseDataId: 3,
     content: "Level 2 Award in Personal Care",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 57,
     courseDataId: 3,
     content: "Level 2 Award in Pressure Care Management ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 58,
     courseDataId: 3,
     content: "Level 2 Award in Prevention of Slips, Trips and Falls",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 59,
     courseDataId: 3,
     content: "Level 2 Award in Professional Relationships and Boundaries",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 60,
     courseDataId: 3,
     content: "Level 2 Award in Stroke Awareness",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 61,
     courseDataId: 3,
     content: "Level 2 Award in the Introduction of Positive Behaviour Support",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 62,
     courseDataId: 3,
     content: "Level 2 Award in Understanding Behaviours That Challenge ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 63,
     courseDataId: 3,
-    content: "Level 2 Award in Understanding Behaviours That Challenge in Dementia",
+    content:
+      "Level 2 Award in Understanding Behaviours That Challenge in Dementia",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 64,
     courseDataId: 3,
     content: "Level 2 Award in Understanding Mental Health ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 65,
     courseDataId: 3,
     content: "Level 3 Award in Dementia",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 66,
     courseDataId: 3,
     content: "Level 3 Award in Medication Competency and Management",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 67,
     courseDataId: 3,
     content: "Level 3 Award in Positive Behaviour Support",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 68,
     courseDataId: 3,
     content: "Level 3 Award in Safeguarding Adults",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 69,
     courseDataId: 4,
     content: "Level 2 Award in Food Safety",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 70,
     courseDataId: 4,
     content: "Level 2 Award in Food Safety Principles ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 71,
     courseDataId: 4,
     content: "Level 2 Award in General Data Protection Regulation – GDPR",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 72,
     courseDataId: 4,
     content: "Level 2 Award in Handling Hazardous Substance (COSHH)",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 73,
     courseDataId: 4,
     content: "Level 2 Award in Lone Working Awareness ",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 74,
     courseDataId: 4,
     content: "Level 2 Award in Managing Personal Stress",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 75,
     courseDataId: 4,
     content: "Level 2 Award in Managing Stress in the Workplace",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 76,
     courseDataId: 4,
     content: "Level 2 Award in Manual Handling",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 77,
     courseDataId: 4,
     content: "Level 2 Award in Risk Assessment in Care",
     time: "2 Hours",
-    price: "200,000"
+    price: "200,000",
   },
   {
     id: 78,
     courseDataId: 4,
     content: "Level 3 Award in Assessing Competency in Moving and Assisting",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 79,
     courseDataId: 4,
     content: "Level 3 Award in Food Safety",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 80,
     courseDataId: 4,
     content: "Level 3 Award in Managing and Supervising Safely",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
   {
     id: 81,
     courseDataId: 4,
     content: "Level 3 Award in Managing Risk Assessment in Care",
     time: "2 Hours",
-    price: "300,000"
+    price: "300,000",
   },
 ];
 
@@ -1265,18 +1267,15 @@ const eLearningCourses = [
   },
   {
     id: 12222222,
-    imgSrc: "images/certificate.jpg",
+    imgSrc: "images/fop2.png",
     color: "orange",
     slug: "full-online-package",
     title: "Full Online Package",
     category: "E-Learning",
     price: "200,000",
     instructor: "Smith John",
-    lessons: "15 Objectives",
-    description:
-      "Every individual new to health and social care, as well as those changing jobs within it, is required to undertake an induction programme that meets the Care Certificate standards and allows them to provide evidence of completedobjectives.",
-    description2:
-      "Our Care Certificate e-learning course provides underpinning theory-basedknowledge for the below 15 standards. Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets.",
+    lessons: "15 Courses",
+    description: "Full Online Package",
     rating: 4,
     students: "6 Hours",
     instructorImg: "images/team_1.jpg",
@@ -1285,18 +1284,15 @@ const eLearningCourses = [
   },
   {
     id: 3333333,
-    imgSrc: "images/certificate.jpg",
+    imgSrc: "images/fc2.png",
     color: "orange",
     slug: "full-online-page-care-certificate",
     title: "Full Online Package + Care Certificate",
     category: "E-Learning",
     price: "300,000",
     instructor: "Smith John",
-    lessons: "15 Objectives",
-    description:
-      "Every individual new to health and social care, as well as those changing jobs within it, is required to undertake an induction programme that meets the Care Certificate standards and allows them to provide evidence of completedobjectives.",
-    description2:
-      "Our Care Certificate e-learning course provides underpinning theory-basedknowledge for the below 15 standards. Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets.",
+    lessons: "15 Courses + Certificate",
+    description: "Full online package + Care Certificate Course",
     rating: 4,
     students: "6 Hours",
     instructorImg: "images/team_1.jpg",
@@ -2086,6 +2082,16 @@ const eLearningCoursesContents = [
     content:
       "Understand how to identify and help control the risks from common workplace hazards",
   },
+  {
+    id: 99,
+    eLearningDataId: 12222222,
+    content: "Full Online package",
+  },
+  {
+    id: 100,
+    eLearningDataId: 3333333,
+    content: "Full Online package + Care Certificate",
+  },
 ];
 
 const teamData = [
@@ -2257,8 +2263,6 @@ const bundles = [
 ];
 
 const bundleContents = [
-
- 
   {
     id: 2,
     bundleDataId: 0,
@@ -2289,7 +2293,7 @@ const bundleContents = [
     bundleDataId: 0,
     content: "First Aid At work (level 3)",
   },
-  
+
   {
     id: 11,
     bundleDataId: 0,
@@ -2380,8 +2384,7 @@ const bundleContents = [
     bundleDataId: 2,
     content: "Autism spectrum (level 2)",
   },
-  
-  
+
   {
     id: 39,
     bundleDataId: 2,
@@ -2462,10 +2465,7 @@ const bundleContents = [
     bundleDataId: 4,
     content: "Health and safety essentials",
   },
- 
- 
 
-  
   {
     id: 61,
     bundleDataId: 3,
@@ -2681,7 +2681,7 @@ const bundleContents = [
     bundleDataId: 3,
     content: "Risk Assessment in care",
   },
-  
+
   {
     id: 105,
     bundleDataId: 3,
@@ -2759,14 +2759,47 @@ const bundleContents = [
   },
 ];
 
+const inductionOrientation = [
+  {
+    id: 0,
+    imgSrc: "images/healthtraining.jpg",
+    color: "orange",
+    slug: "care-certificate",
+    title: "Induction and Orientation",
+    category: "Induction",
+    price: "100,000",
+    instructor: "Smith John",
+    lessons: "34 topics",
+    description:
+      "This course is a robust compilation of introducing candidates to healthcare and other fields of employment overseas. It will enlighten participates on the strategies of self-awareness, prepare individuals on what to expect, how to cope and address various factors that would affect the transition from one country to another. The course will detailed the sociocultural, demographic location and integration of various context associated with jobs, community and business. The impact of lack of induction and orientation.  ",
+    rating: 4,
+    students: "6 Hours",
+    instructorImg: "images/team_1.jpg",
+    review: 43,
+    date: "24 Jan 2023",
+  },
+];
+
 const addOns = [
-  { id: "0", name: "International Visa route", mail: "infomoricolhealthcare@gmail.com" },
+  {
+    id: "0",
+    name: "International Visa route",
+    mail: "infomoricolhealthcare@gmail.com",
+  },
   { id: "1", name: "Brunch/Lunch", price: "5000" },
   { id: "2", name: "Hotel Accomodation", price: "15,000" },
-  { id: "3", name: "Induction & Orientation [Intensive 1 day visual course]", price: "100,000" },
+  {
+    id: "3",
+    name: "Induction & Orientation [Intensive 1 day visual course]",
+    price: "100,000",
+  },
   { id: "4", name: "Care-Certificate Course", price: "150,000" },
   { id: "5", name: "Online Training Course", price: "20,000" },
-  { id: "6", name: "Computer Appreciation", price: "50,000 for a 3 day training" },
+  {
+    id: "6",
+    name: "Computer Appreciation",
+    price: "50,000 for a 3 day training",
+  },
 ];
 
 export {
@@ -2785,5 +2818,6 @@ export {
   eLearningCoursesContents,
   bundles,
   bundleContents,
-  addOns
+  addOns,
+  inductionOrientation
 };

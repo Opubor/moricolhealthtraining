@@ -56,8 +56,7 @@ export async function POST(
 
     resend.emails.send({
       from: "Moricol <onboarding@resend.dev>",
-      to: "opubortony@gmail.com",
-      // to: "infomoricolhealthcare@gmail.com",
+      to: "infomoricolhealthcare@gmail.com",
       subject: "New Course Enrollment",
       react: React.createElement(NewRegistrationMail, {
         courseName: newEnrollment?.course as string,
@@ -70,7 +69,6 @@ export async function POST(
     resend.emails.send({
       from: "Moricol <onboarding@resend.dev>",
       to: newEnrollment?.email as string,
-      // to: "infomoricolhealthcare@gmail.com",
       subject: "New Course Enrollment",
       react: React.createElement(StudentRegEmail, {
         customerName: newEnrollment?.user?.name as string,

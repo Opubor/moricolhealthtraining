@@ -7,7 +7,7 @@ const FooterSection2 = ({ style }) => {
   const { handleVideoShow } = useEduorContext();
   return (
     <footer className={style}>
-      {/* <div className="container">
+      <div className="container">
         <div className="tf__footer_apply">
           <div className="tf__footer_apply_overlay">
             <a className="venobox" role="button" onClick={handleVideoShow}>
@@ -23,7 +23,7 @@ const FooterSection2 = ({ style }) => {
             </a>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="tf__footer">
         <div className="tf__footer_overlay pt_225">
