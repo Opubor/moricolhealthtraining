@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
         userId: result?.data?.userId,
         amount: Number(amount) * 100,
         date: date.toString(),
-        timeTable: result?.data?.timeTable,
+        timeTable: result?.data?.timeTable as string,
       },
     });
 
