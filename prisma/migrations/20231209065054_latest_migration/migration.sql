@@ -8,6 +8,9 @@ CREATE TABLE "User" (
     "gender" TEXT NOT NULL,
     "phone" TEXT NOT NULL,
     "address" TEXT NOT NULL,
+    "userId" TEXT NOT NULL,
+    "resetPasswordToken" TEXT,
+    "resetPasswordTokenExpiry" TIMESTAMP(3),
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
 );
@@ -23,6 +26,7 @@ CREATE TABLE "Enrollment" (
     "date" TEXT NOT NULL,
     "status" TEXT NOT NULL,
     "amount" BIGINT NOT NULL,
+    "timeTable" TEXT NOT NULL DEFAULT 'Your learning timetable will be sent to you shortly',
 
     CONSTRAINT "Enrollment_pkey" PRIMARY KEY ("id")
 );
@@ -41,31 +45,11 @@ CREATE TABLE "Payment" (
     CONSTRAINT "Payment_pkey" PRIMARY KEY ("id")
 );
 
--- CreateTable
-CREATE TABLE "Course" (
-    "id" TEXT NOT NULL,
-    "title" TEXT NOT NULL,
-    "price" BIGINT NOT NULL,
-    "lessons" TEXT NOT NULL,
-    "description1" TEXT NOT NULL,
-    "description2" TEXT,
-    "duration" TEXT NOT NULL,
-    "category" TEXT NOT NULL,
-
-    CONSTRAINT "Course_pkey" PRIMARY KEY ("id")
-);
-
--- CreateTable
-CREATE TABLE "CourseContent" (
-    "id" TEXT NOT NULL,
-    "content" TEXT NOT NULL,
-    "duration" TEXT,
-
-    CONSTRAINT "CourseContent_pkey" PRIMARY KEY ("id")
-);
-
 -- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "User_resetPasswordToken_key" ON "User"("resetPasswordToken");
 
 -- AddForeignKey
 ALTER TABLE "Enrollment" ADD CONSTRAINT "Enrollment_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;

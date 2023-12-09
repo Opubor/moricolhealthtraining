@@ -43,7 +43,7 @@ model Enrollment {
   date         String
   status       String
   amount       BigInt
-  timeTable    String? @default("Your learning timetable will be sent to you shortly")
+  timeTable    String @default("Your learning timetable will be sent to you shortly")
   Payment      Payment[]
 }
 
