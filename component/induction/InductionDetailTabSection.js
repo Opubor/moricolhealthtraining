@@ -25,7 +25,6 @@ const InductionDetailTabSection = () => {
       <Tab.Content id="pills-tabContent">
         <Tab.Pane eventKey="overview">
           <div className="tf__course_overview">
-            <h3>Description</h3>
             <p>
               This course is a robust compilation of introducing candidates to
               healthcare and other fields of employment overseas. It will

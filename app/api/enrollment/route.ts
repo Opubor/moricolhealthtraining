@@ -28,12 +28,18 @@ export async function POST(req: NextRequest) {
   const courseDesc = courseAmount.find(
     (item) => (item.title as string) === (result?.data?.course as string)
   );
-  const amount = courseDesc?.price;
+
+  let amount = Number(courseDesc?.price);
+  let course = result?.data?.course;
+  if (courseDesc?.title === "Brunch/Lunch" || courseDesc?.title === "Hotel Accomodation") {
+    course = result?.data?.course + " - " + result?.data?.noOfDays + " Days";
+     amount = Number(courseDesc?.price) * Number(result?.data?.noOfDays);
+  }
 
   try {
     const enrollment = await prisma.enrollment.create({
       data: {
-        course: result?.data?.course,
+        course: course as string,
         email: result?.data?.email,
         enrollmentId: enrollmentId,
         phone: result?.data?.phone,
@@ -41,8 +47,11 @@ export async function POST(req: NextRequest) {
         userId: result?.data?.userId,
         amount: Number(amount) * 100,
         date: date.toString(),
+        timeTable: result?.data?.timeTable,
       },
     });
+
+    console.log("ssssss")
     let paymentId = "PAY" + date.getDate() + randomBytes(2).toString("hex");
 
     const payment = await prisma.payment.create({
@@ -50,7 +59,7 @@ export async function POST(req: NextRequest) {
         paymentStatus: "Pending",
         paymentId: paymentId,
         amount: Number(amount) * 100,
-        course: result?.data?.course,
+        course: course as string,
         enrollmentId: enrollment?.id,
         userId: result?.data?.userId,
         date: date.toString(),

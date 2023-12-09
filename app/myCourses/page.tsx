@@ -31,11 +31,11 @@ async function Page() {
       <Layout>
         <BreadcrumbSection header={"My Courses"} title={"My Courses"} />
 
-        <div className="container mt_50 mb_95">
+        <div className="container mt_50 mb_95 max-w-100">
           <h2 className="fw-bold text-success text-decoration-underline mb-4">
             Registered Courses
           </h2>
-          <table className="table">
+          <table className="table max-w-100 overflow-auto">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -43,7 +43,7 @@ async function Page() {
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone</th>
-                <th scope="col">Course</th>
+                <th scope="col">Payment For</th>
                 <th scope="col">Date</th>
                 <th scope="col">Amount</th>
                 <th scope="col">Status</th>

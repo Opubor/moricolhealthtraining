@@ -59,7 +59,7 @@ const ELearningDetailSection = ({ courseData, courseContents }) => {
                     ) : (
                       <div
                         onClick={() => promptRegistration()}
-                        className="common_btn"
+                        className="common_btn mx-2"
                         href={`/enrollment/${courseData?.id}?type=eLearningCourse`}
                       >
                         enrol

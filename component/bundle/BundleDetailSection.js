@@ -1,7 +1,7 @@
 "use client";
-import { courseDataArray, bundles } from "../../data/Data";
+import { courseDataArray, bundles, addOns } from "../../data/Data";
 import Link from "next/link";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import BundleDetailTabContent from "./BundleDetailTabContent";
 import { useSession } from "next-auth/react";
 import RegPrompter from "../RegPrompter";
@@ -59,7 +59,7 @@ const BundleDetailSection = ({ courseData, courseContents }) => {
                     ) : (
                       <div
                         onClick={() => promptRegistration()}
-                        className="common_btn"
+                        className="common_btn mx-2"
                         href={`/enrollment/${courseData?.id}?type=bundle`}
                       >
                         enrol
@@ -102,6 +102,63 @@ const BundleDetailSection = ({ courseData, courseContents }) => {
                 </ul>
               </div>
             </div>
+          </div>
+          <div className="row w-100">
+            <h4 className="text-center text-decoration-underline text-success fw-bold mt-4">
+              Add Ons
+            </h4>
+            {addOns.map((data) => (
+              <>
+                {data?.name === "International Work Visa" ? (
+                  <div className="col-xl-3" key={data.id}>
+                    <div className={`tf__activities_item orange`}>
+                      <span>
+                        <i className={"fa fa-book"}></i>{" "}
+                      </span>
+                      <h6 className="fw-bold mt-2">{data?.name}</h6>
+                      <h5 className="fw-bold mt-2">
+                        {data?.price && <p>&#8358;{data?.price}</p>}
+                      </h5>
+                      <div className="text-warning mt-2">
+                        {data?.mail && <p>{data?.mail}</p>}
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    href={`/enrollment/${data?.id}?type=addOns`}
+                    className="col-xl-3"
+                    key={data.id}
+                  >
+                    <div className={`tf__activities_item orange`}>
+                      <span>
+                        <i className={"fa fa-book"}></i>{" "}
+                      </span>
+                      <h6 className="fw-bold mt-2">{data?.name}</h6>
+                      <h5 className="fw-bold mt-2">
+                        {data?.price && <p>&#8358;{data?.price}</p>}
+                      </h5>
+                      <div className=" mt-2">
+                        {data?.mail && <p>{data?.mail}</p>}
+                      </div>
+                    </div>
+                  </Link>
+                )}
+              </>
+            ))}
+            {courseData?.title === "Bundle 4" && (
+              <Link href={`/eLearning`} className="col-xl-3">
+                <div className={`tf__activities_item orange`}>
+                  <span>
+                    <i className={"fa fa-book"}></i>{" "}
+                  </span>
+                  <h6 className="fw-bold mt-2">E-Learning Courses</h6>
+                  <h5 className="fw-bold mt-2">
+                    <p>&#8358;20,000 per Course</p>
+                  </h5>
+                </div>
+              </Link>
+            )}
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ function Page({ params }: PageProps) {
       <div className="enrollmentlogo">
         <img src="/images/moricollogo.jpeg" />
       </div>
-      <h2 className="fw-bold text-decoration-underline">COURSE ENROLLMENT</h2>
+      <h2 className="fw-bold text-decoration-underline">REGISTRATION</h2>
       <EnrollmentSection courseId={params?.slug as number} />
     </div>
   );

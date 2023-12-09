@@ -8,9 +8,9 @@ async function Page() {
   const session = await getServerSession(options);
 
   return (
-    <div className="orderStatus p-4">
+    <div className="orderStatus p-4 container">
       <div className="enrollmentlogo">
-        <img src="/images/moricollogo.jpeg" />
+        {/* <img src="/images/moricollogo.jpeg" /> */}
       </div>
       <h1 className="fw-bold mt-4"> Enrolment Successful!</h1>
       <p className="mt-4 text-center">
@@ -24,7 +24,7 @@ async function Page() {
       <p className="mt-2 text-center">
         You will receive a follow-up shortly to commence your classes.
       </p>
-      <div className="mt-4 mb-4">
+      <div className="mt-4 mb_195">
         <Link href={"/"} className="bg-success text-white p-2 rounded">
           Back to Home page
         </Link>

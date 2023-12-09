@@ -77,12 +77,12 @@ const FooterSection2 = ({ style }) => {
                     <p>Headquarter: Road 4,House 2 .Abraham Adesanya Estate, Ajah Lagos.</p>
                     <p>Branch Office: 27, Reuben Agho Avenue, off 2nd Ugobest road, GRA, Benin City, Edo state</p>
                     <p>
-                      <a href="tel:09124460695"> Phone: 09124460695</a>
+                      <a href="tel:09124460695"  className="text-warning"> Phone: 09124460695</a>
                     </p>
                     <p>
-                      <a href="mailto:infomoricolhealthcare@gmail.com">Email: infomoricolhealthcare@gmail.com </a>
-                      <a href="mailto:moricolhealth@qualityservice.com">Email: moricolhealth@qualityservice.com </a>
-                      <span>Website: moricolhealthtraining.com</span>
+                      <a href="mailto:infomoricolhealthcare@gmail.com"  className="text-warning">Email: infomoricolhealthcare@gmail.com </a>
+                      <a href="mailto:moricolhealth@qualityservice.com"  className="text-warning">Email: moricolhealth@qualityservice.com </a>
+                      <span  className="text-warning">Website: moricolhealthtraining.com</span>
                     </p>
                   </div>
                 </div>

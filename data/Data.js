@@ -670,6 +670,11 @@ const courseDataContents = [
   {
     id: 0,
     courseDataId: 0,
+    tag: "Available",
+    description:
+      "This is an elective that will teach you the techniques of BLS with certification. The course teaches you the basic steps in administering cardiopulmonary resuscitation (CPR) and basic life support measures (BLS) to adults, children and infants. Various First aid measures are explained, the use of automated external defibrillators (AEDS) and how to open patient’s airways. This course will give you the ability to save lives.",
+    category: "Core & Mandatory",
+    imgSrc: "/images/basiclifesupport.png",
     content: "Level 2 Award in Basic Life Support",
     time: "2 Hours",
     price: "200,000",
@@ -677,6 +682,8 @@ const courseDataContents = [
   {
     id: 1,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Duty of Care",
     time: "3 Hours",
     price: "200,000",
@@ -684,6 +691,8 @@ const courseDataContents = [
   {
     id: 2,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Effective Communication ",
     time: "3 Hours",
     price: "200,000",
@@ -691,12 +700,20 @@ const courseDataContents = [
   {
     id: 3,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Equality, Diversity and Inclusion",
     time: "6 Hours",
+    price: "200,000",
   },
   {
     id: 4,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/foodsafety.png",
+    tag: "Available",
+    description:
+      "This course impacts knowledge about the type of help given to someone who is injured or ill to keep them safe and to cause no further harm.    ",
     content: "Level 2 Award in Food Safety, Nutrition and Hydration",
     time: "3 Hours",
     price: "200,000",
@@ -704,6 +721,8 @@ const courseDataContents = [
   {
     id: 5,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Safe Handling and Medication ",
     time: "3 Hours",
     price: "200,000",
@@ -711,6 +730,8 @@ const courseDataContents = [
   {
     id: 6,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Handling and Recording Information",
     time: "3 Hours",
     price: "200,000",
@@ -718,6 +739,11 @@ const courseDataContents = [
   {
     id: 7,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/healthsafety.png",
+    tag: "Available",
+    description:
+      "This elective will teach you to understand your own possibilities and responsibilities of others relating to health, safety and fire in the work setting. The course will also enlighten you to key elements and principles regarding Health, Fire, Safety.",
     content: "Level 2 Award in Health, Safety and Fire",
     time: "3 Hours",
     price: "200,000",
@@ -725,6 +751,8 @@ const courseDataContents = [
   {
     id: 8,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Infection Prevention and Control ",
     time: "3 Hours",
     price: "200,000",
@@ -732,6 +760,8 @@ const courseDataContents = [
   {
     id: 9,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Mental Capacity Act (Inc. DoLS)",
     time: "3 Hours",
     price: "200,000",
@@ -739,13 +769,20 @@ const courseDataContents = [
   {
     id: 10,
     courseDataId: 0,
-    content: "Level 2 Award in Moving and Assisting ",
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
+    content: "Level 2 Award in Moving and Assisting",
     time: "3 Hours",
     price: "200,000",
   },
   {
     id: 11,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/movingassisting.png",
+    tag: "Available",
+    description:
+      "The aim of this module is to get you to recognize the principles of safe moving. Hoists provide a way to transfer somebody with limited mobility without putting unnecessary strain on the career of the person being moved. Furthermore, this elective will make you become conversant with the key principles of moving and handling.    ",
     content: "Level 2 Award in Moving, Assisting and Hoisting ",
     time: "3 Hours",
     price: "200,000",
@@ -753,6 +790,8 @@ const courseDataContents = [
   {
     id: 12,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Oral Health",
     time: "3 Hours",
     price: "200,000",
@@ -760,6 +799,10 @@ const courseDataContents = [
   {
     id: 13,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/personcentered.png",
+    tag: "Available",
+    description: "",
     content: "Level 2 Award in Person-Centred Care and Support ",
     time: "3 Hours",
     price: "200,000",
@@ -767,6 +810,8 @@ const courseDataContents = [
   {
     id: 14,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Promoting Dignity in Care ",
     time: "3 Hours",
     price: "200,000",
@@ -774,6 +819,8 @@ const courseDataContents = [
   {
     id: 15,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content:
       "Level 2 Award in Role of the Care Worker and Personal Development",
     time: "3 Hours",
@@ -782,6 +829,8 @@ const courseDataContents = [
   {
     id: 16,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Safeguarding Adults",
     time: "3 Hours",
     price: "200,000",
@@ -789,6 +838,8 @@ const courseDataContents = [
   {
     id: 17,
     courseDataId: 0,
+    category: "Core & Mandatory",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Safeguarding Children",
     time: "3 Hours",
     price: "200,000",
@@ -796,6 +847,8 @@ const courseDataContents = [
   {
     id: 18,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Automated External Defibrillation",
     time: "2 Hours",
     price: "200,000",
@@ -803,6 +856,8 @@ const courseDataContents = [
   {
     id: 19,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Basic Life Support ",
     time: "2 Hours",
     price: "200,000",
@@ -810,6 +865,8 @@ const courseDataContents = [
   {
     id: 20,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Basic Paediatric First Aid",
     time: "2 Hours",
     price: "200,000",
@@ -817,6 +874,8 @@ const courseDataContents = [
   {
     id: 21,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Emergency Paediatric First Aid",
     time: "2 Hours",
     price: "200,000",
@@ -824,6 +883,11 @@ const courseDataContents = [
   {
     id: 22,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/firesafetyawareness.png",
+    tag: "Available",
+    description:
+      "This course impacts knowledge about the type of help given to someone who is injured or ill to keep them safe and to cause no further harm.",
     content: "Level 2 Award in Fire Safety Awareness",
     time: "2 Hours",
     price: "200,000",
@@ -831,6 +895,8 @@ const courseDataContents = [
   {
     id: 23,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in First Aid Awareness ",
     time: "2 Hours",
     price: "200,000",
@@ -838,6 +904,8 @@ const courseDataContents = [
   {
     id: 24,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Emergency First Aid at Work",
     time: "2 Hours",
     price: "300,000",
@@ -845,6 +913,8 @@ const courseDataContents = [
   {
     id: 25,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in First Aid at Work",
     time: "2 Hours",
     price: "300,000",
@@ -852,6 +922,8 @@ const courseDataContents = [
   {
     id: 26,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in First Aid at Work Requal ",
     time: "2 Hours",
     price: "300,000",
@@ -859,13 +931,17 @@ const courseDataContents = [
   {
     id: 27,
     courseDataId: 1,
-    content: "Level 3 Award in ILS ",
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
+    content: "Level 3 Award in Immediate Life Support (ILS)",
     time: "2 Hours",
     price: "300,000",
   },
   {
     id: 28,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Paediatric First Aid",
     time: "2 Hours",
     price: "300,000",
@@ -873,6 +949,8 @@ const courseDataContents = [
   {
     id: 29,
     courseDataId: 1,
+    category: "First Aid...",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in the Role of the Fire Marshal ",
     time: "2 Hours",
     price: "300,000",
@@ -880,6 +958,8 @@ const courseDataContents = [
   {
     id: 30,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Anaphylaxis and Emergency Medication Awareness",
     time: "2 Hours",
     price: "200,000",
@@ -887,6 +967,8 @@ const courseDataContents = [
   {
     id: 31,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Basic Clinical Observations",
     time: "2 Hours",
     price: "200,000",
@@ -894,6 +976,8 @@ const courseDataContents = [
   {
     id: 32,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Catheter Care",
     time: "2 Hours",
     price: "200,000",
@@ -901,6 +985,11 @@ const courseDataContents = [
   {
     id: 33,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/diabetesawareness.png",
+    tag: "Available",
+    description:
+      "Diabetes is a chronic (long-standing) health condition that affects how your body turns food into energy. Usually, your body either dosen’t make enough insulin or can’t use it as well as it should. This course will teach you about the 3p’s of Diabetes which is polydipsia, polyuria, polyphagia e.t.c. this corresponds to increase in thirst, urination and appetite.",
     content: "Level 2 Award in Diabetes Awareness ",
     time: "2 Hours",
     price: "200,000",
@@ -908,6 +997,11 @@ const courseDataContents = [
   {
     id: 34,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/epilepsyemergency.png",
+    tag: "Available",
+    description:
+      "Delegates will be taught medications often used to arrest this condition outside of the hospital setting and the procedure that is used during the administering. The elective course will also teach you ways to help raise awareness about epilepsy by learning about epilepsy and seizure first aid amongst other pointers",
     content: "Level 2 Award in Epilepsy and Emergency Medication Awareness",
     time: "2 Hours",
     price: "200,000",
@@ -915,6 +1009,8 @@ const courseDataContents = [
   {
     id: 35,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Epilepsy Awareness",
     time: "2 Hours",
     price: "200,000",
@@ -922,6 +1018,9 @@ const courseDataContents = [
   {
     id: 36,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/inhalersnebulizers.png",
+    tag: "Available",
     content: "Level 2 Award in Inhalers and Nebulizers",
     time: "2 Hours",
     price: "200,000",
@@ -929,6 +1028,8 @@ const courseDataContents = [
   {
     id: 37,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Oxygen Therapy",
     time: "2 Hours",
     price: "200,000",
@@ -936,6 +1037,8 @@ const courseDataContents = [
   {
     id: 38,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in PEG Feeding Awareness ",
     time: "2 Hours",
     price: "200,000",
@@ -943,6 +1046,8 @@ const courseDataContents = [
   {
     id: 39,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Stoma Care Awareness",
     time: "2 Hours",
     price: "200,000",
@@ -950,6 +1055,8 @@ const courseDataContents = [
   {
     id: 40,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in PEG Feeding",
     time: "2 Hours",
     price: "300,000",
@@ -957,6 +1064,8 @@ const courseDataContents = [
   {
     id: 41,
     courseDataId: 2,
+    category: "Clinical",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Tracheostomy",
     time: "2 Hours",
     price: "300,000",
@@ -964,6 +1073,12 @@ const courseDataContents = [
   {
     id: 42,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/autismspectrum.png",
+    category: "Specialist",
+    tag: "Available",
+    description:
+      "Autism spectrum disorder (ASD) is a developmental disability caused by differences in the brain. People with this disorder have problems with social communication and interaction, and restricted or respective behaviours or interest. Delegates will be taught the various autism spectrum disorders and how to identify if an individual is on the spectrum",
     content: "Level 2 Award in Autism Spectrum",
     time: "2 Hours",
     price: "200,000",
@@ -971,6 +1086,10 @@ const courseDataContents = [
   {
     id: 43,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/boundaries.png",
+    tag: "Available",
+
     content: "Level 2 Award in Boundaries and Good Practice ",
     time: "2 Hours",
     price: "200,000",
@@ -978,6 +1097,10 @@ const courseDataContents = [
   {
     id: 44,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/careplanning.png",
+    tag: "Available",
+
     content: "Level 2 Award in Care Planning",
     time: "2 Hours",
     price: "200,000",
@@ -985,6 +1108,10 @@ const courseDataContents = [
   {
     id: 45,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/customerservice.png",
+    tag: "Available",
+
     content: "Level 2 Award in Customer Service & Complaints Management",
     time: "2 Hours",
     price: "200,000",
@@ -992,6 +1119,11 @@ const courseDataContents = [
   {
     id: 46,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/awardindementia.png",
+    tag: "Available",
+    description:
+      "This is an incurable condition with the underlying symptoms that include forgetfulness, limited social skills and thinking abilities so impaired that it interferes with daily functioning. This elective will enlighten you on how to manage such a condition with aid of medical diagnosis, lab tests or imaging.",
     content: "Level 2 Award in Dementia",
     time: "2 Hours",
     price: "200,000",
@@ -999,6 +1131,8 @@ const courseDataContents = [
   {
     id: 47,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Drug & Alcohol Abuse Awareness",
     time: "2 Hours",
     price: "200,000",
@@ -1006,6 +1140,8 @@ const courseDataContents = [
   {
     id: 48,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Dysphagia Awareness",
     time: "2 Hours",
     price: "200,000",
@@ -1013,6 +1149,8 @@ const courseDataContents = [
   {
     id: 49,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Dysphagia Awareness ",
     time: "2 Hours",
     price: "200,000",
@@ -1020,6 +1158,10 @@ const courseDataContents = [
   {
     id: 50,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/endoflifecare.png",
+    tag: "Available",
+
     content: "Level 2 Award in End of Life Care",
     time: "2 Hours",
     price: "200,000",
@@ -1027,6 +1169,8 @@ const courseDataContents = [
   {
     id: 51,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Epilepsy & Buccal Midazolam",
     time: "2 Hours",
     price: "200,000",
@@ -1034,6 +1178,8 @@ const courseDataContents = [
   {
     id: 52,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Learning Disability",
     time: "2 Hours",
     price: "200,000",
@@ -1041,6 +1187,8 @@ const courseDataContents = [
   {
     id: 53,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Loss and Bereavement",
     time: "2 Hours",
     price: "200,000",
@@ -1048,6 +1196,8 @@ const courseDataContents = [
   {
     id: 54,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Mental Health",
     time: "2 Hours",
     price: "200,000",
@@ -1055,6 +1205,8 @@ const courseDataContents = [
   {
     id: 55,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in People Hoisting",
     time: "2 Hours",
     price: "200,000",
@@ -1062,6 +1214,8 @@ const courseDataContents = [
   {
     id: 56,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Personal Care",
     time: "2 Hours",
     price: "200,000",
@@ -1069,6 +1223,8 @@ const courseDataContents = [
   {
     id: 57,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Pressure Care Management ",
     time: "2 Hours",
     price: "200,000",
@@ -1076,6 +1232,8 @@ const courseDataContents = [
   {
     id: 58,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Prevention of Slips, Trips and Falls",
     time: "2 Hours",
     price: "200,000",
@@ -1083,6 +1241,8 @@ const courseDataContents = [
   {
     id: 59,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Professional Relationships and Boundaries",
     time: "2 Hours",
     price: "200,000",
@@ -1090,6 +1250,11 @@ const courseDataContents = [
   {
     id: 60,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/strokeawareness.png",
+    tag: "Available",
+    description:
+      "This elective will teach you how to recognize when someone is experiencing a stroke. The B.E.F.A.S.T. warning signs which you will be made aware of can help anyone recognize when a stroke may be happening and initiate the emergency 911.",
     content: "Level 2 Award in Stroke Awareness",
     time: "2 Hours",
     price: "200,000",
@@ -1097,6 +1262,8 @@ const courseDataContents = [
   {
     id: 61,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in the Introduction of Positive Behaviour Support",
     time: "2 Hours",
     price: "200,000",
@@ -1104,6 +1271,8 @@ const courseDataContents = [
   {
     id: 62,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Understanding Behaviours That Challenge ",
     time: "2 Hours",
     price: "200,000",
@@ -1111,6 +1280,8 @@ const courseDataContents = [
   {
     id: 63,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content:
       "Level 2 Award in Understanding Behaviours That Challenge in Dementia",
     time: "2 Hours",
@@ -1119,6 +1290,11 @@ const courseDataContents = [
   {
     id: 64,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/understandingmhealth.png",
+    tag: "Available",
+    description:
+      "Mental health is a state of well being in which every individual realizes his or her own potential, can cope with the normal stress of life, can work productively and fruitfully and is able to make a contribution to her or his community. This course further highlights the level of functioning of the mind and how best to understand the causes respectively.",
     content: "Level 2 Award in Understanding Mental Health ",
     time: "2 Hours",
     price: "200,000",
@@ -1126,6 +1302,8 @@ const courseDataContents = [
   {
     id: 65,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Dementia",
     time: "2 Hours",
     price: "300,000",
@@ -1133,6 +1311,8 @@ const courseDataContents = [
   {
     id: 66,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Medication Competency and Management",
     time: "2 Hours",
     price: "300,000",
@@ -1140,6 +1320,8 @@ const courseDataContents = [
   {
     id: 67,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Positive Behaviour Support",
     time: "2 Hours",
     price: "300,000",
@@ -1147,6 +1329,8 @@ const courseDataContents = [
   {
     id: 68,
     courseDataId: 3,
+    category: "Specialist",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Safeguarding Adults",
     time: "2 Hours",
     price: "300,000",
@@ -1154,6 +1338,11 @@ const courseDataContents = [
   {
     id: 69,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/awardinfoodsafety.png",
+    tag: "Available",
+    description:
+      "This elective course shall teach you to grasp various scientific methods and discipline in handling, preparing and storage of food in ways that prevent food borne illness.",
     content: "Level 2 Award in Food Safety",
     time: "2 Hours",
     price: "200,000",
@@ -1161,6 +1350,8 @@ const courseDataContents = [
   {
     id: 70,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Food Safety Principles ",
     time: "2 Hours",
     price: "200,000",
@@ -1168,6 +1359,8 @@ const courseDataContents = [
   {
     id: 71,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in General Data Protection Regulation – GDPR",
     time: "2 Hours",
     price: "200,000",
@@ -1175,6 +1368,8 @@ const courseDataContents = [
   {
     id: 72,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Handling Hazardous Substance (COSHH)",
     time: "2 Hours",
     price: "200,000",
@@ -1182,6 +1377,8 @@ const courseDataContents = [
   {
     id: 73,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Lone Working Awareness ",
     time: "2 Hours",
     price: "200,000",
@@ -1189,6 +1386,8 @@ const courseDataContents = [
   {
     id: 74,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Managing Personal Stress",
     time: "2 Hours",
     price: "200,000",
@@ -1196,6 +1395,8 @@ const courseDataContents = [
   {
     id: 75,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Managing Stress in the Workplace",
     time: "2 Hours",
     price: "200,000",
@@ -1203,6 +1404,10 @@ const courseDataContents = [
   {
     id: 76,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/manualhandling.png",
+    tag: "Available",
+
     content: "Level 2 Award in Manual Handling",
     time: "2 Hours",
     price: "200,000",
@@ -1210,6 +1415,11 @@ const courseDataContents = [
   {
     id: 77,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/riskaccessment.png",
+    tag: "Available",
+    description:
+      "This elective shall teach you the various steps in achieving this goal and to improve the process which you would implement in risk assessment as you factor the unique aspects of a care home and individual resident/staff needs.",
     content: "Level 2 Award in Risk Assessment in Care",
     time: "2 Hours",
     price: "200,000",
@@ -1217,6 +1427,8 @@ const courseDataContents = [
   {
     id: 78,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Assessing Competency in Moving and Assisting",
     time: "2 Hours",
     price: "300,000",
@@ -1224,6 +1436,8 @@ const courseDataContents = [
   {
     id: 79,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Food Safety",
     time: "2 Hours",
     price: "300,000",
@@ -1231,6 +1445,8 @@ const courseDataContents = [
   {
     id: 80,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Managing and Supervising Safely",
     time: "2 Hours",
     price: "300,000",
@@ -1238,6 +1454,8 @@ const courseDataContents = [
   {
     id: 81,
     courseDataId: 4,
+    category: "Health & Safety",
+    imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Managing Risk Assessment in Care",
     time: "2 Hours",
     price: "300,000",
@@ -1247,7 +1465,7 @@ const courseDataContents = [
 const eLearningCourses = [
   {
     id: 0,
-    imgSrc: "images/certificate.jpg",
+    imgSrc: "images/carecertwhatsapp.jpeg",
     color: "orange",
     slug: "care-certificate",
     title: "The Care Certificate",
@@ -1507,7 +1725,7 @@ const eLearningCourses = [
     instructor: "Sarah Johnson",
     lessons: "5 Objectives",
     description:
-      "To provide an understanding of substances hazardous to health and howtheyshould be used safely",
+      "To provide an understanding of substances hazardous to health and how they should be used safely",
     rating: 4,
     students: "1 Hour",
     instructorImg: "images/team_5.jpg",
@@ -2085,10 +2303,80 @@ const eLearningCoursesContents = [
   {
     id: 99,
     eLearningDataId: 12222222,
-    content: "Full Online package",
+    content: "Principles of Moving & Assisting",
   },
   {
     id: 100,
+    eLearningDataId: 12222222,
+    content: "Safe Handling of Medication",
+  },
+  {
+    id: 101,
+    eLearningDataId: 12222222,
+    content: "Dementia Awareness",
+  },
+  {
+    id: 102,
+    eLearningDataId: 12222222,
+    content: "Infection Control",
+  },
+  {
+    id: 103,
+    eLearningDataId: 12222222,
+    content: "Food Safety Principles",
+  },
+  {
+    id: 104,
+    eLearningDataId: 12222222,
+    content: "Safeguarding Adults",
+  },
+  {
+    id: 105,
+    eLearningDataId: 12222222,
+    content: "Dysphagia Awareness",
+  },
+  {
+    id: 106,
+    eLearningDataId: 12222222,
+    content: "Epilepsy & Emergency Medication",
+  },
+  {
+    id: 107,
+    eLearningDataId: 12222222,
+    content: "Equality, Diversity & Inclusion",
+  },
+  {
+    id: 108,
+    eLearningDataId: 12222222,
+    content: "COVID-19 Infection, Prevention, Identification & Control",
+  },
+  {
+    id: 109,
+    eLearningDataId: 12222222,
+    content: "General Data Protection Regulation (GDPR)",
+  },
+  {
+    id: 110,
+    eLearningDataId: 12222222,
+    content: "Handling Hazardous Substances (COSHH)",
+  },
+  {
+    id: 111,
+    eLearningDataId: 12222222,
+    content: "First Aid Principles",
+  },
+  {
+    id: 112,
+    eLearningDataId: 12222222,
+    content: "Role of a Fire Marshal",
+  },
+  {
+    id: 113,
+    eLearningDataId: 12222222,
+    content: "Health & Safety Essentials",
+  },
+  {
+    id: 114,
     eLearningDataId: 3333333,
     content: "Full Online package + Care Certificate",
   },
@@ -2207,7 +2495,7 @@ const bundles = [
     price: "399,500",
     lessons: "13 packages",
     description:
-      "Basic Life Support - Infection Prevention and Control - Safeguarding Children ...",
+      "Level 2 & 3 Courses + Care Certificate + Induction and Orientation",
   },
   {
     id: 1,
@@ -2220,7 +2508,7 @@ const bundles = [
     price: "399,500",
     lessons: "13 packages",
     description:
-      "Autism Spectrum (Level 2) - Diabetes Awareness (Level 2) - Learning Disability(Level 2) ...",
+      "Level 2 & 3 Courses +  All Stand Alone E-Learning Courses + Induction and Orientation",
   },
   {
     id: 2,
@@ -2233,19 +2521,18 @@ const bundles = [
     price: "399,500",
     lessons: "13 packages",
     description:
-      "Managing risk accessments in care(Level 3) - Medications competency and management(Level 3) - Stroke Awareness ...",
-  },
+"Level 2 & 3 Courses + Care Certificate + Stand Alone Courses + Induction and Orientation"  },
   {
     id: 3,
     imgSrc: "images/bundle4.png",
     color: "orange",
     slug: "bundle-4",
-    title: "Bundle 4 (Stand Alone Course)",
+    title: "Bundle 4",
     category: "Bundle 4",
     price: "399,500",
     lessons: "57 packages",
     description:
-      "LEVEL 2 Courses + LEVEL 3 Courses, Duty of Care - Medications Competency MGT ...",
+      "All Moricol In Class Courses + Care Certificate + Induction and Orientation",
   },
   {
     id: 4,
@@ -2253,12 +2540,12 @@ const bundles = [
     imgSrc: "images/bundle5.png",
     color: "orange",
     slug: "bundle-5",
-    title: "Bundle 5 (Online Course)",
+    title: "Bundle 5",
     category: "Bundle 5",
     price: "399,500",
     lessons: "20 packages",
     description:
-      "Principles of moving and assisting - GDPR - Safe handling of medication - Dementia Awareness ...",
+    "All Moricol E-Learning Courses + Care Certificate + Induction and Orientation",
   },
 ];
 
@@ -2266,129 +2553,129 @@ const bundleContents = [
   {
     id: 2,
     bundleDataId: 0,
-    content: "Basic life support (level 2)",
+    content: "Basic life support (level 2 Classroom)",
   },
   {
     id: 3,
     bundleDataId: 0,
-    content: "Infection, prevention and Control (level 2)",
+    content: "Infection, prevention and Control (level 2) Classroom",
   },
   {
     id: 4,
     bundleDataId: 0,
-    content: "Safe Guarding Children (level 2)",
+    content: "Safe Guarding Children (level 2 Classroom)",
   },
   {
     id: 5,
     bundleDataId: 0,
-    content: "Safe Guarding Children (level 2)",
+    content: "Safe Guarding Adults (level 2 Classroom)",
   },
   {
     id: 6,
     bundleDataId: 0,
-    content: "Food safety (level 3)",
+    content: "Health, Safety and Fire (level 2 Classroom)",
   },
   {
     id: 7,
     bundleDataId: 0,
-    content: "First Aid At work (level 3)",
+    content: "Equality, Diversity And Inclusion (level 2 Classroom)",
   },
 
   {
     id: 11,
     bundleDataId: 0,
-    content: "Health, Safety, Fire (level 2)",
+    content: "Food safety (level 3)",
   },
   {
     id: 12,
     bundleDataId: 0,
-    content: "Equality, Diversity And Inclusion (level 2)",
+    content: "First Aid At work (level 3)",
   },
   {
     id: 13,
     bundleDataId: 1,
-    content: "Autism spectrum (level 2)",
+    content: "Autism spectrum (Classroom level 2)",
   },
   {
     id: 14,
     bundleDataId: 1,
-    content: "Diabetes Awareness (level 2)",
+    content: "Diabetes Awareness (Classroom level 2)",
   },
   {
     id: 15,
     bundleDataId: 1,
-    content: "Epilepsy and Emergency medication Awareness (level 2)",
+    content: "Epilepsy and Emergency medication Awareness (Classroom level 2)",
   },
   {
     id: 16,
     bundleDataId: 1,
-    content: "Learning Disability (level 2)",
+    content: "Learning Disability (Classroom level 2)",
   },
   {
     id: 17,
     bundleDataId: 1,
-    content: "Basic clinical observation (level 2)",
+    content: "Basic clinical observation (Classroom level 2)",
   },
   {
     id: 18,
     bundleDataId: 1,
-    content: "Dementia (level 3)",
+    content: "Dementia (Classroom level 3)",
   },
   {
     id: 19,
     bundleDataId: 1,
-    content: "ILS (level 3)",
+    content: "Award in Immediate Life Support (ILS) (Classroom level 3)",
   },
   {
     id: 20,
     bundleDataId: 1,
-    content: "Stroke Awareness (level 2)",
+    content: "Stroke Awareness (Classroom level 2)",
   },
   {
     id: 26,
     bundleDataId: 2,
-    content: "Medications competency and management (level 3)",
+    content: "Medications competency and management (Classroom level 3)",
   },
   {
     id: 27,
     bundleDataId: 2,
-    content: "Managing Risk Assessment in care (level 3)",
+    content: "Managing Risk Assessment in care (Classroom level 3)",
   },
   {
     id: 28,
     bundleDataId: 2,
-    content: "Understanding mental health (level 2)",
+    content: "Understanding mental health (Classroom level 2)",
   },
   {
     id: 29,
     bundleDataId: 2,
-    content: "Moving, Assisting and Hosting (level 2)",
+    content: "Moving, Assisting and Hosting (Classroom level 2)",
   },
   {
     id: 30,
     bundleDataId: 2,
-    content: "Stroke Awareness (level 2)",
+    content: "Stroke Awareness (Classroom level 2)",
   },
   {
     id: 31,
     bundleDataId: 2,
-    content: "Diabetes Awareness (level 2)",
+    content: "Diabetes Awareness (Classroom level 2)",
   },
   {
     id: 32,
     bundleDataId: 2,
-    content: "Epilepsy and Emergency medication Awareness (level 2)",
+    content: "Epilepsy and Emergency medication Awareness (Classroom level 2)",
   },
   {
     id: 33,
     bundleDataId: 2,
-    content: "Autism spectrum (level 2)",
+    content: "Autism spectrum (Classroom level 2)",
   },
 
   {
     id: 39,
     bundleDataId: 2,
-    content: "Moricol Quality Service",
+    content: "Care Certificate + Stand Alone Courses",
   },
   {
     id: 40,
@@ -2469,293 +2756,147 @@ const bundleContents = [
   {
     id: 61,
     bundleDataId: 3,
-    content: "Duty of care",
+    content: "Level 2 Award in Basic Life Support",
   },
   {
     id: 62,
     bundleDataId: 3,
-    content: "Effective Communication",
+    content: "Level 2 Award in Food Safety, Nutrition and Hydration",
   },
   {
     id: 63,
     bundleDataId: 3,
-    content: "Food, safety, Nutrition and Hydration.",
+    content: "Level 2 Award in Health, Safety and Fire",
   },
   {
     id: 64,
     bundleDataId: 3,
-    content: "Safe Handling And Medication",
+    content: "Level 2 Award in Moving, Assisting and Hoisting",
   },
   {
     id: 65,
     bundleDataId: 3,
-    content: "Handling And Recording information.",
+    content: "Level 2 Award in Person-Centred Care and Support",
   },
   {
     id: 66,
     bundleDataId: 3,
-    content: "Mental Capacity Act (inc. Dols)",
+    content: "Level 2 Award in Fire Safety Awareness",
   },
   {
     id: 67,
     bundleDataId: 3,
-    content: "Oral Health",
+    content: "Level 2 Award in Diabetes Awareness",
   },
   {
     id: 68,
     bundleDataId: 3,
-    content: "Person centred care And support",
+    content: "Level 2 Award in Epilepsy and Emergency Medication Awareness",
   },
   {
     id: 69,
     bundleDataId: 3,
-    content: "Promoting Dignity in care",
+    content: "Level 2 Award in Inhalers and Nebulizers",
   },
   {
     id: 70,
     bundleDataId: 3,
-    content: "Role of care worker and personal Development",
+    content: "Level 2 Award in Autism Spectrum",
   },
   {
     id: 71,
     bundleDataId: 3,
-    content: "Automated External Defibrillation",
+    content: "Level 2 Award in Boundaries and Good Practice",
   },
   {
     id: 72,
     bundleDataId: 3,
-    content: "Basic Paediatric first Aid",
+    content: "Level 2 Award in Care Planning",
   },
   {
     id: 73,
     bundleDataId: 3,
-    content: "Emergency Paediatric first Aid",
+    content: "Level 2 Award in Customer Service & Complaints Management",
   },
   {
     id: 74,
     bundleDataId: 3,
-    content: "Fire safety Awareness",
+    content: "Level 2 Award in Dementia",
   },
   {
     id: 75,
     bundleDataId: 3,
-    content: "First aid Awareness ",
+    content: "Level 2 Award in End of Life Care",
   },
   {
     id: 76,
     bundleDataId: 3,
-    content: "Anaphylaxis and Emergency Medication Awareness",
+    content: "Level 2 Award in Stroke Awareness",
   },
   {
     id: 77,
     bundleDataId: 3,
-    content: "Catheter care",
+    content: "Level 2 Award in Understanding Mental Health",
   },
   {
     id: 78,
     bundleDataId: 3,
-    content: "Inhalers And Nebulizers",
+    content: "Level 2 Award in Food Safety",
   },
   {
     id: 79,
     bundleDataId: 3,
-    content: "Oxygen Therapy",
+    content: "Level 2 Award in Manual Handling",
   },
   {
     id: 80,
     bundleDataId: 3,
-    content: "PEG Feeding Awareness(2/3)",
+    content: "Level 2 Award in Risk Assessment in Care",
   },
   {
     id: 81,
     bundleDataId: 3,
-    content: "Stoma care Awareness ",
+    content: "Care Certificate",
   },
   {
     id: 82,
     bundleDataId: 3,
-    content: "Boundaries And Good Practice ",
+    content: "Induction and Orientation",
   },
   {
     id: 83,
-    bundleDataId: 3,
-    content: "Care  Planning ",
+    bundleDataId: 4,
+    content: "Care Certificate",
   },
   {
     id: 84,
-    bundleDataId: 3,
-    content: "Customer Service And Complaints",
+    bundleDataId: 4,
+    content: "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
     id: 85,
-    bundleDataId: 3,
-    content: "Drug And Alcohol Abuse Awareness",
+    bundleDataId: 2,
+    content: "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
     id: 86,
-    bundleDataId: 3,
-    content: "Dysphagia Awareness",
+    bundleDataId: 1,
+    content: "All Stand Alone E-Learning Courses",
   },
   {
     id: 87,
-    bundleDataId: 3,
-    content: "End of life care",
+    bundleDataId: 1,
+    content: "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
     id: 88,
-    bundleDataId: 3,
-    content: "Epilepsy And Bucal Midazolam",
+    bundleDataId: 0,
+    content: "Care Certificate (Online)",
   },
   {
     id: 89,
-    bundleDataId: 3,
-    content: "Loss and Bereavement",
-  },
-  {
-    id: 90,
-    bundleDataId: 3,
-    content: "Mental health",
-  },
-  {
-    id: 91,
-    bundleDataId: 3,
-    content: "People Hoisting ",
-  },
-  {
-    id: 92,
-    bundleDataId: 3,
-    content: "Personal care ",
-  },
-  {
-    id: 93,
-    bundleDataId: 3,
-    content: "Pressure Care management ",
-  },
-  {
-    id: 94,
-    bundleDataId: 3,
-    content: "Prevention of Trips, slips and falls",
-  },
-  {
-    id: 95,
-    bundleDataId: 3,
-    content: "Professional Relationships and Boundaries",
-  },
-  {
-    id: 96,
-    bundleDataId: 3,
-    content: "The introduction of positive behaviour support",
-  },
-  {
-    id: 97,
-    bundleDataId: 3,
-    content: "Understanding the Behaviour that challenge.",
-  },
-  {
-    id: 98,
-    bundleDataId: 3,
-    content: "Food safety principles",
-  },
-  {
-    id: 99,
-    bundleDataId: 3,
-    content: "Lone working Awareness",
-  },
-  {
-    id: 100,
-    bundleDataId: 3,
-    content: "Managing personal stress",
-  },
-  {
-    id: 101,
-    bundleDataId: 3,
-    content: "Managing stress in the work place",
-  },
-  {
-    id: 102,
-    bundleDataId: 3,
-    content: "Manual Handling",
-  },
-  {
-    id: 103,
-    bundleDataId: 3,
-    content: "Risk Assessment in care",
-  },
-
-  {
-    id: 105,
-    bundleDataId: 3,
-    content: "Medications, competency MGT.",
-  },
-  {
-    id: 106,
-    bundleDataId: 3,
-    content: "Positive behaviour support.",
-  },
-  {
-    id: 107,
-    bundleDataId: 3,
-    content: "Managing and supervising safety.",
-  },
-  {
-    id: 108,
-    bundleDataId: 3,
-    content: "Managing risk assessment in care management.",
-  },
-  {
-    id: 109,
-    bundleDataId: 3,
-    content: "Food safety",
-  },
-  {
-    id: 110,
-    bundleDataId: 3,
-    content: "Assessing competency in moving and assisting.",
-  },
-  {
-    id: 111,
-    bundleDataId: 3,
-    content: "Tracheostomy",
-  },
-  {
-    id: 112,
-    bundleDataId: 3,
-    content: "PEG Feeding",
-  },
-  {
-    id: 113,
-    bundleDataId: 3,
-    content: "Medication competency and management",
-  },
-  {
-    id: 114,
-    bundleDataId: 3,
-    content: "Role of a fire marshall",
-  },
-  {
-    id: 115,
-    bundleDataId: 3,
-    content: "Paediatric First Aid",
-  },
-  {
-    id: 116,
-    bundleDataId: 3,
-    content: "First Aid at work",
-  },
-  {
-    id: 117,
-    bundleDataId: 3,
-    content: "ILS",
-  },
-  {
-    id: 118,
-    bundleDataId: 3,
-    content: "Food",
-  },
-  {
-    id: 119,
-    bundleDataId: 3,
-    content: "Safe Guarding Adults.",
+    bundleDataId: 0,
+    content: "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
 ];
 
@@ -2781,25 +2922,24 @@ const inductionOrientation = [
 ];
 
 const addOns = [
+ 
+  { id: 0, name: "Brunch/Lunch", price: "5000 Daily" },
+  { id: 1, name: "Hotel Accomodation", price: "15,000 Daily" },
   {
-    id: "0",
-    name: "International Visa route",
-    mail: "infomoricolhealthcare@gmail.com",
-  },
-  { id: "1", name: "Brunch/Lunch", price: "5000" },
-  { id: "2", name: "Hotel Accomodation", price: "15,000" },
-  {
-    id: "3",
-    name: "Induction & Orientation [Intensive 1 day visual course]",
-    price: "100,000",
-  },
-  { id: "4", name: "Care-Certificate Course", price: "150,000" },
-  { id: "5", name: "Online Training Course", price: "20,000" },
-  {
-    id: "6",
+    id: 2,
     name: "Computer Appreciation",
     price: "50,000 for a 3 day training",
   },
+  {
+    id: 3,
+    name: "International Work Visa",
+    mail: "infomoricolhealthcare@gmail.com",
+  },
+];
+
+const timeTable = [
+  { id: 1, name: "Regular classes", description: "2days a week/9am-2pm 5weeks/Friday + Saturday 10hrs weekly 50hrs total" },
+  { id: 2, name: "Master Classes", description: "2weeks/ Monday-Friday 9am-2pm 25hrs weekly 50hrs total" },
 ];
 
 export {
@@ -2819,5 +2959,6 @@ export {
   bundles,
   bundleContents,
   addOns,
-  inductionOrientation
+  inductionOrientation,
+  timeTable
 };

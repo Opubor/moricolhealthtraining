@@ -17,7 +17,7 @@ const courseAmount = [
   {
     id: 3,
     title: "Level 2 Award in Equality, Diversity and Inclusion",
-    time: "6 Hours",
+    price: "6 Hours",
   },
   {
     id: 4,
@@ -136,7 +136,7 @@ const courseAmount = [
   },
   {
     id: 27,
-    title: "Level 3 Award in ILS ",
+    title: "Level 3 Award in Immediate Life Support (ILS)",
     price: "300000"
   },
   {
@@ -506,12 +506,12 @@ const courseAmount = [
   },
   {
     id: 101,
-    title: "Bundle 4 (Stand Alone Course)",
+    title: "Bundle 4",
     price: "399500",
   },
   {
     id: 102,
-    title: "Bundle 5 (Online Course)",
+    title: "Bundle 5",
     price: "399500",
   },
   {
@@ -538,6 +538,21 @@ const courseAmount = [
     id: 105,
     title: "Induction and Orientation",
     price: "100000",
+  },
+  {
+    id: 106,
+    title: "Brunch/Lunch",
+    price: "5000",
+  },
+  {
+    id: 105,
+    title: "Hotel Accomodation",
+    price: "15000",
+  },
+  {
+    id: 105,
+    title: "Computer Appreciation",
+    price: "50000",
   },
 
 ];

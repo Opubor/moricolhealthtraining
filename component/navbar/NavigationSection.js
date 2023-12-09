@@ -20,16 +20,19 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
          
         </li>
         <li className="nav-item">
-          <Navlink href="/about">about us</Navlink>
+          <Navlink href="/about">about</Navlink>
         </li>
         <li className="nav-item">
-          <Navlink href="/courses">In-Class Courses</Navlink>
+          <Navlink href="/courses">In-Class</Navlink>
         </li>
         <li className="nav-item">
-          <Navlink href="/eLearning">E-Learning Courses</Navlink>
+          <Navlink href="/eLearning">E-Learning</Navlink>
         </li>
         <li className="nav-item">
           <Navlink href="/bundles">Bundles</Navlink>
+        </li>
+        <li className="nav-item">
+          <Navlink href="/induction">Induction</Navlink>
         </li>
         {btnPosition ? null : (
           <li className="nav-item">

@@ -7,20 +7,11 @@ import { useSession } from "next-auth/react";
 import RegPrompter from "../RegPrompter";
 
 const CourseDetailSection = ({ courseData, courseContents }) => {
-  const { data: session } = useSession();
-  const [error, setError] = useState(false);
-
-  const promptRegistration = async () => {
-    setError(true);
-    return setTimeout(() => {
-      setError(false);
-    }, 9000);
-  };
   return (
-    <section className="tf__courses_details mt_195 xs_mt_100">
+    <section className="tf__courses_details mt_100">
       <div className="container">
         <div className="row">
-          <div className="col-xl-8 col-lg-8">
+          <div className="col-xl-12 col-lg-12">
             <div className="tf__courses_details_area">
               <div className="tf__courses_details_img">
                 <img
@@ -49,7 +40,7 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
                     <p>{courseData.price}</p>
                   </li>
                   <li>
-                    {session?.user ? (
+                    {/* {session?.user ? (
                       <Link
                         className="common_btn"
                         href={`/enrollment/${courseData?.id}?type=inclass`}
@@ -59,13 +50,13 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
                     ) : (
                       <div
                         onClick={() => promptRegistration()}
-                        className="common_btn"
+                        className="common_btn mx-2"
                         href={`/enrollment/${courseData?.id}?type=inclass`}
                       >
                         enrol
                       </div>
                     )}
-                    {error && <RegPrompter />}
+                    {error && <RegPrompter />} */}
                   </li>
                 </ul>
               </div>
@@ -80,7 +71,7 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4">
+          {/* <div className="col-xl-4 col-lg-4">
             <div className="tf__sidebar" id="sticky_sidebar">
               <div className="tf__sidebar_blog sidebar_item">
                 <h3>popular courses</h3>
@@ -95,12 +86,7 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
                         />
                       </div>
                       <div className="text">
-                        {/* <p>
-                          <span className="text-warning">
-                            <i className="fa-solid fa-clock"></i>
-                          </span>{" "}
-                          {item?.students}
-                        </p> */}
+                       
 
                         <Link href={`/courses/${item.slug}`}>{item.title}</Link>
                       </div>
@@ -109,7 +95,7 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

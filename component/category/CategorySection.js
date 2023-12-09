@@ -13,7 +13,7 @@ const CategorySection = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-xl-4 col-md-6 wow fadeInUp">
+          <div className="col-xl-6 col-md-6 wow fadeInUp">
             <div className="tf__single_category light_blue">
               <div className="tf__single_category_icon">
                 <i className="fa fa-book"></i>
@@ -24,7 +24,7 @@ const CategorySection = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-md-6 wow fadeInUp">
+          <div className="col-xl-6 col-md-6 wow fadeInUp">
             <div className="tf__single_category blue">
               <div className="tf__single_category_icon">
                 <i className="fa fa-book"></i>
@@ -35,29 +35,19 @@ const CategorySection = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-md-6 wow fadeInUp">
-            <div className="tf__single_category green">
-              <div className="tf__single_category_icon">
-                <i className="fa fa-book"></i>
-              </div>
-              <div className="tf__single_category_text">
-                <h3>Online Courses(Bundles 5)</h3>
-                <p>1 day a week/9am-4pm <br></br>Tuesday/7hrs/week <br></br> 7weeks -56hrs total</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-4 col-md-6 wow fadeInUp">
+        
+          <div className="col-xl-6 col-md-6 wow fadeInUp">
             <div className="tf__single_category gray">
               <div className="tf__single_category_icon">
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
                 <h3>Online Courses(Bundles 5)</h3>
-                <p>1 day a week/9am-4pm <br></br>Thursday/7hrs/week <br></br> 8weeks- 56hrs total</p>
+                <p>Enjoy the flexibility <br></br>of learning at your own pace <br></br> and comfort</p>
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-md-6 wow fadeInUp">
+          <div className="col-xl-6 col-md-6 wow fadeInUp">
             <div className="tf__single_category orange">
               <div className="tf__single_category_icon">
                 <i className="fa fa-book"></i>

@@ -85,7 +85,8 @@ export async function POST(
         studentPhoneNumber: newEnrollment?.phone as string,
         registrationDate: newEnrollment?.date as string,
         courseAmount: Number(courseAmount) /100,
-        paidAmount: Number(paidAmount) /100
+        paidAmount: Number(paidAmount) /100,
+        timeTable: newEnrollment?.timeTable as string
       }),
     });
     resend.emails.send({
@@ -98,7 +99,9 @@ export async function POST(
         courseName: newEnrollment?.course as string,
         registrationDate: newEnrollment?.date as string,
         courseAmount: Number(courseAmount) /100,
-        paidAmount: Number(paidAmount) /100
+        paidAmount: Number(paidAmount) /100,
+        timeTable: newEnrollment?.timeTable as string
+
       }),
     });
 
