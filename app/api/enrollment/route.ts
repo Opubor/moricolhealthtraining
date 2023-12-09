@@ -51,7 +51,6 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    console.log("ssssss")
     let paymentId = "PAY" + date.getDate() + randomBytes(2).toString("hex");
 
     const payment = await prisma.payment.create({
