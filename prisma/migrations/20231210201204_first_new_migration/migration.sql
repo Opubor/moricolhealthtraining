@@ -9,7 +9,7 @@ CREATE TABLE "User" (
     "phone" TEXT NOT NULL,
     "address" TEXT NOT NULL,
     "resetPasswordToken" TEXT,
-    "resetPasswordTokenExpiry" TIMESTAMP(3),
+    "resetPasswordTokenExpiry" TEXT,
     "userId" TEXT NOT NULL,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
@@ -58,4 +58,3 @@ ALTER TABLE "Payment" ADD CONSTRAINT "Payment_enrollmentId_fkey" FOREIGN KEY ("e
 
 -- AddForeignKey
 ALTER TABLE "Payment" ADD CONSTRAINT "Payment_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
-
