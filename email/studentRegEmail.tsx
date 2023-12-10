@@ -54,7 +54,7 @@ function StudentRegEmail({
               <Text>Enrollment ID: {enrollmentId}</Text>
               <Text>Course Amount: &#8358;{courseAmount}</Text>
               <Text>Amount Paid: &#8358;{paidAmount}</Text>
-              <Text>Time-Table: &#8358;{timeTable}</Text>
+              <Text>Time-Table: {timeTable}</Text>
               <Text>
                 Our team is working diligently to finalize the details, and you
                 can expect to be contacted shortly with further instructions.

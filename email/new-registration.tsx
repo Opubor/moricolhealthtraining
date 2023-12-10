@@ -47,7 +47,7 @@ function NewRegistrationMail({ courseName, studentName, studentEmail, studentPho
               <Text>Registration Date: {registrationDate}</Text>
               <Text>Course Amount: &#8358;{courseAmount}</Text>
               <Text>Amount Paid: &#8358;{paidAmount}</Text>
-              <Text>Time-Table: &#8358;{timeTable}</Text>
+              <Text>Time-Table: {timeTable}</Text>
             </Section>
           </Container>
         </Body>
