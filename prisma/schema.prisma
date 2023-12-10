@@ -33,6 +33,7 @@ model Enrollment {
   date         String
   status       String
   amount       BigInt
+  timeTable    String?
   user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   Payment      Payment[]
 }
