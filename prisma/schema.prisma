@@ -1,14 +1,10 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "postgresql"
-  // url      = env("POSTGRES_PRISMA_URL") // uses connection pooling
-  url = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+  url      = env("POSTGRES_URL_NON_POOLING")
 }
 
 model User {
@@ -20,9 +16,9 @@ model User {
   gender                   String
   phone                    String
   address                  String
-  userId                   String
   resetPasswordToken       String?      @unique
   resetPasswordTokenExpiry DateTime?
+  userId                   String
   Enrollment               Enrollment[]
   Payment                  Payment[]
 }
@@ -33,19 +29,17 @@ model Enrollment {
   userId       String
   phone        String
   email        String
-  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   course       String
   date         String
   status       String
   amount       BigInt
-  timeTable    String @default("Your learning timetable will be sent to you shortly")
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   Payment      Payment[]
 }
 
 model Payment {
   id            String     @id @default(uuid())
   userId        String
-  user          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
   course        String
   date          String
   amount        BigInt
@@ -53,4 +47,5 @@ model Payment {
   paymentId     String
   enrollmentId  String
   enrollment    Enrollment @relation(fields: [enrollmentId], references: [id], onDelete: Cascade)
+  user          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
