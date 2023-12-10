@@ -15,6 +15,7 @@ import {
   timeTable,
 } from "@/data/Data";
 import Image from "next/image";
+import { toast } from "react-toastify";
 
 interface Props {
   courseId: number;
@@ -53,8 +54,15 @@ function EnrollmentSection({ courseId }: Props) {
         }),
       });
       setLoading(false);
-      let u = await response.json();
-      return push(u?.url);
+      let x = response.status;
+      if (x === 404) {
+        return toast.error("Course not found", {
+          position: "top-right",
+        });
+      } else if (x === 200) {
+        let res = await response.json();
+        return push(res?.url);
+      }
     } catch (error) {
       return console.log(error);
     }
@@ -207,7 +215,7 @@ function EnrollmentSection({ courseId }: Props) {
             </div>
           </div>
 
-          {courseType === "addOns" && course !== "Computer Appreciation"  && (
+          {courseType === "addOns" && course !== "Computer Appreciation" && (
             <div className="col-xl-12 mt-4">
               <div className="tf__login_imput">
                 <label>No. of Days</label>
@@ -218,9 +226,7 @@ function EnrollmentSection({ courseId }: Props) {
                   {...register("noOfDays", { required: true })}
                 />
                 {errors.noOfDays && (
-                  <p className="text-danger text-sm">
-                    No of Days is required.
-                  </p>
+                  <p className="text-danger text-sm">No of Days is required.</p>
                 )}
               </div>
             </div>

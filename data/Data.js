@@ -693,7 +693,7 @@ const courseDataContents = [
     courseDataId: 0,
     category: "Core & Mandatory",
     imgSrc: "/images/comingsoon.jpg",
-    content: "Level 2 Award in Effective Communication ",
+    content: "Level 2 Award in Effective Communication",
     time: "3 Hours",
     price: "200,000",
   },
@@ -783,7 +783,7 @@ const courseDataContents = [
     tag: "Available",
     description:
       "The aim of this module is to get you to recognize the principles of safe moving. Hoists provide a way to transfer somebody with limited mobility without putting unnecessary strain on the career of the person being moved. Furthermore, this elective will make you become conversant with the key principles of moving and handling.    ",
-    content: "Level 2 Award in Moving, Assisting and Hoisting ",
+    content: "Level 2 Award in Moving, Assisting and Hoisting",
     time: "3 Hours",
     price: "200,000",
   },
@@ -803,7 +803,7 @@ const courseDataContents = [
     imgSrc: "/images/personcentered.png",
     tag: "Available",
     description: "",
-    content: "Level 2 Award in Person-Centred Care and Support ",
+    content: "Level 2 Award in Person-Centred Care and Support",
     time: "3 Hours",
     price: "200,000",
   },
@@ -990,7 +990,7 @@ const courseDataContents = [
     tag: "Available",
     description:
       "Diabetes is a chronic (long-standing) health condition that affects how your body turns food into energy. Usually, your body either dosen’t make enough insulin or can’t use it as well as it should. This course will teach you about the 3p’s of Diabetes which is polydipsia, polyuria, polyphagia e.t.c. this corresponds to increase in thirst, urination and appetite.",
-    content: "Level 2 Award in Diabetes Awareness ",
+    content: "Level 2 Award in Diabetes Awareness",
     time: "2 Hours",
     price: "200,000",
   },
@@ -1090,7 +1090,7 @@ const courseDataContents = [
     imgSrc: "/images/boundaries.png",
     tag: "Available",
 
-    content: "Level 2 Award in Boundaries and Good Practice ",
+    content: "Level 2 Award in Boundaries and Good Practice",
     time: "2 Hours",
     price: "200,000",
   },
@@ -1273,7 +1273,7 @@ const courseDataContents = [
     courseDataId: 3,
     category: "Specialist",
     imgSrc: "/images/comingsoon.jpg",
-    content: "Level 2 Award in Understanding Behaviours That Challenge ",
+    content: "Level 2 Award in Understanding Behaviours That Challenge",
     time: "2 Hours",
     price: "200,000",
   },
@@ -1295,7 +1295,7 @@ const courseDataContents = [
     tag: "Available",
     description:
       "Mental health is a state of well being in which every individual realizes his or her own potential, can cope with the normal stress of life, can work productively and fruitfully and is able to make a contribution to her or his community. This course further highlights the level of functioning of the mind and how best to understand the causes respectively.",
-    content: "Level 2 Award in Understanding Mental Health ",
+    content: "Level 2 Award in Understanding Mental Health",
     time: "2 Hours",
     price: "200,000",
   },
@@ -2695,7 +2695,7 @@ const bundleContents = [
   {
     id: 43,
     bundleDataId: 4,
-    content: "Injection control",
+    content: "Infection control",
   },
   {
     id: 44,
@@ -2725,7 +2725,7 @@ const bundleContents = [
   {
     id: 49,
     bundleDataId: 4,
-    content: "Covid-19 injection, prevention, identification and control",
+    content: "Covid-19 infection, prevention, identification and control",
   },
   {
     id: 50,

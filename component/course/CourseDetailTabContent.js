@@ -118,29 +118,27 @@ const CourseDetailTabContent = ({ courseData, courseContents }) => {
                     >
                       <div className="tf__single_courses">
                         <div className="tf__single_courses_img">
-                          <Link
+                          <div
                             className="title"
-                            href={`/courses/${data.slug}`}
                           >
                             <img
                               src={data.imgSrc}
                               alt="courses"
                               className="img-fluid w-100"
                             />
-                          </Link>
-                          <a className={`categories ${data.color}`} href="#">
+                          </div>
+                          <div className={`categories ${data.color}`}>
                             {data.category}
-                          </a>
+                          </div>
                           <span>&#8358;{data.price}</span>
                         </div>
 
                         <div className="tf__single_courses_text">
-                          <Link
+                          <div
                             className="title"
-                            href={`/courses/${data.slug}`}
                           >
                             {data.title}
-                          </Link>
+                          </div>
                           <p className="description d-flex gap-2 align-items-center ">
                             <i className="fas fa-folder-open"></i>
                             {data?.content}

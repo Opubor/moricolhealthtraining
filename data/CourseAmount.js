@@ -11,13 +11,13 @@ const courseAmount = [
   },
   {
     id: 2,
-    title: "Level 2 Award in Effective Communication ",
+    title: "Level 2 Award in Effective Communication",
     price: "200000"
   },
   {
     id: 3,
     title: "Level 2 Award in Equality, Diversity and Inclusion",
-    price: "6 Hours",
+    price: "200000",
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const courseAmount = [
   },
   {
     id: 11,
-    title: "Level 2 Award in Moving, Assisting and Hoisting ",
+    title: "Level 2 Award in Moving, Assisting and Hoisting",
     price: "200000"
   },
   {
@@ -66,7 +66,7 @@ const courseAmount = [
   },
   {
     id: 13,
-    title: "Level 2 Award in Person-Centred Care and Support ",
+    title: "Level 2 Award in Person-Centred Care and Support",
     price: "200000"
   },
   {
@@ -166,7 +166,7 @@ const courseAmount = [
   },
   {
     id: 33,
-    title: "Level 2 Award in Diabetes Awareness ",
+    title: "Level 2 Award in Diabetes Awareness",
     price: "200000"
   },
   {
@@ -216,7 +216,7 @@ const courseAmount = [
   },
   {
     id: 43,
-    title: "Level 2 Award in Boundaries and Good Practice ",
+    title: "Level 2 Award in Boundaries and Good Practice",
     price: "200000"
   },
   {
@@ -311,7 +311,7 @@ const courseAmount = [
   },
   {
     id: 62,
-    title: "Level 2 Award in Understanding Behaviours That Challenge ",
+    title: "Level 2 Award in Understanding Behaviours That Challenge",
     price: "200000"
   },
   {
@@ -321,7 +321,7 @@ const courseAmount = [
   },
   {
     id: 64,
-    title: "Level 2 Award in Understanding Mental Health ",
+    title: "Level 2 Award in Understanding Mental Health",
     price: "200000"
   },
   {
@@ -379,11 +379,11 @@ const courseAmount = [
     title: "Level 2 Award in Managing Stress in the Workplace",
     price: "200000"
   },
-  {
-    id: 76,
-    title: "Level 2 Award in Manual Handling",
-    price: "200000"
-  },
+  // {
+  //   id: 76,
+  //   title: "Level 2 Award in Manual Handling",
+  //   price: "200000"
+  // },
   {
     id: 77,
     title: "Level 2 Award in Risk Assessment in Care",
@@ -536,21 +536,16 @@ const courseAmount = [
   },
   {
     id: 105,
-    title: "Induction and Orientation",
-    price: "100000",
-  },
-  {
-    id: 106,
     title: "Brunch/Lunch",
     price: "5000",
   },
   {
-    id: 105,
+    id: 106,
     title: "Hotel Accomodation",
     price: "15000",
   },
   {
-    id: 105,
+    id: 107,
     title: "Computer Appreciation",
     price: "50000",
   },

@@ -28,6 +28,12 @@ export async function POST(req: NextRequest) {
   const courseDesc = courseAmount.find(
     (item) => (item.title as string) === (result?.data?.course as string)
   );
+  if(!courseDesc){
+    console.log("Course not found")
+    return new Response(JSON.stringify("Course not found"), {
+      status: 404,
+    });
+  }
 
   let amount = Number(courseDesc?.price);
   let course = result?.data?.course;
@@ -86,6 +92,6 @@ export async function POST(req: NextRequest) {
       status: 200,
     });
   } catch (error) {
-    return new Response(JSON.stringify(error), { status: 404 });
+    return new Response(JSON.stringify(error), { status: 400 });
   }
 }
