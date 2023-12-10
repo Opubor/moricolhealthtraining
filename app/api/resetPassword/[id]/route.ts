@@ -38,8 +38,9 @@ export async function PUT(
       });
     }
     const today = new Date();
+    let dateConversion = new Date(resetPasswordTokenExpiry);
 
-    if (today > resetPasswordTokenExpiry) {
+    if (today > dateConversion) {
       return new Response(JSON.stringify("Token Expired"), {
         status: 400,
       });

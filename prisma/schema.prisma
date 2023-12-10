@@ -17,7 +17,7 @@ model User {
   phone                    String
   address                  String
   resetPasswordToken       String?      @unique
-  resetPasswordTokenExpiry DateTime?
+  resetPasswordTokenExpiry String?
   userId                   String
   Enrollment               Enrollment[]
   Payment                  Payment[]

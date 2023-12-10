@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
       },
       data: {
         resetPasswordToken: resetPasswordToken,
-        resetPasswordTokenExpiry: resetPasswordTokenExpiry,
+        resetPasswordTokenExpiry: resetPasswordTokenExpiry.toString(),
       },
     });
     resend.emails.send({
