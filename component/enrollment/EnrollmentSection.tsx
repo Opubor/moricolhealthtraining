@@ -155,7 +155,7 @@ function EnrollmentSection({ courseId }: Props) {
           {/* ===Bundle 1-3=== */}
           {courseType === "bundle" &&
             ["Bundle 1", "Bundle 2", "Bundle 3"].includes(course) && (
-              <div className="d-md-flex w-md-50 gap-2">
+              <div className="d-md-flex w-md-50 gap-2 mb-4">
                 {timeTable.map((data) => (
                   <div className="form-check">
                     <input

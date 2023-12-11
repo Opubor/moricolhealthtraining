@@ -14,7 +14,7 @@ export async function POST(
   { params }: { params: { id: number } }
 ): Promise<any> {
   try {
-    const secretKey = `${process.env.SECRET_KEY}`;
+    const secretKey = `${process.env.PAYSTACK_SECRET_KEY}`;
     const event: PaystackEventResponse = await req.json();
 
     const hash = crypto

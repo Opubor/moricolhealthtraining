@@ -412,7 +412,7 @@ const courseAmount = [
   {
     id: 82,
     title: "The Care Certificate",
-    price: "150000",
+    price: "120",
   },
   {
     id: 83,
