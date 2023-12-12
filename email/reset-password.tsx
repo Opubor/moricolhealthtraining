@@ -65,7 +65,7 @@ function ResetPasswordReciept({
               </Text>
               <Text>Best regards,</Text>
               <Text>Moricol</Text>
-              <Text>09124460695</Text>
+              <Text>+234 9124460695</Text>
             </Section>
           </Container>
         </Body>

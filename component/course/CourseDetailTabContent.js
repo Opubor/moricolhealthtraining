@@ -90,7 +90,7 @@ const CourseDetailTabContent = ({ courseData, courseContents }) => {
                             ) : (
                               <div
                                 onClick={() => promptRegistration()}
-                                className="common_btn mx-2"
+                                className="common_btn w-100 text-center"
                                 href={`/enrollment/${courseData?.id}?type=inclass`}
                               >
                                 enrol

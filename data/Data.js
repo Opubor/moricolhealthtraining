@@ -802,7 +802,8 @@ const courseDataContents = [
     category: "Core & Mandatory",
     imgSrc: "/images/personcentered.png",
     tag: "Available",
-    description: "",
+    description:
+      "This elective equips individuals with the knowledge, skills and values to provide compassionate and effective care that respects the unique needs and preferences of each individual. Person-centred care entails understanding The concept of Person-centred care promoting individuality and dignity, empowering individuals and fostering independence, building positive and trusting relationships and promoting holistic well-being. This elective will give our clients a greater ability to meet the diverse individual needs, improved communication collaboration, with an increased confidence in providing person centred care.",
     content: "Level 2 Award in Person-Centred Care and Support",
     time: "3 Hours",
     price: "200,000",
@@ -1021,6 +1022,8 @@ const courseDataContents = [
     category: "Clinical",
     imgSrc: "/images/inhalersnebulizers.png",
     tag: "Available",
+    description:
+      "This award equips individuals with the essential knowledge and skills to safety and effectively administer these respiratory medications to patients in various healthcare settings.The award covers,types of inhalers, correct inhaler technique, maintaining and cleaning inhalers,side effects and potential complications of inhaler therapy and documenting inhaler usage. The Knowledge of Nebulizers helps the individual to know the principles of Nevulizers therapy,preparing and administering nebulized medication, Monitoring patients during nebulizer therapy, cleaning and disinfecting nebulizers and documenting  nebulizer usage.This elective helps in career advancement and is useful for Nurses,Healthcare assistants ,respiratory therapist and anyone in respiratory care.",
     content: "Level 2 Award in Inhalers and Nebulizers",
     time: "2 Hours",
     price: "200,000",
@@ -1089,7 +1092,8 @@ const courseDataContents = [
     category: "Specialist",
     imgSrc: "/images/boundaries.png",
     tag: "Available",
-
+    description:
+      "The Award in Boundaries and Good practice is a crucial qualification for anyone working in healthcare and social care settings.This elective typically covers key areas like understanding professional boundaries,professional codes of conduct and local policies,Establishing rules of contact and maintaining a safe distance ,demonstration of professional behaviour  and avoiding dual relationships ,identifying and dealing with risk factors including reporting breaches of professional boundaries .This award is ideal for healthcare support workers,social care workers , volunteers and anyone who wants to work in health and social care sector. The elective wil  enhance greater job opportunities in this sector .",
     content: "Level 2 Award in Boundaries and Good Practice",
     time: "2 Hours",
     price: "200,000",
@@ -1100,7 +1104,8 @@ const courseDataContents = [
     category: "Specialist",
     imgSrc: "/images/careplanning.png",
     tag: "Available",
-
+    description:
+      "This is a recognised qualification that equips individuals with the knowledge and skills needed to develop and implement personalised care plan for individuals in various settings such as understanding person centered care ,care planning for different needs ,nutrition and Hydration,Personal hygiene support ,continence care ,promoting sleep ,communication and collaboration,record keeping and documentation. Care planning enhances knowledge,skills  and improved career prospects for care workers,support workers,support workers, Personal assistants,Healthcare assistants and anyone who wants to work in the care sector",
     content: "Level 2 Award in Care Planning",
     time: "2 Hours",
     price: "200,000",
@@ -1111,7 +1116,8 @@ const courseDataContents = [
     category: "Specialist",
     imgSrc: "/images/customerservice.png",
     tag: "Available",
-
+    description:
+      "The leve 2 Award equips Individuals with skills our knowledge to excel in customer service roles and effectively handles  complaints, Effective communication and interpersonal skills, building rapport And maintaining positive relationships, problem solving and decision-making and using technology for effective customer service. Complaint management is understanding the importance of Effective complaints handling, Active listening an empathy in dealing with complaints, investigating complaints and gathering information, Resolving complaints and reaching  solutions and learning from complaints and improving service quality .This award would enhance greater job opportunities and career progression.",
     content: "Level 2 Award in Customer Service & Complaints Management",
     time: "2 Hours",
     price: "200,000",
@@ -1161,7 +1167,8 @@ const courseDataContents = [
     category: "Specialist",
     imgSrc: "/images/endoflifecare.png",
     tag: "Available",
-
+    description:
+      "A Level 2 award in End of Life Care is a valuable qualification for anyone who wants to work in the field of palliative and end of life care.The Award covers a range of topics including (a)understanding death,dying and bereavement.This includes exploring the physical,emotional ,social and spiritual aspects of End of life care. Others are communication skills, pain management, symptom management, spiritual care and ethical considerations.This award is suitable for Healthcare  professionals,Care workers ,Support workers and volunteers who work with individuals and families facing End of life care.",
     content: "Level 2 Award in End of Life Care",
     time: "2 Hours",
     price: "200,000",
@@ -1407,7 +1414,8 @@ const courseDataContents = [
     category: "Health & Safety",
     imgSrc: "/images/manualhandling.png",
     tag: "Available",
-
+    description:
+      "This award equips learners with the knowledge and skills required to effectively manage and plan healthcare administration and manage tasks.Manual planning Covers topics like principles of healthcare management ,planning and organising healthcare services, human resource management in healthcare,financial management in healthcare, quality management in Healthcare,Health information management,communication and interpersonal skills and Healthcare ethics and Law.",
     content: "Level 2 Award in Manual Handling",
     time: "2 Hours",
     price: "200,000",
@@ -2521,7 +2529,8 @@ const bundles = [
     price: "399,500",
     lessons: "13 packages",
     description:
-"Level 2 & 3 Courses + Care Certificate + Stand Alone Courses + Induction and Orientation"  },
+      "Level 2 & 3 Courses + Care Certificate + Stand Alone Courses + Induction and Orientation",
+  },
   {
     id: 3,
     imgSrc: "images/bundle4.png",
@@ -2545,7 +2554,7 @@ const bundles = [
     price: "399,500",
     lessons: "20 packages",
     description:
-    "All Moricol E-Learning Courses + Care Certificate + Induction and Orientation",
+      "All Moricol E-Learning Courses + Care Certificate + Induction and Orientation",
   },
 ];
 
@@ -2871,12 +2880,14 @@ const bundleContents = [
   {
     id: 84,
     bundleDataId: 4,
-    content: "Induction and Orientation (Extensive 1-Day training/Visual Course)",
+    content:
+      "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
     id: 85,
     bundleDataId: 2,
-    content: "Induction and Orientation (Extensive 1-Day training/Visual Course)",
+    content:
+      "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
     id: 86,
@@ -2886,7 +2897,8 @@ const bundleContents = [
   {
     id: 87,
     bundleDataId: 1,
-    content: "Induction and Orientation (Extensive 1-Day training/Visual Course)",
+    content:
+      "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
     id: 88,
@@ -2896,7 +2908,8 @@ const bundleContents = [
   {
     id: 89,
     bundleDataId: 0,
-    content: "Induction and Orientation (Extensive 1-Day training/Visual Course)",
+    content:
+      "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
 ];
 
@@ -2922,7 +2935,6 @@ const inductionOrientation = [
 ];
 
 const addOns = [
- 
   { id: 0, name: "Brunch/Lunch", price: "5000 Daily" },
   { id: 1, name: "Hotel Accomodation", price: "15,000 Daily" },
   {
@@ -2938,8 +2950,17 @@ const addOns = [
 ];
 
 const timeTable = [
-  { id: 1, name: "Regular classes", description: "2days a week/9am-2pm 5weeks/Friday + Saturday 10hrs weekly 50hrs total" },
-  { id: 2, name: "Master Classes", description: "2weeks/ Monday-Friday 9am-2pm 25hrs weekly 50hrs total" },
+  {
+    id: 1,
+    name: "Regular classes",
+    description:
+      "2days a week/9am-2pm 5weeks/Friday + Saturday 10hrs weekly 50hrs total",
+  },
+  {
+    id: 2,
+    name: "Master Classes",
+    description: "2weeks/ Monday-Friday 9am-2pm 25hrs weekly 50hrs total",
+  },
 ];
 
 export {
@@ -2960,5 +2981,5 @@ export {
   bundleContents,
   addOns,
   inductionOrientation,
-  timeTable
+  timeTable,
 };

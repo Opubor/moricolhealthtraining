@@ -33,24 +33,34 @@ const FooterSection2 = ({ style }) => {
                 <div className="col-xl-3 col-md-7 col-lg-3">
                   <div className="tf__footer_logo_area">
                     <Link className="footer_logo" href="/">
-                      <img src={"/images/moricollogo.jpeg"} alt="Moricol" className="img-fluid w-100" />
+                      <img
+                        src={"/images/moricollogo.jpeg"}
+                        alt="Moricol"
+                        className="img-fluid w-100"
+                      />
                     </Link>
                     <p>
-                    Elevating Lives through Expert Health Education: Your Wellness Partner.
+                      Elevating Lives through Expert Health Education: Your
+                      Wellness Partner.
                     </p>
                     <ul className="d-flex flex-wrap">
                       <li>
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100094794262869&mibextid=LQQJ4d">
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/profile.php?id=100094794262869&mibextid=LQQJ4d"
+                        >
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
-                      
+
                       <li>
-                        <a target="_blank" href="https://instagram.com/moricol2022?igshid=OGQ5ZDc2ODk2ZA==">
+                        <a
+                          target="_blank"
+                          href="https://instagram.com/moricol2022?igshid=OGQ5ZDc2ODk2ZA=="
+                        >
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>
-                      
                     </ul>
                   </div>
                 </div>
@@ -67,22 +77,50 @@ const FooterSection2 = ({ style }) => {
                       <li>
                         <Link href="/bundles">Course Bundles</Link>
                       </li>
-                     
                     </ul>
                   </div>
                 </div>
                 <div className="col-xl-3 col-md-7 col-lg-3">
                   <div className="tf__footer_content">
                     <h3>Our Contacts</h3>
-                    <p>Headquarter: Road 4,House 2 .Abraham Adesanya Estate, Ajah Lagos.</p>
-                    <p>Branch Office: 27, Reuben Agho Avenue, off 2nd Ugobest road, GRA, Benin City, Edo state</p>
                     <p>
-                      <a href="tel:09124460695"  className="text-warning"> Phone: 09124460695</a>
+                      Headquarter: Road 4,House 2 .Abraham Adesanya Estate, Ajah
+                      Lagos.
                     </p>
                     <p>
-                      <a href="mailto:infomoricolhealthcare@gmail.com"  className="text-warning">Email: infomoricolhealthcare@gmail.com </a>
-                      <a href="mailto:moricolhealth@qualityservice.com"  className="text-warning">Email: moricolhealth@qualityservice.com </a>
-                      <span  className="text-warning">Website: moricolhealthtraining.com</span>
+                      Branch Office: 27, Reuben Agho Avenue, off 2nd Ugobest
+                      road, GRA, Benin City, Edo state
+                    </p>
+                    <p>
+                      Phone:{" "}
+                      <a href="tel:09124460695" className="text-warning">
+                        {" "}
+                        +234 9124460695
+                      </a>
+                    </p>
+                    <p>
+                      WhatSapp:{" "}
+                      <a  href={`https://wa.me/09124460695`} className="text-warning" target="_blank">
+                        {" "}
+                        +234 9124460695
+                      </a>
+                    </p>
+                    <p>
+                      <a
+                        href="mailto:infomoricolhealthcare@gmail.com"
+                        className="text-warning"
+                      >
+                        Email: infomoricolhealthcare@gmail.com{" "}
+                      </a>
+                      <a
+                        href="mailto:moricolhealth@qualityservice.com"
+                        className="text-warning"
+                      >
+                        Email: moricolhealth@qualityservice.com{" "}
+                      </a>
+                      <span className="text-warning">
+                        Website: moricolhealthtraining.com
+                      </span>
                     </p>
                   </div>
                 </div>
