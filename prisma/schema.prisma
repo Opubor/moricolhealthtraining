@@ -41,6 +41,8 @@ model Enrollment {
   timeTable    String?
   user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   Payment      Payment[]
+
+  @@index([userId])
 }
 
 model Payment {
@@ -54,4 +56,6 @@ model Payment {
   enrollmentId  String
   enrollment    Enrollment @relation(fields: [enrollmentId], references: [id], onDelete: Cascade)
   user          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([enrollmentId])
+  @@index([userId])
 }
