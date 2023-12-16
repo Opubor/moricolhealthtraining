@@ -547,8 +547,8 @@ const services = [
   {
     id: 1,
     iClassName: "fa fa-palette",
-    title: "Expert-Led Training",
-    desc: "Health Mastery Begins Here: Expert-Led Courses, Your Pathway to Wellness!",
+    title: "Certification",
+    desc: "Empower your future – our health training services proudly bear UK accreditation.",
     color: "gray",
   },
   {
@@ -561,8 +561,8 @@ const services = [
   {
     id: 3,
     iClassName: "fa fa-analytics",
-    title: "Certification",
-    desc: "Certify Your Success: Elevate Your Skills, Transform Your Future!",
+    title: "Expert-Led Training",
+    desc: "Health Mastery Begins Here: Expert-Led Courses, Your Pathway to Wellness!",
     color: "blue",
   },
   {

@@ -24,13 +24,21 @@ const AboutSection3 = ({ style }) => {
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 wow fadeInRight">
-            <div className="tf__about_2_text">
+            <div className="tf__about_2_text ">
               <div className="tf__heading_area tf__heading_area_left mb_25">
                 <h5>About Us</h5>
                 <h2>Nurturing Health Literacy</h2>
               </div>
               <p>Your Source for Comprehensive Health Education Training.</p>
-              <ul>
+              <p>
+                Embark on a journey of excellence with our accredited health
+                training services! We are thrilled to announce that our programs
+                have earned prestigious accreditation from the United Kingdom, a
+                testament to our unwavering commitment to quality education and
+                your professional growth.
+              </p>
+
+              <ul className="w-100">
                 <li>
                   <div className="icon">
                     <img
@@ -91,10 +99,11 @@ const AboutSection3 = ({ style }) => {
                     />
                   </div>
                   <div className="text">
-                    <h4>Innovation in Education</h4>
+                    <h4>Career Advancement</h4>
                     <p>
-                      Embracing innovative teaching methods and technology to
-                      enhance the learning experience for our clients.
+                      With an accredited qualification in hand, you'll be
+                      equipped to stand out in the competitive health industry
+                      and advance your career with confidence.
                     </p>{" "}
                   </div>
                 </li>

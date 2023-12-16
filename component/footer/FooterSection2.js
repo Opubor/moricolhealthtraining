@@ -84,11 +84,11 @@ const FooterSection2 = ({ style }) => {
                   <div className="tf__footer_content">
                     <h3>Our Contacts</h3>
                     <p>
-                      Headquarter: Road 4,House 2 .Abraham Adesanya Estate, Ajah
+                      Head Office: Road 4,House 2 .Abraham Adesanya Estate, Ajah
                       Lagos.
                     </p>
                     <p>
-                      Branch Office: 27, Reuben Agho Avenue, off 2nd Ugobest
+                      Branch Office: 27, Reuben Agho Avenue, off 2nd Ugbor
                       road, GRA, Benin City, Edo state
                     </p>
                     <p>
@@ -119,7 +119,7 @@ const FooterSection2 = ({ style }) => {
                         Email: moricolhealth@qualityservice.com{" "}
                       </a>
                       <span className="text-warning">
-                        Website: moricolhealthtraining.com
+                        Website: <a href="www.moricolservices.com">www.moricolservices.com</a>
                       </span>
                     </p>
                   </div>

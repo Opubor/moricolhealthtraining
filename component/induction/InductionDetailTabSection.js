@@ -34,7 +34,7 @@ const InductionDetailTabSection = () => {
               to another. The course will detailed the sociocultural,
               demographic location and integration of various context associated
               with jobs, community and business. The impact of lack of induction
-              and orientation.
+              and orientation can cause several challenges in a foreign country.
             </p>
 
             <h3>Objectives</h3>
