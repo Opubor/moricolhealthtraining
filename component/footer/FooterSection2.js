@@ -119,7 +119,7 @@ const FooterSection2 = ({ style }) => {
                         Email: moricolhealth@qualityservice.com{" "}
                       </a>
                       <span className="text-warning">
-                        Website: <a href="www.moricolservices.com">www.moricolservices.com</a>
+                        Website: <a href="/">www.moricolservices.com</a>
                       </span>
                     </p>
                   </div>
