@@ -6,7 +6,7 @@ import Layout from "@/component/layout/Layout";
 import PopularServiceSection2 from "@/component/service/PopularServiceSection2";
 export const metadata = {
   title: 'Moricol Health Training',
-  description: 'Developed by Azizur Rahman',
+  description: 'Developed by Opubor Tony',
 }
 export default function About() {
     return (

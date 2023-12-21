@@ -18,7 +18,7 @@ import VideoModal from "@/component/modal/VideoModal";
 
 export const metadata = {
   title: "Moricol Health Training",
-  description: "Developed by Azizur Rahman",
+  description: "Developed by Opubor Tony",
 };
 export default function Home3() {
   return (

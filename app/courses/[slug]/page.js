@@ -5,7 +5,7 @@ import { courseDataArray, courseDataContents } from "@/data/Data";
 import ErrorSection from "@/component/error/ErrorSection";
 export const metadata = {
   title: "Moricol Health Training",
-  description: "Developed by Azizur Rahman",
+  description: "Developed by Opubor Tony",
 };
 export default function CourseDetails({ params }) {
   const { slug } = params; // Destructure 'slug' from 'params'

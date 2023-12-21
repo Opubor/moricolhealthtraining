@@ -3,7 +3,7 @@ import Layout from "@/component/layout/Layout";
 import TermSection from "@/component/terms/TermSection";
 export const metadata = {
   title: 'Eduor Privacy & Policy Page',
-  description: 'Developed by Azizur Rahman',
+  description: 'Developed by Opubor Tony',
 }
 export default function PrivacyPolicy() {
     return (

@@ -3,7 +3,7 @@ import AllCourseSection from "@/component/course/AllCourseSection";
 import Layout from "@/component/layout/Layout";
 export const metadata = {
   title: 'Moricol Health Training',
-  description: 'Developed by Azizur Rahman',
+  description: 'Developed by Opubor Tony',
 }
 export default function Courses() {
     return (

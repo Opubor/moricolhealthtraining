@@ -4,7 +4,7 @@ import Layout from "@/component/layout/Layout";
 
 export const metadata = {
   title: 'Moricol 404 Page',
-  description: 'Developed by Azizur Rahman',
+  description: 'Developed by Opubor Tony',
 }
 export default function NotFound() {
   return (

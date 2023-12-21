@@ -84,7 +84,7 @@ const FooterSection2 = ({ style }) => {
                   <div className="tf__footer_content">
                     <h3>Our Contacts</h3>
                     <p>
-                      Head Office: Road 4,House 2 .Abraham Adesanya Estate, Ajah
+                      Head Office: House 2, Road 4, Abraham Adesanya Estate, Ajah
                       Lagos.
                     </p>
                     <p>

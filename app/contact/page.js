@@ -3,7 +3,7 @@ import ContactPageSection from "@/component/contact/ContactPageSection";
 import Layout from "@/component/layout/Layout";
 export const metadata = {
   title: 'Eduor Contact Page',
-  description: 'Developed by Azizur Rahman',
+  description: 'Developed by Opubor Tony',
 }
 export default function Contact() {
     return (

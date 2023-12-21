@@ -10,7 +10,7 @@ import UpdatePassword from "@/component/profile/UpdatePassword";
 
 export const metadata = {
   title: "Moricol Health Training",
-  description: "Developed by Azizur Rahman",
+  description: "Developed by Opubor Tony",
 };
 
 const getUser = async (id) => {

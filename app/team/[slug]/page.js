@@ -4,7 +4,7 @@ import TeamDetailSection from "@/component/team/TeamDetailSection";
 import { teamData } from "@/data/Data";
 export const metadata = {
   title: "Eduor Team Details Page",
-  description: "Developed by Azizur Rahman",
+  description: "Developed by Opubor Tony",
 };
 export default function TeamDetails({ params }) {
   const { slug } = params;
