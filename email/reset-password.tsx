@@ -45,7 +45,7 @@ function ResetPasswordReciept({
               </Text>
               <Text>
                 <Link
-                  href={`${process.env.URL}/resetPassword?token=${resetPasswordToken}`}
+                  href={`${process.env.URL}resetPassword?token=${resetPasswordToken}`}
                   className="text-blue-600 underline text-sm"
                 >
                   Reset Password

@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
         email: user?.email,
         amount: Number(amount) * 100,
         currency: "NGN",
-        callback_url: `${process.env.URL}/order-status/success`,
+        callback_url: `${process.env.URL}order-status/success`,
         metadata: {
           enrollmentId: enrollment?.id,
           paymentId: payment?.id,
