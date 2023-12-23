@@ -109,21 +109,21 @@ export async function POST(
       status: 200,
     });
   } catch (error) {
-    // resend.emails.send({
-    //   from: "Moricol <onboarding@resend.dev>",
-    //   to: "opubortony@gmail.com",
-    //   subject: "Error Messasge",
-    //   html: JSON.stringify(error),
-    // });
+    resend.emails.send({
+      from: "Moricol <onboarding@resend.dev>",
+      to: "opubortony@gmail.com",
+      subject: "Error Messasge",
+      html: JSON.stringify(error),
+    });
 
-    // if (error instanceof Error) {
-    //   resend.emails.send({
-    //     from: "Moricol <onboarding@resend.dev>",
-    //     to: "opubortony@gmail.com",
-    //     subject: "Error Messasge",
-    //     html: JSON.stringify(error?.message),
-    //   });
-    // }
+    if (error instanceof Error) {
+      resend.emails.send({
+        from: "Moricol <onboarding@resend.dev>",
+        to: "opubortony@gmail.com",
+        subject: "Error Messasge",
+        html: JSON.stringify(error?.message),
+      });
+    }
 
     if (error instanceof AppException) {
       return new Response(JSON.stringify(error.message), { status: 400 });

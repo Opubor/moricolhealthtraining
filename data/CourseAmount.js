@@ -447,7 +447,7 @@ const courseAmount = [
   {
     id: 89,
     title: "Dysphagia Awareness",
-    price: "20000",
+    price: "120",
   },
   {
     id: 90,
