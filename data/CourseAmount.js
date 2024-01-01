@@ -286,7 +286,7 @@ const courseAmount = [
   },
   {
     id: 57,
-    title: "Level 2 Award in Pressure Care Management ",
+    title: "Level 2 Award in Pressure Care Management",
     price: "200000"
   },
   {
@@ -411,7 +411,7 @@ const courseAmount = [
   },
   {
     id: 82,
-    title: "The Care Certificate",
+    title: "Care Certificate (15 Standards)",
     price: "150000",
   },
   {
@@ -506,7 +506,7 @@ const courseAmount = [
   },
   {
     id: 101,
-    title: "Bundle 4",
+    title: "Bundle 4 (Specialists)",
     price: "399500",
   },
   {

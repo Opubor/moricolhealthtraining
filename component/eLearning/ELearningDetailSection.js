@@ -5,8 +5,9 @@ import React, { useState } from "react";
 import ELearningDetailTabContent from "./ELearningDetailTabContent";
 import { useSession } from "next-auth/react";
 import RegPrompter from "../RegPrompter";
+import Currency from "../currency/Currency";
 
-const ELearningDetailSection = ({ courseData, courseContents }) => {
+const ELearningDetailSection = ({ courseData, courseContents, user }) => {
   const { data: session } = useSession();
   const [error, setError] = useState(false);
 
@@ -46,7 +47,13 @@ const ELearningDetailSection = ({ courseData, courseContents }) => {
 
                   <li>
                     <h4>price</h4>
-                    <p>&#8358;{courseData.price}</p>
+                    <p>
+                      <Currency
+                        currency={user?.currency}
+                        price={Number(courseData?.price)}
+                      />
+                    </p>
+                    {/* <p>&#8358;{courseData.price}</p> */}
                   </li>
                   <li>
                     {session?.user ? (

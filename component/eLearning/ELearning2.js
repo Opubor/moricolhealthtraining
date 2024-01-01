@@ -1,6 +1,7 @@
 import { courseDataArray, eLearningCourses } from "@/data/Data";
 import Link from "next/link";
 import React from "react";
+import Currency from "../currency/Currency";
 
 const ELearning2 = () => {
   return (
@@ -10,7 +11,9 @@ const ELearning2 = () => {
           <div className="col-xl-7 col-xxl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_20">
               <h5 className="">E-LEARNING COURSE PROGRAMS</h5>
-              <h2>Empowering Health Workers: Specialized Training Courses Await!</h2>
+              <h2>
+                Empowering Health Workers: Specialized Training Courses Await!
+              </h2>
             </div>
           </div>
         </div>
@@ -27,7 +30,15 @@ const ELearning2 = () => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  <span>&#8358;{item.price}</span>
+                  {/* <span>
+                    {new Intl.NumberFormat("ja-JP", {
+                      style: "currency",
+                      currency: "NGN",
+                    }).format(item?.price)}
+                  </span> */}
+                  <Currency currency={user?.currency} price={Number(item?.price)} />
+
+                  {/* <span>&#8358;{item.price}</span> */}
                 </div>
                 <ul className="tf__single_course_header">
                   <li>

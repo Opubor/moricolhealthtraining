@@ -1,8 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { inductionOrientation } from "@/data/Data";
+import Currency from "../currency/Currency";
+import { getServerSession } from "next-auth";
+import { options } from "@/app/api/auth/[...nextauth]/options";
+import { getUser } from "@/service/userService";
+import { CURRENCIES } from "@/lib/types";
 
-function InductionSection() {
+async function InductionSection() {
+  const session = await getServerSession(options);
+  const user = await getUser(session?.user?.id as string);
   return (
     <section className="tf__courses_2 tf__courses_3 e_learning mt-4">
       <div className="container">
@@ -32,7 +39,14 @@ function InductionSection() {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  <span>&#8358;{item.price}</span>
+                  {/* <span>&#8358;{item.price}</span> */}
+                  {/* <span>
+                    {new Intl.NumberFormat("ja-JP", {
+                      style: "currency",
+                      currency: "NGN",
+                    }).format(Number(item?.price))}
+                  </span> */}
+                  <Currency currency={user?.currency as CURRENCIES} price={100000} />
                 </div>
                 <ul className="tf__single_course_header">
                   <li>

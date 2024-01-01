@@ -2,7 +2,6 @@
 import React from "react";
 import { useEduorContext } from "@/context/EduorContext";
 import Navlink from "./Navlink";
-import SubNavlink from "./SubNavlink";
 
 const NavigationSection = ({ position, btnPosition, navRef }) => {
   const { isMobileNavOpen } = useEduorContext();

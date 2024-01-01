@@ -1,12 +1,12 @@
 "use client";
 import { courseDataArray } from "@/data/Data";
 import Link from "next/link";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import CourseDetailTabContent from "./CourseDetailTabContent";
 import { useSession } from "next-auth/react";
 import RegPrompter from "../RegPrompter";
 
-const CourseDetailSection = ({ courseData, courseContents }) => {
+const CourseDetailSection = ({ courseData, courseContents, user }) => {
   return (
     <section className="tf__courses_details mt_100">
       <div className="container">
@@ -37,6 +37,7 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
 
                   <li>
                     <h4>Level</h4>
+                   
                     <p>{courseData.price}</p>
                   </li>
                   <li>
@@ -67,6 +68,7 @@ const CourseDetailSection = ({ courseData, courseContents }) => {
                 <CourseDetailTabContent
                   courseData={courseData}
                   courseContents={courseContents}
+                  user={user}
                 />
               </div>
             </div>

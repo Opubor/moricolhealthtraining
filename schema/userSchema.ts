@@ -7,7 +7,10 @@ export const registerUserSchema = z
     phone: z.string().min(1),
     role: z.string().min(1),
     address: z.string().min(1),
-    gender: z.string().min(1),
+    gender: z.string().optional().nullable(),
+    businessType: z.string().optional().nullable(),
+    registrationNumber: z.string().optional().nullable(),
+    industry: z.string().optional().nullable(),
     password: z
       .string()
       .min(5, { message: "Password must be more than 5 characters" }),
@@ -58,9 +61,14 @@ export const resetPasswordSchema = z
     message: "Passwords must match",
     path: ["confirmPassword"],
   });
+
+  export const editCurrencySchema = z.object({
+    currency: z.string().min(1),
+  });
 export type TRegisterUserSchema = z.infer<typeof registerUserSchema>;
 export type TLoginUserSchema = z.infer<typeof loginUserSchema>;
 export type TEditProfileSchema = z.infer<typeof editProfileSchema>;
 export type TUpdatePasswordSchema = z.infer<typeof updatePasswordSchema>;
 export type TForgotPasswordSchema = z.infer<typeof forgotPasswordSchema>;
 export type TResetPasswordSchema = z.infer<typeof resetPasswordSchema>;
+export type TEditCurrencySchema = z.infer<typeof editCurrencySchema>;

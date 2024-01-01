@@ -4,6 +4,7 @@ import { options } from "../../app/api/auth/[...nextauth]/options";
 import SignOut from "./SignOut";
 import Link from "next/link";
 import prisma from "@/lib/prisma-client";
+import UserCurrency from "../currency/UserCurrency";
 
 const getUser = async (id) => {
   return await prisma.user.findFirst({
@@ -44,7 +45,9 @@ async function TopbarSection({ style }) {
             </div>
           </div>
           <div className="col-xl-6 col-md-6 ">
-            <div className="tf__topbar_right">
+            <div className="d-flex align-items-center justify-content-end gap-2 tf__topbar_right">
+            <UserCurrency user={user} />
+
               <SignOut user={user} />
             </div>
           </div>

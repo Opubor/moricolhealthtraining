@@ -5,8 +5,12 @@ import React, { useState } from "react";
 import { useSession } from "next-auth/react";
 import RegPrompter from "../RegPrompter";
 import InductionDetailTabSection from "./InductionDetailTabSection";
+import Currency from "../currency/Currency";
+interface PageProps {
+  user: any
+}
 
-const InductionDetailSection = () => {
+const InductionDetailSection = ({user}: PageProps) => {
   const { data: session } = useSession();
   const [error, setError] = useState(false);
 
@@ -46,14 +50,22 @@ const InductionDetailSection = () => {
 
                   <li>
                     <h4>price</h4>
-                    <p>&#8358;100,000</p>
+                    {/* <p>&#8358;100,000</p> */}
+                    <p>
+                    <Currency currency={user?.currency} price={100000} />
+
+                      {/* {new Intl.NumberFormat("ja-JP", {
+                        style: "currency",
+                        currency: "NGN",
+                      }).format(100000)} */}
+                    </p>
+
                   </li>
                   <li>
                     {session?.user ? (
                       <Link
                         className="common_btn"
                         href={`/enrollment/${0}?type=induction`}
-
                       >
                         enrol
                       </Link>
@@ -77,7 +89,6 @@ const InductionDetailSection = () => {
               </div>
             </div>
           </div>
-        
         </div>
       </div>
     </section>

@@ -10,19 +10,7 @@ import { registerUserSchema } from "@/schema/userSchema";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req, res) {
-  console.log("reach");
-  // const body = await req.json();
   const result = await req.json();
-  console.log(result);
-
-  // if (!result.success) {
-  //   return new Response(
-  //     JSON.stringify({
-  //       success: false,
-  //       error: result.error.message,
-  //     })
-  //   );
-  // }
 
   const date = new Date();
   let userId = "MOR" + date.getDate() + randomBytes(3).toString("hex");
@@ -53,29 +41,6 @@ export async function POST(req, res) {
           userId: userId
         },
       });
-
-    //   const emailVerificationToken = crypto
-    //     .randomBytes(32)
-    //     .toString("base64url");
-
-    //   await prisma.user.update({
-    //     where: {
-    //       id: user?.id,
-    //     },
-    //     data: {
-    //       emailVerificationToken: emailVerificationToken,
-    //     },
-    //   });
-
-    //   await resend.emails.send({
-    //     from: "Moricol <onboarding@resend.dev>",
-    //     to: user?.email,
-    //     subject: "Email Verification",
-    //     react: React.createElement(VerifyEmail, {
-    //       customerName: user?.firstName + user?.lastName,
-    //       emailVerificationToken: emailVerificationToken,
-    //     }),
-    //   });
 
       return new Response(JSON.stringify("Registration Successful"), {
         status: 200,

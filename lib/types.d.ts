@@ -43,3 +43,6 @@ type PaystackEventResponse = {
   event: string;
   data: PaystackEventData;
 };
+
+type CURRENCIES = "USD" | "EUR" | "NGN" | "GBP" | "CAD" | "AUD"
+

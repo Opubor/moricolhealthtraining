@@ -41,8 +41,8 @@ const BundleDetailTabContent = ({ courseData, courseContents }) => {
             <h3>Bundle Features:</h3>
            
             <ul>
-              {courseContents.map((data) => (
-                <li className={`${data?.style}`}>- {data?.content}</li>
+              {courseContents.map((data, i) => (
+                <li key={i} className={`${data?.style}`}>- {data?.content}</li>
               ))}
             </ul>
           </div>

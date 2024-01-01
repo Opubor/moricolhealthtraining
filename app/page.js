@@ -10,17 +10,25 @@ import ELearning from "@/component/eLearning/ELearning";
 import FooterSection2 from "@/component/footer/FooterSection2";
 import NavbarSection from "@/component/navbar/NavbarSection";
 import TeamSection from "@/component/team/TeamSection";
+import WorkSection from "@/component/work/WorkSection";
 import TopbarSection from "@/component/topbar/TopbarSection";
 import ScrollToTopButton from "@/component/utils/ScrollToTopButton";
 import FaqSection from "@/component/faq/FaqSection";
 import InductionSection from "@/component/induction/InductionSection";
 import VideoModal from "@/component/modal/VideoModal";
+import TeamSection3 from "@/component/team/TeamSection3";
+import TeamSection2 from "@/component/team/TeamSection2";
+import { getServerSession } from "next-auth";
+import { options } from "./api/auth/[...nextauth]/options";
+import { getUser } from "@/service/userService";
 
 export const metadata = {
   title: "Moricol Health Training",
   description: "Developed by Opubor Tony",
 };
-export default function Home3() {
+export default async function Home3() {
+  const session = await getServerSession(options)
+  const user = await getUser(session?.user?.id)
   return (
     <div className="home_3">
       <TopbarSection style="tf__topbar tf__topbar_2" />
@@ -29,12 +37,15 @@ export default function Home3() {
       <CategorySection3 />
       <AboutSection3 style="about_3" />
       <CourseSection2 />
-      <ELearning />
+      <ELearning user={user} />
       <InductionSection />
       <ContactSection />
-      <BundleSection />
+      <BundleSection user={user} />
+      <WorkSection />
       <CategorySection />
       <AboutSection />
+      <TeamSection2 style="tf__team_3 pt_100 pb_100" />
+      <TeamSection3 style="tf__team_3 pt_100 pb_100" />
       <TeamSection style="tf__team_3 pt_100 pb_100" />
       <FaqSection img="/images/education.png" />
 

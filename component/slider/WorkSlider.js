@@ -1,4 +1,5 @@
 import { workData } from "@/data/Data";
+import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 
@@ -52,9 +53,12 @@ const WorkSlider = () => {
               <img src={item.imgSrc} alt="work" className="img-fluid w-100" />
             </div>
             <div className="tf__work_single_text">
-              <h3>{item.task}</h3>
+              <h3 className="fw-bold">{item.task}</h3>
+              <h3>{item.rates}</h3>
               <p>{item.desc}</p>
-              <a href="#">
+
+              {/* <Link href={"/sign-up/company"}> Register you Company</Link> */}
+              <a href={"/sign-up/company"}>
                 <i className="fas fa-long-arrow-right"></i>
               </a>
             </div>

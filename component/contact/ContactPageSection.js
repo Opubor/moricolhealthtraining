@@ -6,21 +6,7 @@ const ContactPageSection = () => {
     <section className="tf__contact_page mt_190 xs_mt_95">
       <div className="container">
         <div className="row">
-          {/* <div className="col-xxl-8 col-xl-7 col-lg-6 wow fadeInLeft">
-            <div className="tf__contact_form">
-              <div className="tf__heading_area tf__heading_area_left mb_25">
-                <h5>OUR contact Us</h5>
-                <h2>Get Our Contact Now.</h2>
-              </div>
-              <p>
-                Promote your blog posts, case udie, and product ouncems with the
-                the branded videoscustomers coming back for services Makes best
-                effort.
-              </p>
-              <ContactForm />
-            </div>
-          </div> */}
-          <div className=" wow fadeInRight">
+          <div className=" wow fadeInRight mb-4">
             <div className="tf__contact_text">
               <div className="tf__contact_single">
                 <div className="icon blue">
@@ -30,6 +16,8 @@ const ContactPageSection = () => {
                   <h3>Call</h3>
                   <a href="tel:+2349124460695">+234 9124460695</a>
                   <a href="tel:+2348093024826">+234 8093024826</a>
+                  {/* <a href="tel:+447479545757">+447 479545757</a>
+                  <a href="tel:+447417551811">+447 417551811</a> */}
                 </div>
               </div>
               <div className="tf__contact_single">
@@ -38,8 +26,12 @@ const ContactPageSection = () => {
                 </div>
                 <div className="text">
                   <h3>mail</h3>
-                  <a href="mailto:infomoricolhealthcare@gmail.com">infomoricolhealthcare@gmail.com </a>
-                  <a href="mailto:moricolhealth@qualityservice.com">moricolhealth@qualityservice.com </a>
+                  <a href="mailto:infomoricolhealthcare@gmail.com">
+                    infomoricolhealthcare@gmail.com{" "}
+                  </a>
+                  <a href="mailto:moricolhealth@qualityservice.com">
+                    moricolhealth@qualityservice.com{" "}
+                  </a>
                 </div>
               </div>
               <div className="tf__contact_single">
@@ -48,8 +40,67 @@ const ContactPageSection = () => {
                 </div>
                 <div className="text">
                   <h3>address</h3>
-                  <p>Headquarter: Road 4,House 2 .Abraham Adesanya Estate, Ajah Lagos</p>
-                  <p>Branch Office: 27, Reuben Agho Avenue, off 2nd Ugobest road, GRA, Benin City, Edo state</p>
+                  <p>
+                    Headquarter: Road 4,House 2 .Abraham Adesanya Estate, Ajah
+                    Lagos
+                  </p>
+                  <p>
+                    Branch Office: 27, Reuben Agho Avenue, off 2nd Ugobest road,
+                    GRA, Benin City, Edo state
+                  </p>
+                  {/* <p>
+                    UK Address 1: 8 Wincanton Road Romford RM3 9DH United
+                    Kingdom.
+                  </p>
+                  <p>
+                    UK Address 2: 26a Hughes Street Swindon SN2 2HG Wiltshire
+                    United Kingdom.
+                  </p> */}
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 className="mt-4 ml-2 fw-bold">UK CONTACT</h4>
+          <div className=" wow fadeInRight">
+            <div className="tf__contact_text">
+              <div className="tf__contact_single">
+                <div className="icon blue">
+                  <i className="fas fa-phone-alt"></i>
+                </div>
+                <div className="text">
+                  <h3>Call</h3>
+                  <a href="tel:+447479545757">+447 479545757</a>
+                  <a href="tel:+447417551811">+447 417551811</a>
+                </div>
+              </div>
+              <div className="tf__contact_single">
+                <div className="icon orange">
+                  <i className="fas fa-phone-alt"></i>
+                </div>
+                <div className="text">
+                  <h3>mail</h3>
+                  <a href="mailto:infomoricolhealthcare@gmail.com">
+                    infomoricolhealthcare@gmail.com{" "}
+                  </a>
+                  <a href="mailto:moricolhealth@qualityservice.com">
+                    moricolhealth@qualityservice.com{" "}
+                  </a>
+                </div>
+              </div>
+              <div className="tf__contact_single">
+                <div className="icon green">
+                  <i className="fas fa-phone-alt"></i>
+                </div>
+                <div className="text">
+                  <h3>address</h3>
+                  <p>
+                    UK Address 1: 8 Wincanton Road Romford RM3 9DH United
+                    Kingdom.
+                  </p>
+                  <p>
+                    UK Address 2: 26a Hughes Street Swindon SN2 2HG Wiltshire
+                    United Kingdom.
+                  </p>
                 </div>
               </div>
             </div>
@@ -63,7 +114,6 @@ const ContactPageSection = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-             
             </div>
           </div>
         </div>

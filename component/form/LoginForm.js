@@ -10,7 +10,6 @@ import { signIn } from "next-auth/react";
 import Link from "next/link";
 
 const LoginForm = (props) => {
-
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -31,7 +30,8 @@ const LoginForm = (props) => {
       });
 
       if (res?.ok) {
-        return router.push("/");
+        router.push("/");
+        return router.refresh();
       } else {
         setLoading(false);
 
@@ -43,7 +43,7 @@ const LoginForm = (props) => {
       return console.log(error);
     }
   };
- 
+
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="row">
@@ -56,7 +56,7 @@ const LoginForm = (props) => {
               {...register("email", { required: true })}
             />
             {errors.email && (
-                <p className="text-danger text-sm">Please enter your E-mail</p>
+              <p className="text-danger text-sm">Please enter your E-mail</p>
             )}
           </div>
         </div>
@@ -69,16 +69,13 @@ const LoginForm = (props) => {
               placeholder="Password"
               {...register("password", { required: true })}
             />
-             {errors.password && (
-                <p className="text-danger text-sm">
-                  Please enter your password
-                </p>
-              )}
+            {errors.password && (
+              <p className="text-danger text-sm">Please enter your password</p>
+            )}
           </div>
         </div>
         <div className="col-xl-12">
           <div className="tf__login_imput tf__login_check_area">
-         
             <Link href="/forgotPassword">Forget Password ?</Link>
           </div>
         </div>

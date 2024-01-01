@@ -2,8 +2,9 @@
 import { useEduorContext } from "@/context/EduorContext";
 import Link from "next/link";
 import React from "react";
+import Currency from "../currency/Currency";
 
-const AllBundlesSection = () => {
+const AllBundlesSection = ({user}) => {
   const {
     currentBundleItems,
     totalBundlePages,
@@ -39,7 +40,14 @@ const AllBundlesSection = () => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  <span>&#8358;{item.price}</span>
+                  {/* <span>
+                    {new Intl.NumberFormat("ja-JP", {
+                      style: "currency",
+                      currency: "NGN",
+                    }).format(item?.price)}
+                  </span> */}
+                  <Currency currency={user?.currency} price={Number(item?.price)} />
+
                 </div>
                 <ul className="tf__single_course_header">
                   {/* <li>

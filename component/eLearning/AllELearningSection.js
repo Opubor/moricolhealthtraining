@@ -2,8 +2,9 @@
 import { useEduorContext } from "@/context/EduorContext";
 import Link from "next/link";
 import React from "react";
+import Currency from "../currency/Currency";
 
-const AllELearningSection = () => {
+const AllELearningSection = ({user}) => {
   const {
     currentELearningItems,
     currentELearningPage,
@@ -38,7 +39,16 @@ const AllELearningSection = () => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  <span>&#8358;{item.price}</span>
+                  {/* <span>&#8358;{item.price}</span> */}
+                  {/* <span>
+                    {new Intl.NumberFormat("ja-JP", {
+                      style: "currency",
+                      currency: "NGN",
+                    }).format(item?.price)}
+
+                  </span> */}
+                  <Currency currency={user?.currency} price={Number(item?.price)} />
+
                 </div>
                 <ul className="tf__single_course_header">
                   {/* <li>

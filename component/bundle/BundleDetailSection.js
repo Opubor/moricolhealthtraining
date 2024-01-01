@@ -5,8 +5,9 @@ import React, { useState } from "react";
 import BundleDetailTabContent from "./BundleDetailTabContent";
 import { useSession } from "next-auth/react";
 import RegPrompter from "../RegPrompter";
+import Currency from "../currency/Currency";
 
-const BundleDetailSection = ({ courseData, courseContents }) => {
+const BundleDetailSection = ({ courseData, courseContents, user }) => {
   const { data: session } = useSession();
   const [error, setError] = useState(false);
 
@@ -46,7 +47,18 @@ const BundleDetailSection = ({ courseData, courseContents }) => {
 
                   <li>
                     <h4>price</h4>
-                    <p>&#8358;{courseData.price}</p>
+                    {/* <p>&#8358;{courseData.price}</p> */}
+                    <p>
+                      <Currency
+                        currency={user?.currency}
+                        price={Number(courseData?.price)}
+                      />
+
+                      {/* {new Intl.NumberFormat("ja-JP", {
+                        style: "currency",
+                        currency: "NGN",
+                      }).format(courseData?.price)} */}
+                    </p>
                   </li>
                   <li>
                     {session?.user ? (
@@ -111,13 +123,26 @@ const BundleDetailSection = ({ courseData, courseContents }) => {
               <>
                 {data?.name === "International Work Visa" ? (
                   <div className="col-xl-3" key={data.id}>
-                    <div className={`tf__activities_item orange`}>
-                      <span>
-                        <i className={"fa fa-book"}></i>{" "}
-                      </span>
+                    <div className={`tf__activities_item `}>
+                      <div className="span__icon">
+                        <span className="ll">
+                          <i className={"fa fa-book"}></i>{" "}
+                        </span>
+                      </div>
                       <h6 className="fw-bold mt-2">{data?.name}</h6>
                       <h5 className="fw-bold mt-2">
-                        {data?.price && <p>&#8358;{data?.price}</p>}
+                        {data?.price && (
+                          <p>
+                            {/* {new Intl.NumberFormat("ja-JP", {
+                              style: "currency",
+                              currency: "NGN",
+                            }).format(data?.price)} */}
+                            <Currency
+                              currency={user?.currency}
+                              price={Number(data?.price)}
+                            />
+                          </p>
+                        )}
                       </h5>
                       <div className="text-warning mt-2">
                         {data?.mail && <p>{data?.mail}</p>}
@@ -130,13 +155,25 @@ const BundleDetailSection = ({ courseData, courseContents }) => {
                     className="col-xl-3"
                     key={data.id}
                   >
-                    <div className={`tf__activities_item orange`}>
+                    <div className={`tf__activities_item `}>
                       <span>
                         <i className={"fa fa-book"}></i>{" "}
                       </span>
                       <h6 className="fw-bold mt-2">{data?.name}</h6>
                       <h5 className="fw-bold mt-2">
-                        {data?.price && <p>&#8358;{data?.price}</p>}
+                        {data?.price && (
+                          <p>
+                            <Currency
+                              currency={user?.currency}
+                              price={Number(data?.price)}
+                            /> {" "}
+                            {/* {new Intl.NumberFormat("ja-JP", {
+                              style: "currency",
+                              currency: "NGN",
+                            }).format(data?.price)}{" "} */}
+                            {data?.extra}
+                          </p>
+                        )}
                       </h5>
                       <div className=" mt-2">
                         {data?.mail && <p>{data?.mail}</p>}
@@ -148,7 +185,7 @@ const BundleDetailSection = ({ courseData, courseContents }) => {
             ))}
             {courseData?.title === "Bundle 4" && (
               <Link href={`/eLearning`} className="col-xl-3">
-                <div className={`tf__activities_item orange`}>
+                <div className={`tf__activities_item`}>
                   <span>
                     <i className={"fa fa-book"}></i>{" "}
                   </span>

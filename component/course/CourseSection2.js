@@ -30,6 +30,7 @@ const CourseSection2 = () => {
                     {item.category}
                   </a>
                   <span>{item.price}</span>
+                 
                 </div>
                 <ul className="tf__single_course_header">
                   {/* <li>

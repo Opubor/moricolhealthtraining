@@ -43,6 +43,13 @@ const FooterSection2 = ({ style }) => {
                       Elevating Lives through Expert Health Education: Your
                       Wellness Partner.
                     </p>
+                    <p>Join the Moricol Community:</p>
+                    <p>
+                      Moricol isn't just a website – it's a community enhancing
+                      lives, one service at a time. Explore, embark on
+                      well-being, and redefine healthcare
+                    </p>
+                    <p>Welcome to Moricol - Your Health, Our Priority</p>
                     <ul className="d-flex flex-wrap">
                       <li>
                         <a
@@ -82,61 +89,86 @@ const FooterSection2 = ({ style }) => {
                 </div>
                 <div className="col-xl-3 col-md-7 col-lg-3">
                   <div className="tf__footer_content">
+                    <h3>Contact Address</h3>
+                    <p>
+                      UK Address 1: 8 Wincanton Road Romford RM3 9DH United
+                      Kingdom.
+                    </p>
+                    <p>
+                      UK Address 2: 26a Hughes Street Swindon SN2 2HG Wiltshire
+                      United Kingdom.
+                    </p>
+                    <p>
+                      Head Office: House 2, Road 4, Abraham Adesanya Estate,
+                      Ajah Lagos.
+                    </p>
+                    <p>
+                      Branch Office: 27, Reuben Agho Avenue, off 2nd Ugbor road,
+                      GRA, Benin City, Edo state
+                    </p>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-md-5 col-lg-3">
+                  <div className="tf__footer_content">
                     <h3>Our Contacts</h3>
                     <p>
-                      Head Office: House 2, Road 4, Abraham Adesanya Estate, Ajah
-                      Lagos.
-                    </p>
-                    <p>
-                      Branch Office: 27, Reuben Agho Avenue, off 2nd Ugbor
-                      road, GRA, Benin City, Edo state
-                    </p>
-                    <p>
-                      Phone:{" "}
+                      Phone 1:{" "}
                       <a href="tel:09124460695" className="text-warning">
                         {" "}
                         +234 9124460695
                       </a>
                     </p>
                     <p>
+                      Phone 2:{" "}
+                      <a href="tel:447479545757" className="text-warning">
+                        {" "}
+                        +447 479545757
+                      </a>
+                    </p>
+                    <p>
+                      Phone 3:{" "}
+                      <a href="tel:447417551811" className="text-warning">
+                        {" "}
+                        +447 417551811
+                      </a>
+                    </p>
+                    <p>
                       WhatSapp:{" "}
-                      <a  href={`https://wa.me/09124460695`} className="text-warning" target="_blank">
+                      <a
+                        href={`https://wa.me/09124460695`}
+                        className="text-warning"
+                        target="_blank"
+                      >
                         {" "}
                         +234 9124460695
                       </a>
                     </p>
                     <p>
+                      Email:
                       <a
                         href="mailto:infomoricolhealthcare@gmail.com"
                         className="text-warning"
                       >
-                        Email: infomoricolhealthcare@gmail.com{" "}
+                        infomoricolhealthcare@gmail.com{" "}
                       </a>
+                    </p>
+                    <p>
+                      Email:
                       <a
                         href="mailto:moricolhealth@qualityservice.com"
                         className="text-warning"
                       >
-                        Email: moricolhealth@qualityservice.com{" "}
+                        moricolhealth@qualityservice.com{" "}
                       </a>
-                      <span className="text-warning">
-                        Website: <a href="/">www.moricolservices.com</a>
-                      </span>
+                    </p>
+                    <p>
+                      Website:
+                      <a href="/" className="text-warning">
+                        www.moricolservices.com
+                      </a>
                     </p>
                   </div>
                 </div>
-                {/* <div className="col-xl-3 col-md-5 col-lg-3">
-                  <div className="tf__footer_content">
-                    <h3>News Letter</h3>
-                    <p>
-                      Our approach to itis unique around know work an we know
-                      Get hands on the you like
-                    </p>
-                    <form>
-                      <input type="text" placeholder="Your Email" />
-                      <button>send</button>
-                    </form>
-                  </div>
-                </div> */}
 
                 <div className="col-12">
                   <div className="tf__copyright">
@@ -147,6 +179,9 @@ const FooterSection2 = ({ style }) => {
                       </li>
                       <li>
                         <a href="/about">About</a>
+                      </li>
+                      <li>
+                        <a href="/terms-condition">Terms and Conditions</a>
                       </li>
                     </ul>
                   </div>

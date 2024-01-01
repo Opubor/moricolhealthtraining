@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import { Tab, Nav } from "react-bootstrap";
 import { useSession } from "next-auth/react";
 import { toast } from "react-toastify";
+import Currency from "../currency/Currency";
 
-const CourseDetailTabContent = ({ courseData, courseContents }) => {
+const CourseDetailTabContent = ({ courseData, courseContents, user }) => {
   const [activeKey, setActiveKey] = useState("overview");
 
   const handleSelect = (key) => {
@@ -61,7 +62,11 @@ const CourseDetailTabContent = ({ courseData, courseContents }) => {
                           <a className={`categories ${data.color}`} href="#">
                             {data.category}
                           </a>
-                          <span>&#8358;{data.price}</span>
+
+                          <Currency
+                            currency={user?.currency}
+                            price={Number(data?.price)}
+                          />
                         </div>
 
                         <div className="tf__single_courses_text">
@@ -118,9 +123,7 @@ const CourseDetailTabContent = ({ courseData, courseContents }) => {
                     >
                       <div className="tf__single_courses">
                         <div className="tf__single_courses_img">
-                          <div
-                            className="title"
-                          >
+                          <div className="title">
                             <img
                               src={data.imgSrc}
                               alt="courses"
@@ -130,15 +133,16 @@ const CourseDetailTabContent = ({ courseData, courseContents }) => {
                           <div className={`categories ${data.color}`}>
                             {data.category}
                           </div>
-                          <span>&#8358;{data.price}</span>
+                          <span>
+                            <Currency
+                              currency={user?.currency}
+                              price={Number(data?.price)}
+                            />
+                          </span>
                         </div>
 
                         <div className="tf__single_courses_text">
-                          <div
-                            className="title"
-                          >
-                            {data.title}
-                          </div>
+                          <div className="title">{data.title}</div>
                           <p className="description d-flex gap-2 align-items-center ">
                             <i className="fas fa-folder-open"></i>
                             {data?.content}
