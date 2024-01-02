@@ -6,6 +6,7 @@ import prisma from "@/lib/prisma-client";
 import Layout from "@/component/layout/Layout";
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import Link from "next/link";
+import { getUser } from "@/service/userService";
 
 const getEnrolledCourses = async (id: string) => {
   const courses = await prisma.enrollment.findMany({
@@ -26,10 +27,11 @@ async function Page() {
   }
 
   const enrolledCourses = await getEnrolledCourses(session?.user?.id as string);
+  const user = await getUser(session?.user?.id);
 
   return (
     <div>
-      <Layout>
+      <Layout user={user}>
         <BreadcrumbSection header={"My Courses"} title={"My Courses"} />
 
         <div className="container mt_50 mb_95 max-w-100">

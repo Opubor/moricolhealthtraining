@@ -12,7 +12,7 @@ async function Page() {
   const user = await getUser(session?.user?.id)
 
   return (
-    <Layout>
+    <Layout user={user}>
       <BreadcrumbSection header='All Bundles' title='All Bundles'/>
       <AllBundlesSection user={user} />
     </Layout>

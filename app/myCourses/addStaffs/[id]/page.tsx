@@ -1,7 +1,10 @@
+import { options } from "@/app/api/auth/[...nextauth]/options";
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import AddStaffEnrForm from "@/component/form/AddStaffEnrForm";
 import Layout from "@/component/layout/Layout";
 import prisma from "@/lib/prisma-client";
+import { getUser } from "@/service/userService";
+import { getServerSession } from "next-auth";
 import React from "react";
 
 type PageProps = {
@@ -23,10 +26,13 @@ const getEnrollmentDetails = async (id: string) => {
   return enrollment;
 };
 async function Page({ params }: PageProps) {
+  const session = await getServerSession(options)
   const enrollment = await getEnrollmentDetails(params?.id as string);
+  const user = await getUser(session?.user?.id as string);
+
   return (
     <>
-      <Layout>
+      <Layout user={user}>
         <BreadcrumbSection header={"My Courses"} title={"Add Staff Details"} />
         <div className="container mt_50 mb_95 max-w-100">
           <div className="d-flex align-items-center justify-contents-center gap-1">

@@ -369,7 +369,7 @@ function EnrollmentSection({ courseId, user }: Props) {
             </div>
           )}
 
-          <div className="col-xl-12">
+          <div className="col-xl-12 mb-4">
             <div className="d-flex align-items-center justify-items-center w-100 mt-3">
               <button
                 onClick={() => {
@@ -377,7 +377,7 @@ function EnrollmentSection({ courseId, user }: Props) {
                     setValue("course", course);
                 }}
                 type="submit"
-                className="btn btn-success w-100"
+                className="btn btn-success w-100 mb-4"
               >
                 {loading ? "Loading" : "Enroll"}
               </button>

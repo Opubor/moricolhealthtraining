@@ -18,7 +18,7 @@ export default async function CourseDetails({ params }) {
   const session = await getServerSession(options)
   const user = await getUser(session?.user?.id)
   return (
-    <Layout>
+    <Layout user={user}>
       <BreadcrumbSection header="E-Learning Course Details" title="E-Learning Details" />
       {courseDesc ? (
         <ELearningDetailSection courseData={courseDesc} courseContents={eLearningContents} user={user}  />

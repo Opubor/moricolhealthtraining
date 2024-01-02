@@ -14,7 +14,7 @@ export default async function Courses() {
   const user = await getUser(session?.user?.id);
 
   return (
-    <Layout>
+    <Layout user={user}>
       <BreadcrumbSection
         header="E-Learning Courses"
         title="All E-Learning Courses"

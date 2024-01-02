@@ -18,7 +18,7 @@ export default async function CourseDetails({ params }) {
   const session = await getServerSession(options)
   const user = await getUser(session?.user?.id)
   return (
-    <Layout>
+    <Layout user={user}>
       <BreadcrumbSection header="BUNDLE COURSES" title="Bundle Courses" />
       {courseDesc ? (
         <BundleDetailSection courseData={courseDesc} courseContents={currentBundleContents} user={user} />

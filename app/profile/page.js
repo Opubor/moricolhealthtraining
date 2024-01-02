@@ -7,18 +7,13 @@ import { options } from "@/app/api/auth/[...nextauth]/options";
 import prisma from "@/lib/prisma-client";
 import { redirect } from "next/navigation";
 import UpdatePassword from "@/component/profile/UpdatePassword";
+import { getUser } from "../../service/userService";
 
 export const metadata = {
   title: "Moricol Health Training",
   description: "Developed by Opubor Tony",
 };
 
-const getUser = async (id) => {
-  return await prisma.user.findFirst({
-    where: { id: id.toString() },
-    include: { Enrollment: true, Payment:true },
-  });
-};
 async function Page() {
 
   const session = await getServerSession(options);
@@ -28,7 +23,7 @@ async function Page() {
 
   const user = await getUser(session?.user?.id);
   return (
-    <Layout>
+    <Layout user={user}>
       <BreadcrumbSection header="Profile" title="Profile" />
       <ProfileCard user={user} />
       <UpdatePassword user={user} />

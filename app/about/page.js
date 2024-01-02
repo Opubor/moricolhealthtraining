@@ -8,13 +8,20 @@ import PopularServiceSection2 from "@/component/service/PopularServiceSection2";
 import TeamSection from "@/component/team/TeamSection";
 import TeamSection2 from "@/component/team/TeamSection2";
 import TeamSection3 from "@/component/team/TeamSection3";
+import { getUser } from "../../service/userService";
+import { options } from "@/app/api/auth/[...nextauth]/options";
+import { getServerSession } from "next-auth";
+
 export const metadata = {
   title: "Moricol Health Training",
   description: "Developed by Opubor Tony",
 };
-export default function About() {
+export default async function About() {
+  const session = await getServerSession(options)
+  const user = await getUser(session?.user?.id);
+
   return (
-    <Layout>
+    <Layout user={user}>
       <BreadcrumbSection header="About us" title="About us" />
       <section className="tf__about_us_page mt_195 xs_mt_100">
         <AboutSection4 style="" />

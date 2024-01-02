@@ -21,7 +21,7 @@ export default async function CourseDetails() {
   const session = await getServerSession(options);
   const user = await getUser(session?.user?.id as string);
   return (
-    <Layout>
+    <Layout user={user}>
       <BreadcrumbSection
         header="Induction & Orientation Details"
         title="Induction & Orientation Details"

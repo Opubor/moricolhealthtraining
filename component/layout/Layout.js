@@ -5,10 +5,10 @@ import FooterSection from "../footer/FooterSection";
 import ScrollToTopButton from "../utils/ScrollToTopButton";
 import FooterSection2 from "../footer/FooterSection2";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, user }) => {
   return (
     <>
-      <NavbarSection style="" logo="/images/moricollogo.jpeg" />
+      <NavbarSection user={user} style="" logo="/images/moricollogo.jpeg" />
       {children}
       <ScrollToTopButton style="" />
       <FooterSection2 style="tf__footer_3 mt-4" logo="images/moricollogo.jpeg" />

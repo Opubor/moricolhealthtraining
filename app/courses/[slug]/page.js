@@ -6,15 +6,12 @@ import ErrorSection from "@/component/error/ErrorSection";
 import prisma from "@/lib/prisma-client";
 import { getServerSession } from "next-auth";
 import { options } from "@/app/api/auth/[...nextauth]/options";
+import { getUser } from "@/service/userService";
 export const metadata = {
   title: "Moricol Health Training",
   description: "Developed by Opubor Tony",
 };
-const getUser = async (id) => {
- return await prisma.user.findFirst({
-    where: {id: id}
-  })
-}
+
 export default async function CourseDetails({ params }) {
   const { slug } = params; // Destructure 'slug' from 'params'
   const courseDesc = courseDataArray.find((item) => item.slug === slug); // Use 'slug' here
@@ -23,7 +20,7 @@ export default async function CourseDetails({ params }) {
  const user = await getUser(session?.user?.id)
  console.log(user)
   return (
-    <Layout>
+    <Layout user={user}>
       <BreadcrumbSection header="Course Details" title="Course Details" />
       {courseDesc ? (
         <CourseDetailSection courseData={courseDesc} courseContents={courseContents} user={user} />
