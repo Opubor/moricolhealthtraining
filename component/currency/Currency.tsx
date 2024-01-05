@@ -32,11 +32,11 @@ function Currency({ currency, price }: Props) {
     <span>
       {new Intl.NumberFormat("en-us", {
         style: "currency",
-        currency: session ? currency :  (currencyValue as string),
+        currency: session ? currency : (currencyValue as string),
       }).format(
         useMoney(
           price,
-          session ? (currency as CURRENCIES) :  (currencyValue as string)
+          session ? (currency as CURRENCIES) : (currencyValue as string)
         )
       )}
     </span>

@@ -8,7 +8,7 @@ import { useSession } from "next-auth/react";
 
 const NavigationSection = ({ position, btnPosition, navRef, user }) => {
   const { isMobileNavOpen } = useEduorContext();
-  const{data:session} = useSession()
+  const { data: session } = useSession();
   return (
     <div
       ref={navRef}
@@ -49,7 +49,7 @@ const NavigationSection = ({ position, btnPosition, navRef, user }) => {
           My Courses
         </a>
       ) : null}
-      {session ? <UserCurrency user={user} /> : <NonUserCurrency />}
+        {session ? <UserCurrency user={user} /> : <NonUserCurrency />}
     </div>
   );
 };

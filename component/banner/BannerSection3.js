@@ -16,7 +16,7 @@ const BannerSection3 = () => {
                 Now!
               </h5>
               <h1 className="text-white">
-                Health <span>Training</span> For a better you.
+                Health <span>Training</span> For A Better You.
               </h1>
               <p className="text-white">
                 Empowering Health Professionals: Elevate Your Expertise Here!

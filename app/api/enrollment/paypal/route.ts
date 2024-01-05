@@ -1,12 +1,14 @@
-import prisma from "@/lib/prisma-client";
-import { TEnrollmentSchema, enrollmentSchema } from "@/schema/enrollmentSchema";
-import { randomBytes } from "crypto";
+import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
+import prisma from "@/lib/prisma-client";
+import { stripe } from "@/lib/stripe";
+import { randomBytes } from "crypto";
+import { CURRENCIES } from "@/lib/types";
+// import useMoney from "@/hooks/useMoney";
+import paypal from "paypal-rest-sdk";
+import { TEnrollmentSchema, enrollmentSchema } from "@/schema/enrollmentSchema";
 import { courseAmount } from "@/data/CourseAmount";
 import { money } from "@/hooks/money";
-import { CURRENCIES } from "@/lib/types";
-import Stripe from "stripe";
-import { stripe } from "@/lib/stripe";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -18,7 +20,51 @@ export async function OPTIONS() {
   return NextResponse.json({}, { headers: corsHeaders });
 }
 
-export async function POST(req: NextRequest) {
+paypal.configure({
+  mode: "sandbox", //sandbox or live
+  client_id:
+    "AdjQ0g4n9Bft7U0mnJR0JMdMk7W7l1ir18ng6jWtAJgWNY7Xsos0DzG7lNYGP0If46b85KYwlUC38bYM",
+  client_secret:
+    "ENWxC5CNzvWtWHvrTLj3ghN4kaziSKG8heLxn_fZpgoOUb96Rl48Rz7s802fdpdCXvBUiYPqzICFcREj",
+});
+
+function createPayPalPayment(amount: string, currency: string, enrollmentId:string, paymentId:string ) {
+  return new Promise((resolve, reject) => {
+    const createPaymentJson = {
+      intent: "sale",
+      payer: {
+        payment_method: "paypal",
+      },
+      transactions: [
+        {
+          amount: {
+            total: amount,
+            currency: currency,
+          },
+          custom: `${enrollmentId}:${paymentId}`,
+        },
+      ],
+      redirect_urls: {
+        return_url: `${process.env.URL}/order-status/confirm-payment`,
+        cancel_url: `${process.env.URL}/order-status/fail`,
+      }
+    };
+
+    paypal.payment.create(createPaymentJson, (error, payment) => {
+      if (error) {
+        console.log(error)
+        reject(error);
+      } else {
+        resolve(payment);
+      }
+    });
+  });
+}
+
+export async function POST(
+  req: Request,
+  { params }: { params: { id: string } }
+) {
   const body: TEnrollmentSchema = await req.json();
   const result = enrollmentSchema.safeParse(body);
   if (!result.success) {
@@ -42,6 +88,7 @@ export async function POST(req: NextRequest) {
   const courseDesc = courseAmount.find(
     (item) => (item.title as string) === (result?.data?.course as string)
   );
+
   if (!courseDesc) {
     console.log("Course not found");
     return new Response(JSON.stringify("Course not found"), {
@@ -173,42 +220,22 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    //===========================
-    // Stripe Line_Items
-    //===========================
-    const line_items: Stripe.Checkout.SessionCreateParams.LineItem[] = [];
+    console.log("ppppppppp")
+    // ==========================
+    // PayPal Payment
+    // ==========================
+    console.log( Math.round(convertedMoney).toString())
+    const paypalPayment: any = await createPayPalPayment(
+      Math.round(convertedMoney).toString(),
+      user?.currency as string,
+      enrollment?.id as string,
+      payment?.id as string
+    );
+    console.log("ddd")
+    let redirectUrl = paypalPayment?.links?.at(1)?.href as string;
 
-    //==============================================
-    // Pushing Course Details to Stripe Line_Items
-    //==============================================
-    line_items.push({
-      quantity: 1,
-      price_data: {
-        currency: user?.currency! as string,
-        product_data: {
-          name: course,
-        },
-        unit_amount: Math.round(Number(convertedMoney) * 100),
-      },
-    });
-
-    //===========================
-    // Stripe Session/Submit
-    //===========================
-    const session = await stripe.checkout.sessions.create({
-      line_items: line_items,
-      mode: "payment",
-      success_url: `${process.env.URL}order-status/success`,
-      cancel_url: `${process.env.URL}order-status/fail`,
-      metadata: {
-        enrollmentId: enrollment?.id,
-        paymentId: payment?.id,
-      },
-    });
-
-    return NextResponse.json({ url: session.url }, { headers: corsHeaders });
+    return NextResponse.json({ url: redirectUrl }, { headers: corsHeaders });
   } catch (error) {
-    console.log(error);
-    return new Response(JSON.stringify(error), { status: 400 });
+    return NextResponse.json(error, { status: 404 });
   }
 }

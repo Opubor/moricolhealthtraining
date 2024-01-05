@@ -123,7 +123,7 @@ export async function POST(req: NextRequest) {
         phone: result?.data?.phone,
         status: "Pending",
         userId: result?.data?.userId,
-        amount: Number(convertedMoney) * 100,
+        amount: Math.round(convertedMoney * 100),
         date: date.toString(),
         timeTable: result?.data?.timeTable as string,
         noOfUsers: result?.data?.noOfUsers,
@@ -152,7 +152,7 @@ export async function POST(req: NextRequest) {
       data: {
         paymentStatus: "Pending",
         paymentId: paymentId,
-        amount: Number(convertedMoney) * 100,
+        amount: Math.round(convertedMoney * 100),
         course: course as string,
         enrollmentId: enrollment?.id,
         userId: result?.data?.userId,
@@ -173,7 +173,7 @@ export async function POST(req: NextRequest) {
       },
       body: JSON.stringify({
         email: user?.email,
-        amount: Number(convertedMoney) * 100,
+        amount: Math.round(convertedMoney * 100),
         currency: "NGN",
         callback_url: `${process.env.URL}order-status/success`,
         metadata: {

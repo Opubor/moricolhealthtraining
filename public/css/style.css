@@ -6011,7 +6011,7 @@ select.select_js.form-select {
 }
 
 .tf__single_team_img {
-  height: 370px;
+  height: 550px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -6019,6 +6019,10 @@ select.select_js.form-select {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.tf__single_team_img img{
+  object-fit: contain;
 }
 
 .tf__single_team_img ul {
@@ -10330,4 +10334,14 @@ section.tf__counter_3 {
   font-size: 14px;
   /* color: rgb(32, 164, 61); */
   text-align: center;
+}
+
+.paymentPicture{
+  min-height: 50px;
+  max-width: 100px;
+  border-radius: 4px;
+}
+.paypalenrlogo{
+  /* min-height: 50px; */
+  max-width: 200px;
 }

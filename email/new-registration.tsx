@@ -22,11 +22,12 @@ interface Props {
   registrationDate: string;
   courseAmount: number;
   paidAmount: number;
-  timeTable: string
+  timeTable: string;
+  currency: string;
 
 }
 
-function NewRegistrationMail({ courseName, studentName, studentEmail, studentPhoneNumber,registrationDate, courseAmount, paidAmount,timeTable }: Props) {
+function NewRegistrationMail({ courseName, studentName, studentEmail, studentPhoneNumber,registrationDate, courseAmount, paidAmount,timeTable, currency }: Props) {
   return (
     <Html>
       <Head />
@@ -45,8 +46,8 @@ function NewRegistrationMail({ courseName, studentName, studentEmail, studentPho
               <Text>Contact Number: <a href={`tel:${studentPhoneNumber}`}>{studentPhoneNumber}</a></Text>
               <Text>Course Selected: {courseName}</Text>
               <Text>Registration Date: {registrationDate}</Text>
-              <Text>Course Amount: &#8358;{courseAmount}</Text>
-              <Text>Amount Paid: &#8358;{paidAmount}</Text>
+              <Text>Course Amount: {currency}{courseAmount}</Text>
+              <Text>Amount Paid: {currency}{paidAmount}</Text>
               <Text>Time-Table: {timeTable}</Text>
             </Section>
           </Container>

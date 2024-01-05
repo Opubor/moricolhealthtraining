@@ -2426,7 +2426,7 @@ const teamData = [
   },
   {
     id: 6,
-    imgSrc: "images/moricollogo.jpeg",
+    imgSrc: "images/esemuze.jpeg",
     name: "Dr. Paul Esemuze",
     designation: "General/ Operational Manager",
     slug: "john-smith",

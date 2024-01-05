@@ -24,11 +24,12 @@ interface Props {
 }
 
 const nairaGateways = [
-  { id: 1, name: "paystack", imageUrl: "/images/paystack.png" },
+  { id: 1, name: "Paystack", imageUrl: "/images/paystack.png" },
+  { id: 2, name: "Stripe", imageUrl: "/images/stripe.png" },
 ];
 const otherCurrenciesGateways = [
-  { id: 1, name: "stripe", imageUrl: "/images/stripe.png" },
-  // { id: 2, name: "paypal", imageUrl: "/paypal.png" },
+  { id: 1, name: "Stripe", imageUrl: "/images/stripe.png" },
+  { id: 2, name: "Paypal", imageUrl: "/images/paypal.png" },
 ];
 
 function EnrollmentSection({ courseId, user }: Props) {
@@ -38,6 +39,8 @@ function EnrollmentSection({ courseId, user }: Props) {
 
   const [course, setCourse] = useState("");
   const [amount, setAmount] = useState("");
+  const [currentPaymentType, setCurrentPaymentType] = useState("");
+  const [chosenTimetable, setChosenTimetable] = useState("");
   const [inputValue, setInputValue] = useState(0);
 
   // const handleInputChange = (event:any) => {
@@ -57,7 +60,7 @@ function EnrollmentSection({ courseId, user }: Props) {
   const onSubmit = async (data: FieldValues) => {
     setLoading(true);
     try {
-      if (user?.currency === "NGN") {
+      if (data?.paymentType === "Paystack") {
         // PAYSTACK
         const response = await fetch("/api/enrollment/paystack", {
           method: "POST",
@@ -83,7 +86,7 @@ function EnrollmentSection({ courseId, user }: Props) {
           let res = await response.json();
           return push(res?.url);
         }
-      } else if (user?.currency !== "NGN") {
+      } else if (data?.paymentType === "Stripe") {
         // STRIPE
         const response = await fetch("/api/enrollment/stripe", {
           method: "POST",
@@ -96,7 +99,33 @@ function EnrollmentSection({ courseId, user }: Props) {
             timeTable: data?.timeTable,
             noOfDays: data?.noOfDays,
             noOfUsers: data?.noOfUsers,
-            // paymentType: "Stripe",
+            paymentType: "Stripe",
+          }),
+        });
+        setLoading(false);
+        let x = response.status;
+        if (x === 404) {
+          return toast.error("Course not found", {
+            position: "top-right",
+          });
+        } else if (x === 200) {
+          let res = await response.json();
+          return push(res?.url);
+        }
+      } else if (data?.paymentType === "Paypal") {
+        // PAYPAL
+        const response = await fetch("/api/enrollment/paypal", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userId: data?.userId,
+            email: data?.email,
+            phone: data?.phone,
+            course: data?.course,
+            timeTable: data?.timeTable,
+            noOfDays: data?.noOfDays,
+            noOfUsers: data?.noOfUsers,
+            paymentType: "Paypal",
           }),
         });
         setLoading(false);
@@ -205,21 +234,25 @@ function EnrollmentSection({ courseId, user }: Props) {
           {/* ===Bundle 1-3=== */}
           {courseType === "bundle" &&
             ["Bundle 1", "Bundle 2", "Bundle 3"].includes(course) && (
-              <div className="d-md-flex w-md-50 gap-2 mb-4">
+              <div className="d-flex align-items-center justify-content-center gap-2">
                 {timeTable.map((data) => (
-                  <div className="form-check">
+                  <div key={data?.id}>
                     <input
                       type="radio"
                       value={`${data?.name} - ${data?.description}`}
-                      id={`gateway-${data.id}`}
-                      className="form-check-input"
+                      id={`timeTable-${data.id}`}
+                      className="d-none"
+                      onClick={() => setChosenTimetable(data?.name)}
+
                       {...register("timeTable", { required: true })}
                       checked
                     />
                     <label
-                      htmlFor={`gateway-${data.id}`}
-                      className={`form-check-label border p-2`}
-                    >
+                      htmlFor={`timeTable-${data.id}`}
+                      className={`${
+                        chosenTimetable === data?.name &&
+                        "border border-primary"
+                      }  d-flex align-items-center justify-content-center`}                    >
                       <div className="border rounded p-3">
                         <h6 className="fw-bold">{data?.name}</h6>
                         <p>{data?.description}</p>
@@ -291,7 +324,6 @@ function EnrollmentSection({ courseId, user }: Props) {
 
       {/* <p className="text-center">Choose Your Preferred Payment Method</p> */}
 
-  
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
           {session?.user?.role === "student" && (
@@ -328,6 +360,66 @@ function EnrollmentSection({ courseId, user }: Props) {
             </Fragment>
           )}
 
+          <p className="text-center small mb-2">
+            Choose your preferred payment gateway
+          </p>
+          {user?.currency === "NGN" && (
+            <div className="d-flex align-items-center justify-content-center gap-2">
+              {nairaGateways.map((gateway) => (
+                <div key={gateway?.id}>
+                  <input
+                    type="radio"
+                    value={gateway.name}
+                    id={`gateway-${gateway.id}`}
+                    className="d-none"
+                    onClick={() => setCurrentPaymentType(gateway?.name)}
+                    {...register("paymentType", { required: true })}
+                  />
+                  <label
+                    htmlFor={`gateway-${gateway.id}`}
+                    className={`${
+                      currentPaymentType === gateway?.name &&
+                      "border border-primary"
+                    } paymentPicture d-flex align-items-center justify-content-center`}
+                  >
+                    <img src={gateway.imageUrl} alt="PaymentGateway" />
+                  </label>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {user?.currency !== "NGN" && (
+            <div className="d-flex align-items-center justify-content-center gap-2">
+              {otherCurrenciesGateways.map((gateway) => (
+                <div key={gateway?.id}>
+                  <input
+                    type="radio"
+                    value={gateway.name}
+                    id={`gateway-${gateway.id}`}
+                    className="d-none"
+                    onClick={() => setCurrentPaymentType(gateway?.name)}
+                    {...register("paymentType", { required: true })}
+                  />
+                  <label
+                    htmlFor={`gateway-${gateway.id}`}
+                    className={`${
+                      currentPaymentType === gateway?.name &&
+                      "border border-primary"
+                    } paymentPicture d-flex align-items-center justify-content-center`}
+                  >
+                    <img src={gateway.imageUrl} alt="PaymentGateway" />
+                  </label>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {errors.paymentType && (
+            <p className="text-danger text-sm text-center small">
+              Please select a payment gateway.
+            </p>
+          )}
           {session?.user?.role === "company" && (
             <Fragment>
               <div className="col-xl-12">
@@ -446,4 +538,3 @@ export default EnrollmentSection;
 //     ))}
 //   </div>
 // )}
-

@@ -92,6 +92,7 @@ export async function POST(req: Request) {
         courseAmount: Number(courseAmount) / 100,
         paidAmount: Number(paidAmount) / 100,
         timeTable: newEnrollment?.timeTable as string,
+        currency: newEnrollment?.currency as string
       }),
     });
     resend.emails.send({
@@ -106,6 +107,7 @@ export async function POST(req: Request) {
         courseAmount: Number(courseAmount) / 100,
         paidAmount: Number(paidAmount) / 100,
         timeTable: newEnrollment?.timeTable as string,
+        currency: newEnrollment?.currency as string
       }),
     });
 

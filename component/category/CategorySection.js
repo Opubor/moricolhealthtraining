@@ -19,7 +19,7 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>Regular classes(Bundles 1-3)</h3>
+                <h3>Regular classes (Bundles 1 - 3)</h3>
                 <p>2days a week/9am-2pm <br></br>5weeks/Friday + Saturday <br></br> 10hrs weekly 50hrs total</p>
               </div>
             </div>
@@ -30,7 +30,7 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>Master classes(Bundles 1-3)</h3>
+                <h3>Master classes (Bundles 1 - 3)</h3>
                 <p>2weeks/ Monday-Friday <br></br>9am-2pm 25hrs weekly <br></br> 50hrs total</p>
               </div>
             </div>
@@ -42,7 +42,7 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>Online Courses(Bundles 5)</h3>
+                <h3>Online Courses (Bundle 5)</h3>
                 <p>Enjoy the flexibility <br></br>of learning at your own pace <br></br> and comfort</p>
               </div>
             </div>

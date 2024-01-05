@@ -102,7 +102,7 @@ const FooterSection2 = ({ style }) => {
                     </p>
                     <p>
                       Branch Office: 27, Reuben Agho Avenue, off 2nd Ugbor road,
-                      GRA, Benin City, Edo state
+                      GRA, Benin City, Edo State
                     </p>
                   </div>
                 </div>

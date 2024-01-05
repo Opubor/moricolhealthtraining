@@ -1,6 +1,14 @@
+import CompanyStaffRegMail from "@/email/companyStaffReg";
 import prisma from "@/lib/prisma-client";
-import { TEditCompanyStaffEnrollmentSchema, editCompanyStaffEnrollmentSchema } from "@/schema/enrollmentSchema";
+import {
+  TEditCompanyStaffEnrollmentSchema,
+  editCompanyStaffEnrollmentSchema,
+} from "@/schema/enrollmentSchema";
 import { NextRequest } from "next/server";
+import React from "react";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function GET(
   req: NextRequest,
@@ -27,10 +35,9 @@ export async function PUT(
   req: NextRequest,
   { params }: { params: { id: string } }
 ): Promise<any> {
-  console.log("aaa")
   const body: TEditCompanyStaffEnrollmentSchema = await req.json();
   const result = editCompanyStaffEnrollmentSchema.safeParse(body);
-  console.log("bbb")
+  console.log("bbb");
 
   if (!result.success) {
     return new Response(
@@ -40,7 +47,6 @@ export async function PUT(
       })
     );
   }
-  console.log("ccc")
 
   try {
     const editStaffDetails = await prisma.companyEnrollment.update({
@@ -51,7 +57,20 @@ export async function PUT(
         phoneNumber: result?.data?.phoneNumber,
       },
     });
-    console.log("ddd")
+
+    const enrollment = await prisma.enrollment.findFirst({
+      where: { id: editStaffDetails?.enrollmentId },
+    });
+
+    resend.emails.send({
+      from: "Moricol <onboarding@resend.dev>",
+      to: result?.data?.email as string,
+      subject: "New Course Enrollment",
+      react: React.createElement(CompanyStaffRegMail, {
+        courseName: enrollment?.course as string,
+        studentName: result?.data?.name as string,
+      }),
+    });
 
     return new Response(JSON.stringify("Updated successfully"), {
       status: 200,
@@ -60,4 +79,3 @@ export async function PUT(
     return new Response(JSON.stringify("Failed!!!"), { status: 404 });
   }
 }
-

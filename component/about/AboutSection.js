@@ -21,9 +21,9 @@ const AboutSection = () => {
                 <p>Delegates are required from one person to a maximum of 30 persons.</p>
                 <li>Training Pattern </li>
                 <p>The training pattern includes the regular classes and the master classes. The regular classes is conducted with a novice approach to the health care and social care environment, hence the period of learning for effective assimilation will take longer. However, the master classes reflect the delegates ability to grasp the modules faster probably because of being conversant with the health care and social care environment and are more likely to require a shorter training pattern.</p>
-                <li>Health care/Social care workers</li>
+                <li>Health Care/ Social Care Workers</li>
                 <p>These are delegates who wish to train in order to improve and acquire move certifications that is recognized internationally.</p>
-                <li>Non-Health care/Social Care Workers</li>
+                <li>Non-Health Care/ Social Care Workers</li>
                 <p>These are delegates who want to be certificated outside their field to boost their career drive.</p>
               </ul>
              
