@@ -6,7 +6,7 @@ import { Resend } from "resend";
 import React from "react";
 import { registerUserSchema } from "@/schema/userSchema";
 // import VerifyEmail from "@/email/verify-email";
-import NewUserMail from "../../../../email/newUser";
+import NewUserMail from "../../../email/newUser";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
