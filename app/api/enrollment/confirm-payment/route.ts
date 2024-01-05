@@ -19,11 +19,9 @@ export async function OPTIONS() {
 }
 
 paypal.configure({
-  mode: "sandbox", //sandbox or live
-  client_id:
-    "AdjQ0g4n9Bft7U0mnJR0JMdMk7W7l1ir18ng6jWtAJgWNY7Xsos0DzG7lNYGP0If46b85KYwlUC38bYM",
-  client_secret:
-    "ENWxC5CNzvWtWHvrTLj3ghN4kaziSKG8heLxn_fZpgoOUb96Rl48Rz7s802fdpdCXvBUiYPqzICFcREj",
+  mode: `${process.env.PAYPAL_MODE}`, //sandbox or live
+  client_id: `${process.env.PAYPAL_CLIENTID}`,
+  client_secret: `${process.env.PAYPAL_CLIENT_SECRET}`,
 });
 
 export async function POST(

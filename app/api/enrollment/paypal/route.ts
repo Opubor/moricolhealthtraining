@@ -21,14 +21,17 @@ export async function OPTIONS() {
 }
 
 paypal.configure({
-  mode: "sandbox", //sandbox or live
-  client_id:
-    "AdjQ0g4n9Bft7U0mnJR0JMdMk7W7l1ir18ng6jWtAJgWNY7Xsos0DzG7lNYGP0If46b85KYwlUC38bYM",
-  client_secret:
-    "ENWxC5CNzvWtWHvrTLj3ghN4kaziSKG8heLxn_fZpgoOUb96Rl48Rz7s802fdpdCXvBUiYPqzICFcREj",
+  mode: `${process.env.PAYPAL_MODE}`, //sandbox or live
+  client_id: `${process.env.PAYPAL_CLIENTID}`,
+  client_secret: `${process.env.PAYPAL_CLIENT_SECRET}`,
 });
 
-function createPayPalPayment(amount: string, currency: string, enrollmentId:string, paymentId:string ) {
+function createPayPalPayment(
+  amount: string,
+  currency: string,
+  enrollmentId: string,
+  paymentId: string
+) {
   return new Promise((resolve, reject) => {
     const createPaymentJson = {
       intent: "sale",
@@ -47,12 +50,12 @@ function createPayPalPayment(amount: string, currency: string, enrollmentId:stri
       redirect_urls: {
         return_url: `${process.env.URL}/order-status/confirm-payment`,
         cancel_url: `${process.env.URL}/order-status/fail`,
-      }
+      },
     };
 
     paypal.payment.create(createPaymentJson, (error, payment) => {
       if (error) {
-        console.log(error)
+        console.log(error);
         reject(error);
       } else {
         resolve(payment);
@@ -220,18 +223,18 @@ export async function POST(
       },
     });
 
-    console.log("ppppppppp")
+    console.log("ppppppppp");
     // ==========================
     // PayPal Payment
     // ==========================
-    console.log( Math.round(convertedMoney).toString())
+    console.log(Math.round(convertedMoney).toString());
     const paypalPayment: any = await createPayPalPayment(
       Math.round(convertedMoney).toString(),
       user?.currency as string,
       enrollment?.id as string,
       payment?.id as string
     );
-    console.log("ddd")
+    console.log("ddd");
     let redirectUrl = paypalPayment?.links?.at(1)?.href as string;
 
     return NextResponse.json({ url: redirectUrl }, { headers: corsHeaders });
