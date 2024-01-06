@@ -223,18 +223,15 @@ export async function POST(
       },
     });
 
-    console.log("ppppppppp");
     // ==========================
     // PayPal Payment
     // ==========================
-    console.log(Math.round(convertedMoney).toString());
     const paypalPayment: any = await createPayPalPayment(
       Math.round(convertedMoney).toString(),
       user?.currency as string,
       enrollment?.id as string,
       payment?.id as string
     );
-    console.log("ddd");
     let redirectUrl = paypalPayment?.links?.at(1)?.href as string;
 
     return NextResponse.json({ url: redirectUrl }, { headers: corsHeaders });

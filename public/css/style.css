@@ -10217,7 +10217,7 @@ section.tf__counter_3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .enrollment img{
   max-width: 200px;

@@ -13,7 +13,7 @@ async function Page({ params }: PageProps) {
   const user = await getUser(session?.user?.id as string);
   return (
     <div className="enrollment p-2">
-      <div className="enrollmentlogo">
+      <div className="enrollmentlogo mt-4">
         <img src="/images/moricollogo.jpeg" />
       </div>
       <h4 className="fw-bold text-decoration-underline">REGISTRATION</h4>

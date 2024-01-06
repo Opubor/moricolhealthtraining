@@ -265,7 +265,7 @@ function EnrollmentSection({ courseId, user }: Props) {
         </>
       )}
       <div className="d-flex align-items-left justify-items-left mt-2 row overflow-hidden">
-        <p>Please enter your details below as part of the enrolment process</p>
+        <p className="text-center">Please enter your details below as part of the enrolment process</p>
       </div>
 
       {session?.user?.role === "company" && courseType !== "addOns" && (
