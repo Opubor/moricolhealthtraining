@@ -17,6 +17,7 @@ import {
 import Image from "next/image";
 import { toast } from "react-toastify";
 import Currency from "../currency/Currency";
+import Link from "next/link";
 
 interface Props {
   courseId: number;
@@ -144,6 +145,12 @@ function EnrollmentSection({ courseId, user }: Props) {
     }
   };
 
+  const promptRegistration = async () => {
+    return toast.error("Register/Login to Enroll", {
+      position: "top-right",
+    });
+  };
+
   useEffect(() => {
     if (courseType === "inclass") {
       const courseDesc = courseDataContents.find(
@@ -206,7 +213,9 @@ function EnrollmentSection({ courseId, user }: Props) {
           {courseType === "inclass" && (
             <div className="border p-2">
               <p className="fw-bold text-center">Location</p>
-              <p className="text-center">House 2, Road 4, Abraham Adesanya Estate, Ajah Lagos, Nigeria.</p>
+              <p className="text-center">
+                House 2, Road 4, Abraham Adesanya Estate, Ajah Lagos, Nigeria.
+              </p>
             </div>
           )}
           {/* ===Bundle 4 */}
@@ -471,20 +480,38 @@ function EnrollmentSection({ courseId, user }: Props) {
 
           <div className="col-xl-12 mb-4">
             <div className="d-flex align-items-center justify-items-center w-100 mt-3">
-              <button
-                onClick={() => {
-                  setValue("userId", session?.user.id),
-                    setValue("course", course);
-                }}
-                type="submit"
-                className="btn btn-success w-100 mb-4"
-              >
-                {loading ? "Loading" : "Enroll"}
-              </button>
+              {session ? (
+                <button
+                  onClick={() => {
+                    setValue("userId", session?.user.id),
+                      setValue("course", course);
+                  }}
+                  type="submit"
+                  className="btn btn-success w-100 mb-4"
+                >
+                  {loading ? "Loading" : "Enroll"}
+                </button>
+              ) : (
+                <div
+                  onClick={() => promptRegistration()}
+                  className="btn btn-success w-100 mb-4"
+                >
+                  Enroll
+                </div>
+              )}
             </div>
           </div>
         </div>
       </form>
+      <div>
+        {!session && (
+          <div className="small">
+            <Link href={"/sign-up"}>Register /</Link> {" "}
+            <Link href={"/sign-in"}>Sign In</Link> {" "}
+            <span>to Continue</span>
+          </div>
+        )}
+      </div>
     </>
   );
 }

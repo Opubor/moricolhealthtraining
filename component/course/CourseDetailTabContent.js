@@ -16,7 +16,7 @@ const CourseDetailTabContent = ({ courseData, courseContents, user }) => {
   const { data: session } = useSession();
 
   const promptRegistration = async () => {
-    return toast.error("Register/Login to Enrol", {
+    return toast.error("Register/Login to Enroll", {
       position: "top-right",
     });
   };

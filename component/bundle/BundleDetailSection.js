@@ -119,71 +119,141 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
             <h4 className="text-center text-decoration-underline text-success fw-bold mt-4">
               Add Ons
             </h4>
-            {addOns.map((data) => (
+            {/* {session ? ( */}
               <>
-                {data?.name === "International Work Visa" ? (
-                  <div className="col-xl-3" key={data.id}>
-                    <div className={`tf__activities_item `}>
-                      <div className="span__icon">
-                        <span className="ll">
-                          <i className={"fa fa-book"}></i>{" "}
-                        </span>
-                      </div>
-                      <h6 className="fw-bold mt-2">{data?.name}</h6>
-                      <h5 className="fw-bold mt-2">
-                        {data?.price && (
-                          <p>
-                            {/* {new Intl.NumberFormat("ja-JP", {
+                {addOns.map((data) => (
+                  <>
+                    {data?.name === "International Work Visa" ? (
+                      <div className="col-xl-3" key={data.id}>
+                        <div className={`tf__activities_item `}>
+                          <div className="span__icon">
+                            <span className="ll">
+                              <i className={"fa fa-book"}></i>{" "}
+                            </span>
+                          </div>
+                          <h6 className="fw-bold mt-2">{data?.name}</h6>
+                          <h5 className="fw-bold mt-2">
+                            {data?.price && (
+                              <p>
+                                {/* {new Intl.NumberFormat("ja-JP", {
                               style: "currency",
                               currency: "NGN",
                             }).format(data?.price)} */}
-                            <Currency
-                              currency={user?.currency}
-                              price={Number(data?.price)}
-                            />
-                          </p>
-                        )}
-                      </h5>
-                      <div className="text-warning mt-2">
-                        {data?.mail && <p>{data?.mail}</p>}
+                                <Currency
+                                  currency={user?.currency}
+                                  price={Number(data?.price)}
+                                />
+                              </p>
+                            )}
+                          </h5>
+                          <div className="text-warning mt-2">
+                            {data?.mail && <p>{data?.mail}</p>}
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                ) : (
-                  <Link
-                    href={`/enrollment/${data?.id}?type=addOns`}
-                    className="col-xl-3"
-                    key={data.id}
-                  >
-                    <div className={`tf__activities_item `}>
-                      <span>
-                        <i className={"fa fa-book"}></i>{" "}
-                      </span>
-                      <h6 className="fw-bold mt-2">{data?.name}</h6>
-                      <h6 className="fw-bold mt-2">{data?.name === "Hotel Accomodation" && "(Nigeria)"}</h6>
-                      <h5 className="fw-bold mt-2">
-                        {data?.price && (
-                          <p>
-                            <Currency
-                              currency={user?.currency}
-                              price={Number(data?.price)}
-                            /> {" "}
-                            {/* {new Intl.NumberFormat("ja-JP", {
+                    ) : (
+                      <Link
+                        href={`/enrollment/${data?.id}?type=addOns`}
+                        className="col-xl-3"
+                        key={data.id}
+                      >
+                        <div className={`tf__activities_item `}>
+                          <span>
+                            <i className={"fa fa-book"}></i>{" "}
+                          </span>
+                          <h6 className="fw-bold mt-2">{data?.name}</h6>
+                          <h6 className="fw-bold mt-2">
+                            {data?.name === "Hotel Accomodation" && "(Nigeria)"}
+                          </h6>
+                          <h5 className="fw-bold mt-2">
+                            {data?.price && (
+                              <p>
+                                <Currency
+                                  currency={user?.currency}
+                                  price={Number(data?.price)}
+                                />{" "}
+                                {/* {new Intl.NumberFormat("ja-JP", {
                               style: "currency",
                               currency: "NGN",
                             }).format(data?.price)}{" "} */}
-                            {data?.extra}
-                          </p>
-                        )}
-                      </h5>
-                      <div className=" mt-2">
-                        {data?.mail && <p>{data?.mail}</p>}
-                      </div>
-                    </div>
-                  </Link>
-                )}
+                                {data?.extra}
+                              </p>
+                            )}
+                          </h5>
+                          <div className=" mt-2">
+                            {data?.mail && <p>{data?.mail}</p>}
+                          </div>
+                        </div>
+                      </Link>
+                    )}
+                  </>
+                ))}
               </>
-            ))}
+            {/* ) : (
+              <>
+                {addOns.map((data) => (
+                  <>
+                    {data?.name === "International Work Visa" ? (
+                      <div className="col-xl-3" key={data.id}>
+                        <div className={`tf__activities_item `}>
+                          <div className="span__icon">
+                            <span className="ll">
+                              <i className={"fa fa-book"}></i>{" "}
+                            </span>
+                          </div>
+                          <h6 className="fw-bold mt-2">{data?.name}</h6>
+                          <h5 className="fw-bold mt-2">
+                            {data?.price && (
+                              <p>
+                             
+                                <Currency
+                                  currency={user?.currency}
+                                  price={Number(data?.price)}
+                                />
+                              </p>
+                            )}
+                          </h5>
+                          <div className="text-warning mt-2">
+                            {data?.mail && <p>{data?.mail}</p>}
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <div
+                        href={`/enrollment/${data?.id}?type=addOns`}
+                        className="col-xl-3"
+                        key={data.id}
+                      >
+                        <div className={`tf__activities_item `}>
+                          <span>
+                            <i className={"fa fa-book"}></i>{" "}
+                          </span>
+                          <h6 className="fw-bold mt-2">{data?.name}</h6>
+                          <h6 className="fw-bold mt-2">
+                            {data?.name === "Hotel Accomodation" && "(Nigeria)"}
+                          </h6>
+                          <h5 className="fw-bold mt-2">
+                            {data?.price && (
+                              <p>
+                                <Currency
+                                  currency={user?.currency}
+                                  price={Number(data?.price)}
+                                />{" "}
+                               
+                                {data?.extra}
+                              </p>
+                            )}
+                          </h5>
+                          <div className=" mt-2">
+                            {data?.mail && <p>{data?.mail}</p>}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </>
+                ))}
+              </>
+            )} */}
             {courseData?.title === "Bundle 4" && (
               <Link href={`/eLearning`} className="col-xl-3">
                 <div className={`tf__activities_item`}>

@@ -14,11 +14,8 @@ const FooterSection2 = ({ style }) => {
               <i className="fas fa-play"></i>
             </a>
             <h3></h3>
-            <p>
-             
-            </p>
-            <a className="apply_btn" href="#">
-            </a>
+            <p></p>
+            <a className="apply_btn" href="#"></a>
           </div>
         </div>
       </div>
@@ -131,7 +128,7 @@ const FooterSection2 = ({ style }) => {
                       </a>
                     </p>
                     <p>
-                      WhatsApp:{" "}
+                      WhatsApp <i className="fab fa-whatsapp"></i>{" "}
                       <a
                         href={`https://wa.me/09124460695`}
                         className="text-warning"
@@ -142,7 +139,7 @@ const FooterSection2 = ({ style }) => {
                       </a>
                     </p>
                     <p>
-                      Email:
+                      Email:{" "}
                       <a
                         href="mailto:infomoricolhealthcare@gmail.com"
                         className="text-warning"
@@ -151,7 +148,7 @@ const FooterSection2 = ({ style }) => {
                       </a>
                     </p>
                     <p>
-                      Email:
+                      Email:{" "}
                       <a
                         href="mailto:moricolhealth@qualityservice.com"
                         className="text-warning"
@@ -160,9 +157,19 @@ const FooterSection2 = ({ style }) => {
                       </a>
                     </p>
                     <p>
-                      Website:
+                      Website:{" "}
                       <a href="/" className="text-warning">
                         www.moricolservices.com
+                      </a>
+                    </p>
+                    <p>
+                      Website:{" "}
+                      <a
+                        target="_blank"
+                        href="https://www.moricolorganicshop.com"
+                        className="text-warning"
+                      >
+                        www.moricolorganicshop.com
                       </a>
                     </p>
                   </div>
