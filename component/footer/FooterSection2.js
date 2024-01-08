@@ -131,7 +131,7 @@ const FooterSection2 = ({ style }) => {
                       </a>
                     </p>
                     <p>
-                      WhatSapp:{" "}
+                      WhatsApp:{" "}
                       <a
                         href={`https://wa.me/09124460695`}
                         className="text-warning"

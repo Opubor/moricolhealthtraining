@@ -160,6 +160,7 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
                         <i className={"fa fa-book"}></i>{" "}
                       </span>
                       <h6 className="fw-bold mt-2">{data?.name}</h6>
+                      <h6 className="fw-bold mt-2">{data?.name === "Hotel Accomodation" && "(Nigeria)"}</h6>
                       <h5 className="fw-bold mt-2">
                         {data?.price && (
                           <p>

@@ -182,7 +182,7 @@ function EnrollmentSection({ courseId, user }: Props) {
       {courseType === "addOns" ? (
         <>
           <h5 className="mb-2 mt-2 fw-bold">
-            {course} -{" "}
+            {course} {course === "Hotel Accomodation" && "(Nigeria)"} -{" "}
             <Currency currency={user?.currency} price={Number(amount)} />
           </h5>
         </>
@@ -202,6 +202,12 @@ function EnrollmentSection({ courseId, user }: Props) {
               value="Your time table will be forwarded to you by Moricol Team"
               {...register("timeTable", { required: true })}
             />
+          )}
+          {courseType === "inclass" && (
+            <div className="border p-2">
+              <p className="fw-bold text-center">Location</p>
+              <p className="text-center">House 2, Road 4, Abraham Adesanya Estate, Ajah Lagos, Nigeria.</p>
+            </div>
           )}
           {/* ===Bundle 4 */}
           {courseType === "bundle" && course === "Bundle 4" && (
@@ -243,7 +249,6 @@ function EnrollmentSection({ courseId, user }: Props) {
                       id={`timeTable-${data.id}`}
                       className="d-none"
                       onClick={() => setChosenTimetable(data?.name)}
-
                       {...register("timeTable", { required: true })}
                       checked
                     />
@@ -252,7 +257,8 @@ function EnrollmentSection({ courseId, user }: Props) {
                       className={`${
                         chosenTimetable === data?.name &&
                         "border border-primary"
-                      }  d-flex align-items-center justify-content-center`}                    >
+                      }  d-flex align-items-center justify-content-center`}
+                    >
                       <div className="border rounded p-3">
                         <h6 className="fw-bold">{data?.name}</h6>
                         <p>{data?.description}</p>
@@ -265,7 +271,9 @@ function EnrollmentSection({ courseId, user }: Props) {
         </>
       )}
       <div className="d-flex align-items-left justify-items-left mt-2 row overflow-hidden">
-        <p className="text-center">Please enter your details below as part of the enrolment process</p>
+        <p className="text-center">
+          Please enter your details below as part of the enrolment process
+        </p>
       </div>
 
       {session?.user?.role === "company" && courseType !== "addOns" && (

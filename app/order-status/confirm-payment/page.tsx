@@ -39,6 +39,7 @@ function Page() {
         }),
       });
       setLoading(false);
+
       if (response.status === 200) {
         return push("/order-status/success");
       } else if (response.status !== 200) {

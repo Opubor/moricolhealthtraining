@@ -42,6 +42,11 @@ async function TopbarSection({ style }) {
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
+                <li>
+                  <a target="_blank" href={`https://wa.me/09124460695`}>
+                    <i className="fab fa-whatsapp"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
