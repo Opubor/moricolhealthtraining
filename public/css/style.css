@@ -2378,12 +2378,12 @@ button {
 .tf__scroll_btn {
   position: fixed;
   bottom: 60px;
-  right: 30px;
+  right: 300px;
   z-index: 111;
   cursor: pointer;
   text-align: center;
   /* transform: rotate(90deg); */
-  background: var(--colorWhite);
+  background: transparent;
   color: var(--colorWhite);
   text-transform: capitalize;
   padding: 5px 15px 7px 15px;
@@ -2406,43 +2406,18 @@ button {
   background-color: rgb(16, 148, 16);
   padding: 5px 15px 7px 15px;
   border-radius: 30px;
+  margin-right: 20px;
 }
 .scrolltop_icon {
   background-color: rgb(12, 19, 154);
   padding: 5px 15px 7px 15px;
   border-radius: 30px;
-}
-.tf__scroll_btn_5 {
-  position: fixed;
-  bottom: 200px;
-  /* right: 45px; */
-  z-index: 111;
-  cursor: pointer;
-  text-align: center;
-  /* transform: rotate(90deg); */
-  background-color: rgb(16, 148, 16);
-  color: var(--colorWhite);
-  text-transform: capitalize;
-  padding: 5px 15px 7px 15px;
-  /* height: 40px;
-  width: 40px; */
-  border-radius: 30px;
-  /* -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg); */
-  animation: scroll_amini linear 2s infinite alternate;
-  -webkit-animation: scroll_amini linear 2s infinite alternate;
-  transition: all linear 0.3s;
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
+  margin-right: 20px;
 }
 
-.tf__scroll_btn:hover {
+/* .tf__scroll_btn:hover {
   background: var(--colorBlack) !important;
-}
+} */
 
 @keyframes scroll_amini {
   from {

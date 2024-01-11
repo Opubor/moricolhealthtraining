@@ -38,7 +38,7 @@ const ScrollToTopButton = ({ style }) => {
       {isVisible && (
         // <div className="d-flex">
         <div
-          className={`tf__scroll_btn ${style} d-flex align-items-center gap-2 mr-2`}
+          className={`tf__scroll_btn ${style} d-flex align-items-center gap-2 mr-4`}
           role="button"
         >
           <div className="whatsapp_icon text-white">
