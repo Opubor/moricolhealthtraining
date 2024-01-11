@@ -52,7 +52,7 @@ export default async function Home3() {
       <VideoModal />
 
       <FooterSection2 style="tf__footer_3" />
-      <ScrollToTopButton style="style-3" />
+      <ScrollToTopButton style="" />
     </div>
   );
 }

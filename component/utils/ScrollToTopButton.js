@@ -34,16 +34,27 @@ const ScrollToTopButton = ({ style }) => {
     });
   };
   return (
-    <div>
+    <div className="d-flex">
       {isVisible && (
+        // <div className="d-flex">
         <div
-          className={`tf__scroll_btn ${style}`}
+          className={`tf__scroll_btn ${style} d-flex align-items-center gap-2 mr-2`}
           role="button"
-          onClick={scrollToTop}
         >
-          {" "}
-          go to top{" "}
+          <div className="whatsapp_icon text-white">
+            <a
+              href={`https://wa.me/09124460695`}
+              className="text-white"
+              target="_blank"
+            >
+              <i className="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <div onClick={scrollToTop} className="scrolltop_icon">
+            <i className="fa fa-arrow-up" aria-hidden="true"></i>
+          </div>
         </div>
+        // </div>
       )}
     </div>
   );

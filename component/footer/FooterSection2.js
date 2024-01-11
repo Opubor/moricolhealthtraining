@@ -40,7 +40,7 @@ const FooterSection2 = ({ style }) => {
                     </p>
                     <p>Join the Moricol Community:</p>
                     <p>
-                      Moricol isn't just a website – it's a community enhancing
+                      Moricol isn't just a website – it is a community enhancing
                       lives, one service at a time. Explore, embark on
                       well-being, and redefine healthcare
                     </p>
@@ -74,7 +74,7 @@ const FooterSection2 = ({ style }) => {
                         <Link href="/eLearning">E-Learning Courses</Link>
                       </li>
                       <li>
-                        <Link href="/courses">classroom Courses</Link>
+                        <Link href="/courses">Classroom Courses</Link>
                       </li>
                       <li>
                         <Link href="/bundles">Course Bundles</Link>
