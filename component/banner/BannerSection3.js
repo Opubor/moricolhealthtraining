@@ -27,16 +27,14 @@ const BannerSection3 = () => {
                     our courses
                   </Link>
                 </li>
-                {/* <li>
-                  <a
-                    className="venobox play_btn"
-                    role="button"
-                    onClick={handleVideoShow}
-                  >
-                    <i className="fas fa-play"></i>
-                  </a>
-                </li> */}
               </ul>
+              <div className="d-flex gap-2 align-items-center mt-4">
+                <i class="fas fa-percent text-white smileyface"></i>{" "}
+                <div className="text-white">
+                  Experience the best with a 10% discount on all our health
+                  training courses
+                </div>
+              </div>
             </div>
           </div>
         </div>

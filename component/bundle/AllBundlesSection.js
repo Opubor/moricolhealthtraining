@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import Currency from "../currency/Currency";
 
-const AllBundlesSection = ({user}) => {
+const AllBundlesSection = ({ user }) => {
   const {
     currentBundleItems,
     totalBundlePages,
@@ -46,9 +46,18 @@ const AllBundlesSection = ({user}) => {
                       currency: "NGN",
                     }).format(item?.price)}
                   </span> */}
-                  <Currency currency={user?.currency} price={Number(item?.price)} />
-
+                  <Currency
+                    currency={user?.currency}
+                    price={Number(item?.price)}
+                  />
                 </div>
+
+                {/* ===Discount=== */}
+                <div className="discount">
+                  <p>-10% discount</p>
+                </div>
+                {/* ============== */}
+
                 <ul className="tf__single_course_header">
                   {/* <li>
                     <i className="fas fa-user"></i> {item.instructor}

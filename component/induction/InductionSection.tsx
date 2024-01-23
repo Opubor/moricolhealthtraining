@@ -46,8 +46,18 @@ async function InductionSection() {
                       currency: "NGN",
                     }).format(Number(item?.price))}
                   </span> */}
-                  <Currency currency={user?.currency as CURRENCIES} price={100000} />
+                  <Currency
+                    currency={user?.currency as CURRENCIES}
+                    price={90000}
+                  />
                 </div>
+
+                {/* ===Discount=== */}
+                <div className="discount">
+                  <p>-10% discount</p>
+                </div>
+                {/* ============== */}
+
                 <ul className="tf__single_course_header">
                   <li>
                     <i className="fas fa-folder-open"></i> {item.lessons}

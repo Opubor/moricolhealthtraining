@@ -14,12 +14,13 @@ const LoginSection = () => {
                 <img src="/images/moricollogo.jpeg" />
               </div>
               <h2 className="text-center">Health Care Training</h2>
-              <p className="text-center">Sign in now to embark on your healthcare training journey</p>
+              <p className="text-center">
+                Sign in now to embark on your healthcare training journey
+              </p>
               <LoginForm />
 
               <p className="">
-                Don’t have an account ?{" "}
-                <Link href="/sign-up">Sign Up</Link>
+                Don’t have an account ? <Link href="/sign-up">Sign Up</Link>
               </p>
             </div>
           </div>

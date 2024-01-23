@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Currency from "../currency/Currency";
 
-function BundleSection({user}) {
+function BundleSection({ user }) {
   return (
     <section className="tf__courses_2 tf__courses_3">
       <div className="container">
@@ -42,6 +42,13 @@ function BundleSection({user}) {
                     />
                   </span>
                 </div>
+
+                {/* ===Discount=== */}
+                <div className="discount">
+                  <p>-10% discount</p>
+                </div>
+                {/* ============== */}
+
                 <ul className="tf__single_course_header">
                   {/* <li>
                   <i className="fas fa-user"></i> {item?.instructor}

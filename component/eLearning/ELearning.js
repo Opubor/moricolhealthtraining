@@ -3,7 +3,7 @@ import Link from "next/link";
 import { eLearningCourses } from "@/data/Data";
 import Currency from "../currency/Currency";
 
-function ELearning({user}) {
+function ELearning({ user }) {
   return (
     <section className="tf__courses_2 tf__courses_3 e_learning mt-4">
       <div className="container">
@@ -39,9 +39,18 @@ function ELearning({user}) {
                       currency: "NGN",
                     }).format(item?.price)}
                   </span> */}
-                  <Currency currency={user?.currency} price={Number(item?.price)} />
-
+                  <Currency
+                    currency={user?.currency}
+                    price={Number(item?.price)}
+                  />
                 </div>
+
+                {/* ===Discount=== */}
+                <div className="discount">
+                  <p>-10% discount</p>
+                </div>
+                {/* ============== */}
+
                 <ul className="tf__single_course_header">
                   <li>
                     <i className="fas fa-folder-open"></i> {item.lessons}

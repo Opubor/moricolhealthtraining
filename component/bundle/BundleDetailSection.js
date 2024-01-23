@@ -53,6 +53,11 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
                         currency={user?.currency}
                         price={Number(courseData?.price)}
                       />
+                      {/* ===Discount=== */}
+                      <div className="discount_detailtab">
+                        <p>-10% discount</p>
+                      </div>
+                      {/* ============== */}
 
                       {/* {new Intl.NumberFormat("ja-JP", {
                         style: "currency",
@@ -120,75 +125,75 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
               Add Ons
             </h4>
             {/* {session ? ( */}
-              <>
-                {addOns.map((data) => (
-                  <>
-                    {data?.name === "International Work Visa" ? (
-                      <div className="col-xl-3" key={data.id}>
-                        <div className={`tf__activities_item `}>
-                          <div className="span__icon">
-                            <span className="ll">
-                              <i className={"fa fa-book"}></i>{" "}
-                            </span>
-                          </div>
-                          <h6 className="fw-bold mt-2">{data?.name}</h6>
-                          <h5 className="fw-bold mt-2">
-                            {data?.price && (
-                              <p>
-                                {/* {new Intl.NumberFormat("ja-JP", {
+            <>
+              {addOns.map((data) => (
+                <>
+                  {data?.name === "International Work Visa" ? (
+                    <div className="col-xl-3" key={data.id}>
+                      <div className={`tf__activities_item `}>
+                        <div className="span__icon">
+                          <span className="ll">
+                            <i className={"fa fa-book"}></i>{" "}
+                          </span>
+                        </div>
+                        <h6 className="fw-bold mt-2">{data?.name}</h6>
+                        <h5 className="fw-bold mt-2">
+                          {data?.price && (
+                            <p>
+                              {/* {new Intl.NumberFormat("ja-JP", {
                               style: "currency",
                               currency: "NGN",
                             }).format(data?.price)} */}
-                                <Currency
-                                  currency={user?.currency}
-                                  price={Number(data?.price)}
-                                />
-                              </p>
-                            )}
-                          </h5>
-                          <div className="text-warning mt-2">
-                            {data?.mail && <p>{data?.mail}</p>}
-                          </div>
+                              <Currency
+                                currency={user?.currency}
+                                price={Number(data?.price)}
+                              />
+                            </p>
+                          )}
+                        </h5>
+                        <div className="text-warning mt-2">
+                          {data?.mail && <p>{data?.mail}</p>}
                         </div>
                       </div>
-                    ) : (
-                      <Link
-                        href={`/enrollment/${data?.id}?type=addOns`}
-                        className="col-xl-3"
-                        key={data.id}
-                      >
-                        <div className={`tf__activities_item `}>
-                          <span>
-                            <i className={"fa fa-book"}></i>{" "}
-                          </span>
-                          <h6 className="fw-bold mt-2">{data?.name}</h6>
-                          <h6 className="fw-bold mt-2">
-                            {data?.name === "Hotel Accomodation" && "(Nigeria)"}
-                          </h6>
-                          <h5 className="fw-bold mt-2">
-                            {data?.price && (
-                              <p>
-                                <Currency
-                                  currency={user?.currency}
-                                  price={Number(data?.price)}
-                                />{" "}
-                                {/* {new Intl.NumberFormat("ja-JP", {
+                    </div>
+                  ) : (
+                    <Link
+                      href={`/enrollment/${data?.id}?type=addOns`}
+                      className="col-xl-3"
+                      key={data.id}
+                    >
+                      <div className={`tf__activities_item `}>
+                        <span>
+                          <i className={"fa fa-book"}></i>{" "}
+                        </span>
+                        <h6 className="fw-bold mt-2">{data?.name}</h6>
+                        <h6 className="fw-bold mt-2">
+                          {data?.name === "Hotel Accomodation" && "(Nigeria)"}
+                        </h6>
+                        <h5 className="fw-bold mt-2">
+                          {data?.price && (
+                            <p>
+                              <Currency
+                                currency={user?.currency}
+                                price={Number(data?.price)}
+                              />{" "}
+                              {/* {new Intl.NumberFormat("ja-JP", {
                               style: "currency",
                               currency: "NGN",
                             }).format(data?.price)}{" "} */}
-                                {data?.extra}
-                              </p>
-                            )}
-                          </h5>
-                          <div className=" mt-2">
-                            {data?.mail && <p>{data?.mail}</p>}
-                          </div>
+                              {data?.extra}
+                            </p>
+                          )}
+                        </h5>
+                        <div className=" mt-2">
+                          {data?.mail && <p>{data?.mail}</p>}
                         </div>
-                      </Link>
-                    )}
-                  </>
-                ))}
-              </>
+                      </div>
+                    </Link>
+                  )}
+                </>
+              ))}
+            </>
             {/* ) : (
               <>
                 {addOns.map((data) => (

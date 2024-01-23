@@ -25,10 +25,10 @@ const NavigationSection = ({ position, btnPosition, navRef, user }) => {
           <Navlink href="/about">about</Navlink>
         </li>
         <li className="nav-item">
-          <Navlink href="/courses">In-Class</Navlink>
+          <Navlink href="/courses">In~Class</Navlink>
         </li>
         <li className="nav-item">
-          <Navlink href="/eLearning">E-Learning</Navlink>
+          <Navlink href="/eLearning">E~Learning</Navlink>
         </li>
         <li className="nav-item">
           <Navlink href="/bundles">Bundles</Navlink>
@@ -49,7 +49,7 @@ const NavigationSection = ({ position, btnPosition, navRef, user }) => {
           My Courses
         </a>
       ) : null}
-        {session ? <UserCurrency user={user} /> : <NonUserCurrency />}
+      {session ? <UserCurrency user={user} /> : <NonUserCurrency />}
     </div>
   );
 };

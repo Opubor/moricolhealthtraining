@@ -52,8 +52,8 @@ export const options: NextAuthOptions = {
         token.address = user?.address;
         token.gender = user?.gender;
         token.password = user?.password;
-        token.role = user?.role
-        token.phone = user?.phone        
+        token.role = user?.role;
+        token.phone = user?.phone;
       }
       return token;
     },
@@ -66,7 +66,7 @@ export const options: NextAuthOptions = {
         session.user.phone = token?.phone;
         session.user.gender = token?.gender;
         session.user.password = token?.password;
-        session.user.role = token?.role
+        session.user.role = token?.role;
       }
       return session;
     },

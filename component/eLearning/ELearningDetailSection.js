@@ -53,6 +53,11 @@ const ELearningDetailSection = ({ courseData, courseContents, user }) => {
                         price={Number(courseData?.price)}
                       />
                     </p>
+                    {/* ===Discount=== */}
+                    <div className="discount_detailtab">
+                      <p>-10% discount</p>
+                    </div>
+                    {/* ============== */}
                     {/* <p>&#8358;{courseData.price}</p> */}
                   </li>
                   <li>

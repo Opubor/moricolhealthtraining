@@ -7,10 +7,10 @@ import RegPrompter from "../RegPrompter";
 import InductionDetailTabSection from "./InductionDetailTabSection";
 import Currency from "../currency/Currency";
 interface PageProps {
-  user: any
+  user: any;
 }
 
-const InductionDetailSection = ({user}: PageProps) => {
+const InductionDetailSection = ({ user }: PageProps) => {
   const { data: session } = useSession();
   const [error, setError] = useState(false);
 
@@ -52,14 +52,18 @@ const InductionDetailSection = ({user}: PageProps) => {
                     <h4>price</h4>
                     {/* <p>&#8358;100,000</p> */}
                     <p>
-                    <Currency currency={user?.currency} price={100000} />
+                      <Currency currency={user?.currency} price={90000} />
 
                       {/* {new Intl.NumberFormat("ja-JP", {
                         style: "currency",
                         currency: "NGN",
                       }).format(100000)} */}
                     </p>
-
+                    {/* ===Discount=== */}
+                    <div className="discount_detailtab">
+                      <p>-10% discount</p>
+                    </div>
+                    {/* ============== */}
                   </li>
                   <li>
                     {session?.user ? (

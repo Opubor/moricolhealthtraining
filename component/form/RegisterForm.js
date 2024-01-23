@@ -33,14 +33,15 @@ const RegisterForm = () => {
         }),
       });
       setLoading(false);
+      const responseMessage = await response.json();
       const res = response.status;
       if (res === 400) {
-        return toast.error("Email already exists!", {
+        return toast.error(responseMessage, {
           position: "top-right",
         });
       } else res === 200;
       {
-        return toast.success("Registration Successful.", {
+        return toast.success(responseMessage, {
           position: "top-right",
         });
       }
@@ -58,7 +59,12 @@ const RegisterForm = () => {
           <h6 className="text-center text-primary">Regular User</h6>
         </div>
         <div className="w-100 d-flex justify-content-center py-1">
-          <Link href={"/sign-up/company"} className="text-decoration-none text-black">Company</Link>
+          <Link
+            href={"/sign-up/company"}
+            className="text-decoration-none text-black"
+          >
+            Company
+          </Link>
         </div>
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>

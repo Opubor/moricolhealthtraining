@@ -36,7 +36,6 @@ const ScrollToTopButton = ({ style }) => {
   return (
     <div className="d-flex">
       {isVisible && (
-        // <div className="d-flex">
         <div
           className={`tf__scroll_btn ${style} d-flex align-items-center gap-2 mr-4`}
           role="button"
@@ -54,7 +53,6 @@ const ScrollToTopButton = ({ style }) => {
             <i className="fa fa-arrow-up" aria-hidden="true"></i>
           </div>
         </div>
-        // </div>
       )}
     </div>
   );

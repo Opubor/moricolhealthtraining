@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import Currency from "../currency/Currency";
 
-const AllELearningSection = ({user}) => {
+const AllELearningSection = ({ user }) => {
   const {
     currentELearningItems,
     currentELearningPage,
@@ -39,17 +39,17 @@ const AllELearningSection = ({user}) => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  {/* <span>&#8358;{item.price}</span> */}
-                  {/* <span>
-                    {new Intl.NumberFormat("ja-JP", {
-                      style: "currency",
-                      currency: "NGN",
-                    }).format(item?.price)}
 
-                  </span> */}
-                  <Currency currency={user?.currency} price={Number(item?.price)} />
-
+                  <Currency
+                    currency={user?.currency}
+                    price={Number(item?.price)}
+                  />
                 </div>
+                {/* ===Discount=== */}
+                <div className="discount">
+                  <p>-10% discount</p>
+                </div>
+                {/* ============== */}
                 <ul className="tf__single_course_header">
                   {/* <li>
                     <i className="fas fa-user"></i> {item.instructor}

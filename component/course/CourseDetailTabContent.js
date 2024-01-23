@@ -69,6 +69,12 @@ const CourseDetailTabContent = ({ courseData, courseContents, user }) => {
                           />
                         </div>
 
+                        {/* ===Discount=== */}
+                        <div className="discount">
+                          <p>-10% discount</p>
+                        </div>
+                        {/* ============== */}
+
                         <div className="tf__single_courses_text">
                           <Link
                             className="title"

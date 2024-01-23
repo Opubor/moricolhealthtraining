@@ -673,7 +673,7 @@ const courseDataContents = [
     imgSrc: "/images/basiclifesupport.jpg",
     content: "Level 2 Award in Basic Life Support",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 1,
@@ -682,7 +682,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Duty of Care",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 2,
@@ -691,7 +691,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Effective Communication",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 3,
@@ -700,7 +700,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Equality, Diversity and Inclusion",
     time: "6 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 4,
@@ -712,18 +712,19 @@ const courseDataContents = [
     //   "This course impacts knowledge about the type of help given to someone who is injured or ill to keep them safe and to cause no further harm.    ",
     content: "Level 2 Award in Food Safety, Nutrition and Hydration",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 5,
     courseDataId: 0,
     category: "Core & Mandatory",
     tag: "Available",
-    description: "Our Safe Handling and Medication Course is a comprehensive training program designed for healthcare professionals seeking to enhance their skills in the safe and effective management of medications. This course covers essential topics, including medication administration protocols, dosage calculations, drug interactions, and adverse reactions. Participants will engage in practical sessions, gaining hands-on experience in safe medication handling, storage, and documentation. The course emphasizes patient safety, error prevention, and compliance with regulatory standards. ",
+    description:
+      "Our Safe Handling and Medication Course is a comprehensive training program designed for healthcare professionals seeking to enhance their skills in the safe and effective management of medications. This course covers essential topics, including medication administration protocols, dosage calculations, drug interactions, and adverse reactions. Participants will engage in practical sessions, gaining hands-on experience in safe medication handling, storage, and documentation. The course emphasizes patient safety, error prevention, and compliance with regulatory standards. ",
     imgSrc: "/images/safehandling.jpg",
     content: "Level 2 Award in Safe Handling and Medication ",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 6,
@@ -732,7 +733,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Handling and Recording Information",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 7,
@@ -744,7 +745,7 @@ const courseDataContents = [
       "This elective will teach you to understand your own possibilities and responsibilities of others relating to health, safety and fire in the work setting. The course will also enlighten you to key elements and principles regarding Health, Fire, Safety.",
     content: "Level 2 Award in Health, Safety and Fire",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 8,
@@ -756,7 +757,7 @@ const courseDataContents = [
       "This course is a practical, evidence-based approach preventing patients and health workers from being harmed by exposing you to various practices such as Hand Hygiene, injection safety, IPC and antimicrobial resistance, surgical site infections, sepsis and basic IPC and primary care.",
     content: "Level 2 Award in Infection Prevention and Control ",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 9,
@@ -765,7 +766,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Mental Capacity Act (Inc. DoLS)",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 10,
@@ -774,7 +775,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Moving and Assisting",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 11,
@@ -786,7 +787,7 @@ const courseDataContents = [
       "The aim of this module is to get you to recognize the principles of safe moving. Hoists provide a way to transfer somebody with limited mobility without putting unnecessary strain on the career of the person being moved. Furthermore, this elective will make you become conversant with the key principles of moving and handling.    ",
     content: "Level 2 Award in Moving, Assisting and Hoisting",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 12,
@@ -795,7 +796,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Oral Health",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 13,
@@ -807,7 +808,7 @@ const courseDataContents = [
     //   "This elective equips individuals with the knowledge, skills and values to provide compassionate and effective care that respects the unique needs and preferences of each individual. Person-centred care entails understanding The concept of Person-centred care promoting individuality and dignity, empowering individuals and fostering independence, building positive and trusting relationships and promoting holistic well-being. This elective will give our clients a greater ability to meet the diverse individual needs, improved communication collaboration, with an increased confidence in providing person centred care.",
     content: "Level 2 Award in Person-Centred Care and Support",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 14,
@@ -816,7 +817,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Promoting Dignity in Care ",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 15,
@@ -826,7 +827,7 @@ const courseDataContents = [
     content:
       "Level 2 Award in Role of the Care Worker and Personal Development",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 16,
@@ -835,7 +836,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Safeguarding Adults",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 17,
@@ -844,7 +845,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Safeguarding Children",
     time: "3 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 18,
@@ -853,7 +854,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Automated External Defibrillation",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 19,
@@ -862,7 +863,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Basic Life Support ",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 20,
@@ -871,7 +872,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Basic Paediatric First Aid",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 21,
@@ -880,7 +881,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Emergency Paediatric First Aid",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 22,
@@ -892,7 +893,7 @@ const courseDataContents = [
     //   "This course impacts knowledge about the type of help given to someone who is injured or ill to keep them safe and to cause no further harm.",
     content: "Level 2 Award in Fire Safety Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 23,
@@ -901,7 +902,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in First Aid Awareness ",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 24,
@@ -910,7 +911,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Emergency First Aid at Work",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 25,
@@ -922,7 +923,7 @@ const courseDataContents = [
       "This course impacts knowledge about the type of help given to someone who is injured or ill to keep them safe and to cause no further harm.",
     content: "Level 3 Award in First Aid at Work",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 26,
@@ -931,7 +932,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in First Aid at Work Requal ",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 27,
@@ -940,7 +941,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Immediate Life Support (ILS)",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 28,
@@ -949,7 +950,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Paediatric First Aid",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 29,
@@ -958,7 +959,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in the Role of the Fire Marshal ",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 30,
@@ -967,7 +968,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Anaphylaxis and Emergency Medication Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 31,
@@ -976,7 +977,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Basic Clinical Observations",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 32,
@@ -988,7 +989,7 @@ const courseDataContents = [
       "Our Catheter Care Course is a specialized training program tailored for healthcare professionals seeking expertise in the proper management of catheters. This course covers crucial aspects such as insertion techniques, routine care procedures, and the prevention of complications associated with catheter use. Participants will gain practical skills through hands-on training, ensuring proficiency in catheter maintenance and addressing patient needs. With a focus on infection prevention and patient comfort, this course is designed to enhance the knowledge and competence of healthcare practitioners, enabling them to provide optimal care for individuals with  catheters.",
     content: "Level 2 Award in Catheter Care",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 33,
@@ -1000,7 +1001,7 @@ const courseDataContents = [
       "Diabetes is a chronic (long-standing) health condition that affects how your body turns food into energy. Usually, your body either dosen’t make enough insulin or can’t use it as well as it should. This course will teach you about the 3p’s of Diabetes which is polydipsia, polyuria, polyphagia e.t.c. this corresponds to increase in thirst, urination and appetite.",
     content: "Level 2 Award in Diabetes Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 34,
@@ -1012,7 +1013,7 @@ const courseDataContents = [
       "Delegates will be taught medications often used to arrest this condition outside of the hospital setting and the procedure that is used during the administering. The elective course will also teach you ways to help raise awareness about epilepsy by learning about epilepsy and seizure first aid amongst other pointers",
     content: "Level 2 Award in Epilepsy and Emergency Medication Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 35,
@@ -1021,7 +1022,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Epilepsy Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 36,
@@ -1033,7 +1034,7 @@ const courseDataContents = [
     //   "This award equips individuals with the essential knowledge and skills to safety and effectively administer these respiratory medications to patients in various healthcare settings.The award covers,types of inhalers, correct inhaler technique, maintaining and cleaning inhalers,side effects and potential complications of inhaler therapy and documenting inhaler usage. The Knowledge of Nebulizers helps the individual to know the principles of Nevulizers therapy,preparing and administering nebulized medication, Monitoring patients during nebulizer therapy, cleaning and disinfecting nebulizers and documenting  nebulizer usage.This elective helps in career advancement and is useful for Nurses,Healthcare assistants ,respiratory therapist and anyone in respiratory care.",
     content: "Level 2 Award in Inhalers and Nebulizers",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 37,
@@ -1041,10 +1042,11 @@ const courseDataContents = [
     category: "Clinical",
     imgSrc: "/images/oxygentherapy.jpg",
     tag: "Available",
-    description: "Our Oxygen Therapy Course is tailored for healthcare professionals seeking in-depth knowledge and expertise in the administration and management of oxygen therapy. This specialized training covers essential topics such as the physiological principles of oxygen therapy, equipment handling and maintenance, and the assessment of patient response. Participants will gain practical skills through hands-on training, ensuring proficiency in delivering oxygen therapy safely and effectively. The course also addresses common challenges and complications, providing healthcare practitioners with the tools to make informed decisions in various clinical scenarios. ",
+    description:
+      "Our Oxygen Therapy Course is tailored for healthcare professionals seeking in-depth knowledge and expertise in the administration and management of oxygen therapy. This specialized training covers essential topics such as the physiological principles of oxygen therapy, equipment handling and maintenance, and the assessment of patient response. Participants will gain practical skills through hands-on training, ensuring proficiency in delivering oxygen therapy safely and effectively. The course also addresses common challenges and complications, providing healthcare practitioners with the tools to make informed decisions in various clinical scenarios. ",
     content: "Level 2 Award in Oxygen Therapy",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 38,
@@ -1053,7 +1055,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in PEG Feeding Awareness ",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 39,
@@ -1061,10 +1063,11 @@ const courseDataContents = [
     category: "Clinical",
     imgSrc: "/images/stomacare.jpeg",
     tag: "Available",
-    description: "Our Stoma Care Course is designed to empower healthcare professionals with the knowledge and skills necessary for proficient stoma care. This specialized training covers critical aspects, including the assessment and management of patients with stomas, stoma appliance selection and application, and addressing potential complications. Participants will engage in practical, hands-on sessions to enhance their competence in providing optimal care for individuals with ostomies. The course places a strong emphasis on patient education, promoting independence, and maintaining the overall well-being of those with stomas.",
+    description:
+      "Our Stoma Care Course is designed to empower healthcare professionals with the knowledge and skills necessary for proficient stoma care. This specialized training covers critical aspects, including the assessment and management of patients with stomas, stoma appliance selection and application, and addressing potential complications. Participants will engage in practical, hands-on sessions to enhance their competence in providing optimal care for individuals with ostomies. The course places a strong emphasis on patient education, promoting independence, and maintaining the overall well-being of those with stomas.",
     content: "Level 2 Award in Stoma Care Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 40,
@@ -1072,10 +1075,11 @@ const courseDataContents = [
     category: "Clinical",
     imgSrc: "/images/pegfeeding.jpeg",
     tag: "Available",
-    description: "Our PEG (Percutaneous Endoscopic Gastrostomy) Feeding Course is a specialized training program tailored for healthcare professionals seeking expertise in managing and caring for patients with PEG tubes. This comprehensive course covers key aspects, including the insertion and removal of PEG tubes, maintenance and troubleshooting, infection prevention, and nutritional support strategies. Participants will engage in hands-on learning experiences, ensuring proficiency in PEG tube care and addressing patient-specific needs. Emphasizing patient safety and comfort, this course equips healthcare practitioners with the knowledge and skills necessary to provide optimal care for individuals relying on enteral feeding through PEG tubes.",
+    description:
+      "Our PEG (Percutaneous Endoscopic Gastrostomy) Feeding Course is a specialized training program tailored for healthcare professionals seeking expertise in managing and caring for patients with PEG tubes. This comprehensive course covers key aspects, including the insertion and removal of PEG tubes, maintenance and troubleshooting, infection prevention, and nutritional support strategies. Participants will engage in hands-on learning experiences, ensuring proficiency in PEG tube care and addressing patient-specific needs. Emphasizing patient safety and comfort, this course equips healthcare practitioners with the knowledge and skills necessary to provide optimal care for individuals relying on enteral feeding through PEG tubes.",
     content: "Level 3 Award in PEG Feeding",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 41,
@@ -1083,10 +1087,11 @@ const courseDataContents = [
     category: "Clinical",
     imgSrc: "/images/trach.jpeg",
     tag: "Available",
-    description: "Our Tracheostomy Care Course is specifically designed for healthcare professionals seeking comprehensive training in the management and care of patients with tracheostomies. This specialized program covers essential topics such as tracheostomy insertion and removal procedures, routine care and maintenance, troubleshooting potential issues, and emergency response protocols. Participants will engage in hands-on learning experiences to develop the skills needed for proficient tracheostomy care, ensuring patient safety and well-being. The course also emphasizes effective communication strategies with patients and their families, fostering a holistic approach to tracheostomy management.",
+    description:
+      "Our Tracheostomy Care Course is specifically designed for healthcare professionals seeking comprehensive training in the management and care of patients with tracheostomies. This specialized program covers essential topics such as tracheostomy insertion and removal procedures, routine care and maintenance, troubleshooting potential issues, and emergency response protocols. Participants will engage in hands-on learning experiences to develop the skills needed for proficient tracheostomy care, ensuring patient safety and well-being. The course also emphasizes effective communication strategies with patients and their families, fostering a holistic approach to tracheostomy management.",
     content: "Level 3 Award in Tracheostomy",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 42,
@@ -1099,7 +1104,7 @@ const courseDataContents = [
       "Autism spectrum disorder (ASD) is a developmental disability caused by differences in the brain. People with this disorder have problems with social communication and interaction, and restricted or respective behaviours or interest. Delegates will be taught the various autism spectrum disorders and how to identify if an individual is on the spectrum",
     content: "Level 2 Award in Autism Spectrum",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 43,
@@ -1111,7 +1116,7 @@ const courseDataContents = [
     //   "The Award in Boundaries and Good practice is a crucial qualification for anyone working in healthcare and social care settings.This elective typically covers key areas like understanding professional boundaries,professional codes of conduct and local policies,Establishing rules of contact and maintaining a safe distance ,demonstration of professional behaviour  and avoiding dual relationships ,identifying and dealing with risk factors including reporting breaches of professional boundaries .This award is ideal for healthcare support workers,social care workers , volunteers and anyone who wants to work in health and social care sector. The elective wil  enhance greater job opportunities in this sector .",
     content: "Level 2 Award in Boundaries and Good Practice",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 44,
@@ -1123,7 +1128,7 @@ const courseDataContents = [
     //   "This is a recognised qualification that equips individuals with the knowledge and skills needed to develop and implement personalised care plan for individuals in various settings such as understanding person centered care ,care planning for different needs ,nutrition and Hydration,Personal hygiene support ,continence care ,promoting sleep ,communication and collaboration,record keeping and documentation. Care planning enhances knowledge,skills  and improved career prospects for care workers,support workers,support workers, Personal assistants,Healthcare assistants and anyone who wants to work in the care sector",
     content: "Level 2 Award in Care Planning",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 45,
@@ -1135,7 +1140,7 @@ const courseDataContents = [
     //   "The leve 2 Award equips Individuals with skills our knowledge to excel in customer service roles and effectively handles  complaints, Effective communication and interpersonal skills, building rapport And maintaining positive relationships, problem solving and decision-making and using technology for effective customer service. Complaint management is understanding the importance of Effective complaints handling, Active listening an empathy in dealing with complaints, investigating complaints and gathering information, Resolving complaints and reaching  solutions and learning from complaints and improving service quality .This award would enhance greater job opportunities and career progression.",
     content: "Level 2 Award in Customer Service & Complaints Management",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 46,
@@ -1144,7 +1149,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Dementia",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 47,
@@ -1153,7 +1158,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Drug & Alcohol Abuse Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 48,
@@ -1162,7 +1167,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Dysphagia Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 49,
@@ -1171,7 +1176,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Dysphagia Awareness ",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 50,
@@ -1183,7 +1188,7 @@ const courseDataContents = [
     //   "A Level 2 award in End of Life Care is a valuable qualification for anyone who wants to work in the field of palliative and end of life care.The Award covers a range of topics including (a)understanding death,dying and bereavement.This includes exploring the physical,emotional ,social and spiritual aspects of End of life care. Others are communication skills, pain management, symptom management, spiritual care and ethical considerations.This award is suitable for Healthcare  professionals,Care workers ,Support workers and volunteers who work with individuals and families facing End of life care.",
     content: "Level 2 Award in End of Life Care",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 51,
@@ -1192,7 +1197,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Epilepsy & Buccal Midazolam",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 52,
@@ -1201,7 +1206,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Learning Disability",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 53,
@@ -1210,7 +1215,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Loss and Bereavement",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 54,
@@ -1219,7 +1224,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Mental Health",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 55,
@@ -1228,7 +1233,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in People Hoisting",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 56,
@@ -1237,7 +1242,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Personal Care",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 57,
@@ -1245,10 +1250,11 @@ const courseDataContents = [
     category: "Specialist",
     imgSrc: "/images/pressurecare2.jpg",
     tag: "Available",
-    description: "Our Pressure Care Management Course is a specialized training program designed for healthcare professionals seeking expertise in preventing and managing pressure ulcers. This comprehensive course covers crucial aspects such as risk assessment, effective positioning, the selection and use of pressure-relieving devices, and the implementation of individualized care plans. Participants will engage in practical learning experiences, gaining hands-on skills to identify, assess, and mitigate the risk of pressure ulcers in diverse healthcare settings. Emphasizing a multidisciplinary approach, the course focuses on collaboration and communication among healthcare teams to enhance patient outcomes. ",
+    description:
+      "Our Pressure Care Management Course is a specialized training program designed for healthcare professionals seeking expertise in preventing and managing pressure ulcers. This comprehensive course covers crucial aspects such as risk assessment, effective positioning, the selection and use of pressure-relieving devices, and the implementation of individualized care plans. Participants will engage in practical learning experiences, gaining hands-on skills to identify, assess, and mitigate the risk of pressure ulcers in diverse healthcare settings. Emphasizing a multidisciplinary approach, the course focuses on collaboration and communication among healthcare teams to enhance patient outcomes. ",
     content: "Level 2 Award in Pressure Care Management",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 58,
@@ -1257,7 +1263,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Prevention of Slips, Trips and Falls",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 59,
@@ -1266,7 +1272,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Professional Relationships and Boundaries",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 60,
@@ -1278,7 +1284,7 @@ const courseDataContents = [
       "This elective will teach you how to recognize when someone is experiencing a stroke. The B.E.F.A.S.T. warning signs which you will be made aware of can help anyone recognize when a stroke may be happening and initiate the emergency 911.",
     content: "Level 2 Award in Stroke Awareness",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 61,
@@ -1287,7 +1293,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in the Introduction of Positive Behaviour Support",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 62,
@@ -1296,7 +1302,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Understanding Behaviours That Challenge",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 63,
@@ -1306,7 +1312,7 @@ const courseDataContents = [
     content:
       "Level 2 Award in Understanding Behaviours That Challenge in Dementia",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 64,
@@ -1318,7 +1324,7 @@ const courseDataContents = [
       "Mental health is a state of well being in which every individual realizes his or her own potential, can cope with the normal stress of life, can work productively and fruitfully and is able to make a contribution to her or his community. This course further highlights the level of functioning of the mind and how best to understand the causes respectively.",
     content: "Level 2 Award in Understanding Mental Health",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 65,
@@ -1330,7 +1336,7 @@ const courseDataContents = [
       "This is an incurable condition with the underlying symptoms that include forgetfulness, limited social skills and thinking abilities so impaired that it interferes with daily functioning. This elective will enlighten you on how to manage such a condition with aid of medical diagnosis, lab tests or imaging.",
     content: "Level 3 Award in Dementia",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 66,
@@ -1342,7 +1348,7 @@ const courseDataContents = [
       "The module teaches a strategy for engaging with patients and caregivers to create a complete and accurate medication list using the brown bag method. A complete and accurate medication list is in the foundation for addressing medication reconciliation and medication management issues.",
     content: "Level 3 Award in Medication Competency and Management",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 67,
@@ -1351,7 +1357,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Positive Behaviour Support",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 68,
@@ -1360,7 +1366,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Safeguarding Adults",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 69,
@@ -1372,7 +1378,7 @@ const courseDataContents = [
     //   "This elective course shall teach you to grasp various scientific methods and discipline in handling, preparing and storage of food in ways that prevent food borne illness.",
     content: "Level 2 Award in Food Safety",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 70,
@@ -1381,7 +1387,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Food Safety Principles ",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 71,
@@ -1390,7 +1396,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in General Data Protection Regulation – GDPR",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 72,
@@ -1399,7 +1405,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Handling Hazardous Substance (COSHH)",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 73,
@@ -1408,7 +1414,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Lone Working Awareness ",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 74,
@@ -1417,7 +1423,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Managing Personal Stress",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 75,
@@ -1426,7 +1432,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 2 Award in Managing Stress in the Workplace",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 76,
@@ -1438,7 +1444,7 @@ const courseDataContents = [
     //   "This award equips learners with the knowledge and skills required to effectively manage and plan healthcare administration and manage tasks.Manual planning Covers topics like principles of healthcare management ,planning and organising healthcare services, human resource management in healthcare,financial management in healthcare, quality management in Healthcare,Health information management,communication and interpersonal skills and Healthcare ethics and Law.",
     content: "Level 2 Award in Manual Handling",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 77,
@@ -1450,7 +1456,7 @@ const courseDataContents = [
     //   "This elective shall teach you the various steps in achieving this goal and to improve the process which you would implement in risk assessment as you factor the unique aspects of a care home and individual resident/staff needs.",
     content: "Level 2 Award in Risk Assessment in Care",
     time: "2 Hours",
-    price: "200000",
+    price: "180000",
   },
   {
     id: 78,
@@ -1459,7 +1465,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Assessing Competency in Moving and Assisting",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 79,
@@ -1467,10 +1473,11 @@ const courseDataContents = [
     category: "Health & Safety",
     imgSrc: "/images/foodsafety.jpg",
     tag: "Available",
-    description: " This comprehensive course covers key aspects such as proper food handling, storage, and preparation, as well as hygiene practices to prevent contamination. Participants will learn about critical control points, risk assessment, and effective measures to maintain a sanitary food environment. By emphasizing regulatory compliance and industry standards, this course aims to equip professionals with the knowledge and skills needed to prevent foodborne illnesses, safeguard consumer health, and uphold the highest standards of food safety in their operations",
+    description:
+      " This comprehensive course covers key aspects such as proper food handling, storage, and preparation, as well as hygiene practices to prevent contamination. Participants will learn about critical control points, risk assessment, and effective measures to maintain a sanitary food environment. By emphasizing regulatory compliance and industry standards, this course aims to equip professionals with the knowledge and skills needed to prevent foodborne illnesses, safeguard consumer health, and uphold the highest standards of food safety in their operations",
     content: "Level 3 Award in Food Safety",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 80,
@@ -1479,7 +1486,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Managing and Supervising Safely",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
   {
     id: 81,
@@ -1488,7 +1495,7 @@ const courseDataContents = [
     imgSrc: "/images/comingsoon.jpg",
     content: "Level 3 Award in Managing Risk Assessment in Care",
     time: "2 Hours",
-    price: "300000",
+    price: "270000",
   },
 ];
 
@@ -1500,7 +1507,7 @@ const eLearningCourses = [
     slug: "care-certificate",
     title: "Care Certificate (15 Standards)",
     category: "E-Learning",
-    price: "150000",
+    price: "135000",
     instructor: "Smith John",
     lessons: "15 Objectives",
     description:
@@ -1520,7 +1527,7 @@ const eLearningCourses = [
     slug: "full-online-package",
     title: "Full Online Package",
     category: "E-Learning",
-    price: "200000",
+    price: "180000",
     instructor: "Smith John",
     lessons: "15 Courses",
     description: "Full Online Package",
@@ -1537,7 +1544,7 @@ const eLearningCourses = [
     slug: "full-online-page-care-certificate",
     title: "Full Online Package + Care Certificate",
     category: "E-Learning",
-    price: "300000",
+    price: "270000",
     instructor: "Smith John",
     lessons: "15 Courses + Certificate",
     description: "Full online package + Care Certificate Course",
@@ -1554,7 +1561,7 @@ const eLearningCourses = [
     slug: "principles-of-moving-and-assisting",
     title: "Principles of Moving & Assisting",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Hasan Mahmud",
     lessons: "5 Objectives",
     description:
@@ -1572,7 +1579,7 @@ const eLearningCourses = [
     slug: "safe-handling-of-medication",
     title: "Safe Handling of Medication",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Khalid Hasan",
     lessons: "6 Objectives",
     description:
@@ -1590,7 +1597,7 @@ const eLearningCourses = [
     slug: "dementia-awareness",
     title: "Dementia Awareness",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sazal Ahmed",
     lessons: "5 Objectives",
     description:
@@ -1608,7 +1615,7 @@ const eLearningCourses = [
     slug: "infection-control",
     title: "Infection Control",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "5 Objectives",
     description:
@@ -1626,7 +1633,7 @@ const eLearningCourses = [
     slug: "Food-Safety-Principles",
     title: "Food Safety Principles",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "5 Objectives",
     description: "To be able to prepare and handle food safely",
@@ -1643,7 +1650,7 @@ const eLearningCourses = [
     slug: "safeguarding-adults",
     title: "Safeguarding Adults",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "3 Objectives",
     description:
@@ -1661,7 +1668,7 @@ const eLearningCourses = [
     slug: "dysphagia-awareness",
     title: "Dysphagia Awareness",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "7 Objectives",
     description:
@@ -1679,7 +1686,7 @@ const eLearningCourses = [
     slug: "epilepsy-and-emergency-medication",
     title: "Epilepsy & Emergency Medication",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "4 Objectives",
     description:
@@ -1697,7 +1704,7 @@ const eLearningCourses = [
     slug: "equality-diversity-and-inclusion",
     title: "Equality, Diversity & Inclusion",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "5 Objectives",
     description:
@@ -1715,7 +1722,7 @@ const eLearningCourses = [
     slug: "covid19-ipic",
     title: "COVID-19 Infection, Prevention, Identification & Control",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "10 Objectives",
     description:
@@ -1733,7 +1740,7 @@ const eLearningCourses = [
     slug: "GDPR",
     title: "General Data Protection Regulation (GDPR)",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "6 Objectives",
     description:
@@ -1751,7 +1758,7 @@ const eLearningCourses = [
     slug: "handling-harzadous-substances",
     title: "Handling Hazardous Substances (COSHH)",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "5 Objectives",
     description:
@@ -1769,7 +1776,7 @@ const eLearningCourses = [
     slug: "first-aid-principles",
     title: "First Aid Principles",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "6 Objectives",
     description:
@@ -1787,7 +1794,7 @@ const eLearningCourses = [
     slug: "Role-of-a-Fire-Marshal",
     title: "Role of a Fire Marshal",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "6 Objectives",
     description:
@@ -1805,7 +1812,7 @@ const eLearningCourses = [
     slug: "Health-and-Safety-Essentials",
     title: "Health & Safety Essentials",
     category: "E-Learning",
-    price: "20000",
+    price: "18000",
     instructor: "Sarah Johnson",
     lessons: "6 Objectives",
     description:
@@ -2579,7 +2586,7 @@ const bundles = [
     slug: "bundle-1",
     title: "Bundle 1",
     category: "Bundle 1",
-    price: "399500",
+    price: "359550",
     lessons: "13 packages",
     description:
       "Level 2 & 3 Courses + Care Certificate + Induction and Orientation",
@@ -2592,7 +2599,7 @@ const bundles = [
     slug: "bundle-2",
     title: "Bundle 2",
     category: "Bundle 2",
-    price: "399500",
+    price: "359550",
     lessons: "13 packages",
     description:
       "Level 2 & 3 Courses +  All Stand Alone E-Learning Courses + Induction and Orientation",
@@ -2605,7 +2612,7 @@ const bundles = [
     slug: "bundle-3",
     title: "Bundle 3",
     category: "Bundle 3",
-    price: "399500",
+    price: "359550",
     lessons: "13 packages",
     description:
       "Level 2 & 3 Courses + Care Certificate + Stand Alone Courses + Induction and Orientation",
@@ -2617,7 +2624,7 @@ const bundles = [
     slug: "bundle-4",
     title: "Bundle 4 (Specialists)",
     category: "Bundle 4",
-    price: "399500",
+    price: "359550",
     lessons: "57 packages",
     description:
       "All Moricol In Class Courses + Care Certificate + Induction and Orientation",
@@ -2630,7 +2637,7 @@ const bundles = [
     slug: "bundle-5",
     title: "Bundle 5",
     category: "Bundle 5",
-    price: "399500",
+    price: "359550",
     lessons: "20 packages",
     description:
       "All Moricol E-Learning Courses + Care Certificate + Induction and Orientation",
@@ -3020,7 +3027,7 @@ const inductionOrientation = [
     slug: "care-certificate",
     title: "Induction and Orientation",
     category: "Induction",
-    price: "100000",
+    price: "90000",
     instructor: "Smith John",
     lessons: "34 topics",
     description:

@@ -319,7 +319,11 @@ button {
   background-size: cover !important;
   padding-top: 245px;
   padding-bottom: 180px;
-  background-image: linear-gradient(rgba(223, 213, 213, 0.736), rgba(223, 213, 213, 0.736)),url(../images/orangegradbg.jpg);
+  background-image: linear-gradient(
+      rgba(223, 213, 213, 0.736),
+      rgba(223, 213, 213, 0.736)
+    ),
+    url(../images/orangegradbg.jpg);
 }
 
 .tf__breadcrumb .container {
@@ -1171,7 +1175,7 @@ button {
   background-image: url(../images/faq_bg.png);
 }
 .tf__banner_3 .tf__banner_text::after,
-.tf__faq::after{
+.tf__faq::after {
   position: absolute;
   content: "";
   background: url(../images/book_shapes.png);
@@ -1187,7 +1191,7 @@ button {
   -webkit-animation: banner_animi_2 linear 3s infinite alternate;
 }
 
-.tf__faq::before{
+.tf__faq::before {
   position: absolute;
   content: "";
   background: url(../images/pen_shapes.png);
@@ -2378,7 +2382,7 @@ button {
 .tf__scroll_btn {
   position: fixed;
   bottom: 60px;
-  right: 300px;
+  right: 5px;
   z-index: 111;
   cursor: pointer;
   text-align: center;
@@ -4387,7 +4391,8 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/orangegradbg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/orangegradbg.jpg);
 }
 
 .tf__banner_2_text {
@@ -5091,7 +5096,8 @@ button {
   margin: 0;
   height: auto;
   background-position: center top !important;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/orangegradbg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/orangegradbg.jpg);
 }
 
 .home_3 .tf__banner_text {
@@ -5176,7 +5182,8 @@ button {
   padding-top: 25px;
   position: relative;
   /* top: -95px; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/nurse.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/nurse.jpg);
 }
 
 .tf__study_contact_text {
@@ -6035,7 +6042,7 @@ select.select_js.form-select {
   -o-border-radius: 20px;
 }
 
-.tf__single_team_img img{
+.tf__single_team_img img {
   object-fit: contain;
 }
 
@@ -10224,21 +10231,20 @@ section.tf__counter_3 {
   max-height: 100vh;
 }
 
-
 /* ========ENROLLMENT======= */
-.enrollment{
+.enrollment {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* height: 100vh; */
 }
-.enrollment img{
+.enrollment img {
   max-width: 200px;
   max-height: 200px;
   object-fit: contain;
 }
-.orderStatus{
+.orderStatus {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10312,21 +10318,21 @@ section.tf__counter_3 {
   background-color: #0056b3;
 }
 
-.dashboard{
+.dashboard {
   display: flex;
-  align-items:  center;
+  align-items: center;
   gap: 10px;
 }
-.subDashboard{
+.subDashboard {
   width: 200px;
 }
 
-.discount-rates-header{
+.discount-rates-header {
   color: rgb(32, 164, 61);
   font-weight: 900;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.discount-plans{
+.discount-plans {
   width: 200px;
   /* height: 400px; */
 }
@@ -10344,18 +10350,51 @@ section.tf__counter_3 {
   height: 80px;
 }
 
-.discount-rates-text p{
+.discount-rates-text p {
   font-size: 14px;
   /* color: rgb(32, 164, 61); */
   text-align: center;
 }
 
-.paymentPicture{
+.paymentPicture {
   min-height: 50px;
   max-width: 100px;
   border-radius: 4px;
 }
-.paypalenrlogo{
+.paypalenrlogo {
   /* min-height: 50px; */
   max-width: 200px;
+}
+
+.discount {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 13px;
+}
+.discount_detailtab {
+  display: flex;
+  justify-content: center;
+}
+
+.discount p {
+  background-color: orange;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  font-size: 13px;
+}
+.discount_detailtab p {
+  background-color: orange;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  font-size: 13px;
+}
+
+.smileyface {
+  font-size: 30px;
 }
