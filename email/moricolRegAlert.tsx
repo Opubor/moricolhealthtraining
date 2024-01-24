@@ -32,13 +32,11 @@ function MoricolRegAlert({ userName, userEmail, phoneNumber }: Props) {
               <Heading className="leading-tight">
                 New User Registration on Moricol Health Training
               </Heading>
-              <Text>Dear {userName},</Text>
               <Text>
                 A new user has registered on Moricol health training. Here are
                 the details:
               </Text>
               <Text>Registration Details:</Text>
-
               <Text>User Name: {userName}</Text>
               <Text>Email Address: {userEmail}</Text>
               <Text>Phone Number: {phoneNumber}</Text>
