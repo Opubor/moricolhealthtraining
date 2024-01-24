@@ -74,7 +74,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
       // =======Moricol Mail=========
       await resend.emails.send({
         from: "Moricol <onboarding@resend.dev>",
-        to: "infomoricolhealthcare@gmail.com",
+        to: "opubortony@gmail.com",
         subject: "Moricol Registration",
         react: React.createElement(MoricolRegAlert, {
           userName: result?.data?.name,
@@ -82,6 +82,17 @@ export async function POST(req: NextRequest, res: NextResponse) {
           phoneNumber: result?.data?.phone,
         }),
       });
+      // // =======Moricol Mail=========
+      // await resend.emails.send({
+      //   from: "Moricol <onboarding@resend.dev>",
+      //   to: "infomoricolhealthcare@gmail.com",
+      //   subject: "Moricol Registration",
+      //   react: React.createElement(MoricolRegAlert, {
+      //     userName: result?.data?.name,
+      //     userEmail: result?.data?.email,
+      //     phoneNumber: result?.data?.phone,
+      //   }),
+      // });
 
       if (user) {
         return new Response(JSON.stringify("Registration Successful"), {
