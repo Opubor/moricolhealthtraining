@@ -64,7 +64,7 @@ function NewUserMail({ userName, userEmail, phoneNumber }: Props) {
               <Text>
                 Thank you for your commitment to continuous learning, and we
                 look forward to your active involvement in the upcoming
-                Professional Health Training Course.
+                Professional Health Training Courses.
               </Text>
               <Text>Best regards,</Text>
               <Text>Moricol</Text>

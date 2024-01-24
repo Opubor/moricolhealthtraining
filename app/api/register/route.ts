@@ -56,7 +56,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
       // =======User Mail=========
       const { data, error } = await resend.emails.send({
-        from: "Moricol <onboarding@resend.dev>",
+        from: "infomoricolhealthcare@moricolservices.com",
         to: result?.data?.email,
         subject: "Moricol Registration",
         react: React.createElement(NewUserMail, {
@@ -68,12 +68,12 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
       // if (error) {
       //   console.log("error", error);
-      //   return res.status(400).json(error);
+      // return res.status(400).json(error);
       // }
 
       // =======Moricol Mail=========
       await resend.emails.send({
-        from: "Moricol <onboarding@resend.dev>",
+        from: "infomoricolhealthcare@moricolservices.com",
         to: "opubortony@gmail.com",
         subject: "Moricol Registration",
         react: React.createElement(MoricolRegAlert, {
