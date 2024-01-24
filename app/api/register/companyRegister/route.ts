@@ -57,7 +57,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
       // =======User Mail=========
       await resend.emails.send({
-        from: "Moricol <onboarding@resend.dev>",
+        from: "infomoricolhealthcare@moricolservices.com",
         to: result?.data?.email,
         subject: "Moricol Registration",
         react: React.createElement(NewUserMail, {
@@ -69,7 +69,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
       // =======Moricol Mail=========
       await resend.emails.send({
-        from: "Moricol <onboarding@resend.dev>",
+        from: "infomoricolhealthcare@moricolservices.com",
         to: "infomoricolhealthcare@gmail.com",
         subject: "Moricol Registration",
         react: React.createElement(MoricolRegAlert, {
