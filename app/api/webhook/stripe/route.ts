@@ -29,26 +29,26 @@ export async function POST(req: Request) {
 
   const session = event.data.object as Stripe.Checkout.Session;
 
-//   if (event.type !== "checkout.session.completed") {
-//     const enrollment = await prisma.enrollment.update({
-//       where: {
-//         id: session?.metadata?.enrollmentId,
-//       },
-//       data: {
-//         status: "Failed",
-//       },
-//     });
+  //   if (event.type !== "checkout.session.completed") {
+  //     const enrollment = await prisma.enrollment.update({
+  //       where: {
+  //         id: session?.metadata?.enrollmentId,
+  //       },
+  //       data: {
+  //         status: "Failed",
+  //       },
+  //     });
 
-//     const paymentUpdate = await prisma.payment.update({
-//       where: {
-//         id: session?.metadata?.paymentId,
-//       },
-//       data: {
-//         paymentStatus: "Failed",
-//       },
-//     });
-//     throw new AppException("unknown event");
-//   }
+  //     const paymentUpdate = await prisma.payment.update({
+  //       where: {
+  //         id: session?.metadata?.paymentId,
+  //       },
+  //       data: {
+  //         paymentStatus: "Failed",
+  //       },
+  //     });
+  //     throw new AppException("unknown event");
+  //   }
 
   if (event.type === "checkout.session.completed") {
     const enrollment = await prisma.enrollment.update({
@@ -80,7 +80,7 @@ export async function POST(req: Request) {
     let paidAmount = session?.amount_total;
 
     resend.emails.send({
-      from: "Moricol <onboarding@resend.dev>",
+      from: "infomoricolhealthcare@moricolservices.com",
       to: "infomoricolhealthcare@gmail.com",
       subject: "New Course Enrollment",
       react: React.createElement(NewRegistrationMail, {
@@ -92,11 +92,11 @@ export async function POST(req: Request) {
         courseAmount: Number(courseAmount) / 100,
         paidAmount: Number(paidAmount) / 100,
         timeTable: newEnrollment?.timeTable as string,
-        currency: newEnrollment?.currency as string
+        currency: newEnrollment?.currency as string,
       }),
     });
     resend.emails.send({
-      from: "Moricol <onboarding@resend.dev>",
+      from: "infomoricolhealthcare@moricolservices.com",
       to: newEnrollment?.email as string,
       subject: "New Course Enrollment",
       react: React.createElement(StudentRegEmail, {
@@ -107,7 +107,7 @@ export async function POST(req: Request) {
         courseAmount: Number(courseAmount) / 100,
         paidAmount: Number(paidAmount) / 100,
         timeTable: newEnrollment?.timeTable as string,
-        currency: newEnrollment?.currency as string
+        currency: newEnrollment?.currency as string,
       }),
     });
 

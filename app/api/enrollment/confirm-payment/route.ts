@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma-client";
 import paypal from "paypal-rest-sdk";
-import { TPaypalPaymentSchema, paypalPaymentSchema } from "@/schema/enrollmentSchema";
+import {
+  TPaypalPaymentSchema,
+  paypalPaymentSchema,
+} from "@/schema/enrollmentSchema";
 import { Resend } from "resend";
 import React from "react";
 import NewRegistrationMail from "@/email/new-registration";
@@ -71,7 +74,7 @@ export async function POST(
                 status: "Success",
               },
             });
-        
+
             const paymentUpdate = await prisma.payment.update({
               where: {
                 id: paymentId,
@@ -92,7 +95,7 @@ export async function POST(
             let paidAmount = amount;
 
             resend.emails.send({
-              from: "Moricol <onboarding@resend.dev>",
+              from: "infomoricolhealthcare@moricolservices.com",
               to: "infomoricolhealthcare@gmail.com",
               subject: "New Course Enrollment",
               react: React.createElement(NewRegistrationMail, {
@@ -104,11 +107,11 @@ export async function POST(
                 courseAmount: Number(courseAmount) / 100,
                 paidAmount: Number(paidAmount) / 100,
                 timeTable: newEnrollment?.timeTable as string,
-                currency: newEnrollment?.currency as string
+                currency: newEnrollment?.currency as string,
               }),
             });
             resend.emails.send({
-              from: "Moricol <onboarding@resend.dev>",
+              from: "infomoricolhealthcare@moricolservices.com",
               to: newEnrollment?.email as string,
               subject: "New Course Enrollment",
               react: React.createElement(StudentRegEmail, {
@@ -119,7 +122,7 @@ export async function POST(
                 courseAmount: Number(courseAmount) / 100,
                 paidAmount: Number(paidAmount) / 100,
                 timeTable: newEnrollment?.timeTable as string,
-                currency: newEnrollment?.currency as string
+                currency: newEnrollment?.currency as string,
               }),
             });
           } else {
@@ -141,7 +144,7 @@ export async function POST(
                 status: "Failed",
               },
             });
-        
+
             const paymentUpdate = await prisma.payment.update({
               where: {
                 id: paymentId,

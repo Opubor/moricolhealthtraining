@@ -63,7 +63,7 @@ export async function PUT(
     });
 
     resend.emails.send({
-      from: "Moricol <onboarding@resend.dev>",
+      from: "infomoricolhealthcare@moricolservices.com",
       to: result?.data?.email as string,
       subject: "New Course Enrollment",
       react: React.createElement(CompanyStaffRegMail, {

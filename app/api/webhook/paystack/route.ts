@@ -75,7 +75,7 @@ export async function POST(
     let paidAmount = event.data.amount;
 
     resend.emails.send({
-      from: "Moricol <onboarding@resend.dev>",
+      from: "infomoricolhealthcare@moricolservices.com",
       to: "infomoricolhealthcare@gmail.com",
       subject: "New Course Enrollment",
       react: React.createElement(NewRegistrationMail, {
@@ -84,14 +84,14 @@ export async function POST(
         studentEmail: newEnrollment?.email as string,
         studentPhoneNumber: newEnrollment?.phone as string,
         registrationDate: newEnrollment?.date as string,
-        courseAmount: Number(courseAmount) /100,
-        paidAmount: Number(paidAmount) /100,
+        courseAmount: Number(courseAmount) / 100,
+        paidAmount: Number(paidAmount) / 100,
         timeTable: newEnrollment?.timeTable as string,
-        currency: newEnrollment?.currency as string
+        currency: newEnrollment?.currency as string,
       }),
     });
     resend.emails.send({
-      from: "Moricol <onboarding@resend.dev>",
+      from: "infomoricolhealthcare@moricolservices.com",
       to: newEnrollment?.email as string,
       subject: "New Course Enrollment",
       react: React.createElement(StudentRegEmail, {
@@ -99,10 +99,10 @@ export async function POST(
         enrollmentId: newEnrollment?.enrollmentId as string,
         courseName: newEnrollment?.course as string,
         registrationDate: newEnrollment?.date as string,
-        courseAmount: Number(courseAmount) /100,
-        paidAmount: Number(paidAmount) /100,
+        courseAmount: Number(courseAmount) / 100,
+        paidAmount: Number(paidAmount) / 100,
         timeTable: newEnrollment?.timeTable as string,
-        currency: newEnrollment?.currency as string
+        currency: newEnrollment?.currency as string,
       }),
     });
 
@@ -111,7 +111,7 @@ export async function POST(
     });
   } catch (error) {
     resend.emails.send({
-      from: "Moricol <onboarding@resend.dev>",
+      from: "infomoricolhealthcare@moricolservices.com",
       to: "opubortony@gmail.com",
       subject: "Error Messasge",
       html: JSON.stringify(error),
@@ -119,7 +119,7 @@ export async function POST(
 
     if (error instanceof Error) {
       resend.emails.send({
-        from: "Moricol <onboarding@resend.dev>",
+        from: "infomoricolhealthcare@moricolservices.com",
         to: "opubortony@gmail.com",
         subject: "Error Messasge",
         html: JSON.stringify(error?.message),

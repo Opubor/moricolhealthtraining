@@ -3,7 +3,10 @@ import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 import { Resend } from "resend";
 import React from "react";
-import { TForgotPasswordSchema, forgotPasswordSchema } from "@/schema/userSchema";
+import {
+  TForgotPasswordSchema,
+  forgotPasswordSchema,
+} from "@/schema/userSchema";
 import ResetPasswordReciept from "@/email/reset-password";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -48,7 +51,7 @@ export async function POST(req: NextRequest) {
       },
     });
     resend.emails.send({
-      from: "Moricol <onboarding@resend.dev>",
+      from: "infomoricolhealthcare@moricolservices.com",
       to: user?.email,
       subject: "Reset Password",
       react: React.createElement(ResetPasswordReciept, {
