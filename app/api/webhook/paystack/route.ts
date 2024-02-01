@@ -110,27 +110,9 @@ export async function POST(
       status: 200,
     });
   } catch (error) {
-    resend.emails.send({
-      from: "infomoricolhealthcare@moricolservices.com",
-      to: "opubortony@gmail.com",
-      subject: "Error Messasge",
-      html: JSON.stringify(error),
-    });
-
-    if (error instanceof Error) {
-      resend.emails.send({
-        from: "infomoricolhealthcare@moricolservices.com",
-        to: "opubortony@gmail.com",
-        subject: "Error Messasge",
-        html: JSON.stringify(error?.message),
-      });
-    }
-
     if (error instanceof AppException) {
       return new Response(JSON.stringify(error.message), { status: 400 });
     }
-
-    console.log(error);
 
     return new Response(JSON.stringify("Something went wrong"), {
       status: 400,
