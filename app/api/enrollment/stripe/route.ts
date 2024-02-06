@@ -43,7 +43,6 @@ export async function POST(req: NextRequest) {
     (item) => (item.title as string) === (result?.data?.course as string)
   );
   if (!courseDesc) {
-    console.log("Course not found");
     return new Response(JSON.stringify("Course not found"), {
       status: 404,
     });
@@ -208,7 +207,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ url: session.url }, { headers: corsHeaders });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return new Response(JSON.stringify(error), { status: 400 });
   }
 }

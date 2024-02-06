@@ -11,7 +11,7 @@ function RegPrompter({ setError }: Props) {
         href={"/sign-up"}
         className="text-white text-decoration-underline text-xs p-4 border-2 border-white w-full rounded-tr-full rounded-br-full"
       >
-        Register/SignIn
+        Register/ Login
       </Link>
     </div>
   );

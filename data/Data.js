@@ -2432,6 +2432,17 @@ const teamData = [
     email: "dapreye@gmail.com",
   },
   {
+    id: 200,
+    imgSrc: "images/toyin.jpeg",
+    name: "Afolabi Oluwatoyin",
+    designation: "P.A to the Director of Media, Publicity and Human Relations",
+    slug: "benjamin-carter",
+    about:
+      "I am a dedicated teacher with a passion for inspiring young minds. I believe in creating a positive learning environment to help students reach their full potential.",
+    phone: "+234 8165938087",
+    email: "afolabikafilat842@gmail.com",
+  },
+  {
     id: 6,
     imgSrc: "images/esemuze.jpeg",
     name: "Dr. Paul Esemuze",

@@ -5,9 +5,11 @@ import { Tab, Nav } from "react-bootstrap";
 import { useSession } from "next-auth/react";
 import { toast } from "react-toastify";
 import Currency from "../currency/Currency";
+import RegPrompter from "../RegPrompter";
 
 const CourseDetailTabContent = ({ courseData, courseContents, user }) => {
   const [activeKey, setActiveKey] = useState("overview");
+  const [error, setError] = useState(false);
 
   const handleSelect = (key) => {
     setActiveKey(key);
@@ -16,9 +18,10 @@ const CourseDetailTabContent = ({ courseData, courseContents, user }) => {
   const { data: session } = useSession();
 
   const promptRegistration = async () => {
-    return toast.error("Register/Login to Enroll", {
-      position: "top-right",
-    });
+    setError(true);
+    return setTimeout(() => {
+      setError(false);
+    }, 9000);
   };
 
   return (
@@ -101,13 +104,14 @@ const CourseDetailTabContent = ({ courseData, courseContents, user }) => {
                             ) : (
                               <div
                                 onClick={() => promptRegistration()}
-                                className="common_btn w-100 text-center"
+                                className="common_btn w-100 text-center cursorPointer"
                                 href={`/enrollment/${courseData?.id}?type=inclass`}
                               >
                                 enrol
                               </div>
                             )}
                           </div>
+                          {error && <RegPrompter />}
                         </div>
                       </div>
                     </div>

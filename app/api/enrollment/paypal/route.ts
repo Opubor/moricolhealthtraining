@@ -55,7 +55,7 @@ function createPayPalPayment(
 
     paypal.payment.create(createPaymentJson, (error, payment) => {
       if (error) {
-        console.log(error);
+        // console.log(error);
         reject(error);
       } else {
         resolve(payment);
@@ -93,7 +93,6 @@ export async function POST(
   );
 
   if (!courseDesc) {
-    console.log("Course not found");
     return new Response(JSON.stringify("Course not found"), {
       status: 404,
     });

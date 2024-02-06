@@ -37,7 +37,6 @@ export async function PUT(
 ): Promise<any> {
   const body: TEditCompanyStaffEnrollmentSchema = await req.json();
   const result = editCompanyStaffEnrollmentSchema.safeParse(body);
-  console.log("bbb");
 
   if (!result.success) {
     return new Response(

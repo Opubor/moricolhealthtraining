@@ -35,8 +35,8 @@ function ProfileCard({ user }: Props) {
         }),
       });
       router.refresh();
-      setLoading(false);
-      return console.log(await response.json());
+
+      return setLoading(false);
     } catch (error) {
       return console.log(error);
     }
@@ -50,11 +50,10 @@ function ProfileCard({ user }: Props) {
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
-          <div className="col-xl-12">
+            <div className="col-xl-12">
               <div className="tf__login_imput mt-3">
                 <label>User ID</label>
                 <p className="text-black p-2 border">{user?.userId}</p>
-
               </div>
             </div>
             <div className="col-xl-12">
@@ -75,7 +74,6 @@ function ProfileCard({ user }: Props) {
               <div className="tf__login_imput mt-3">
                 <label>email</label>
                 <p className="text-black p-2 border">{user?.email}</p>
-
               </div>
             </div>
 

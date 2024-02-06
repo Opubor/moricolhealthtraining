@@ -12,7 +12,7 @@ type PageProps = {
 };
 
 function EditStaffEnrForm({ staffDetails }: PageProps) {
-    const router = useRouter()
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -27,19 +27,21 @@ function EditStaffEnrForm({ staffDetails }: PageProps) {
   const onSubmit = async (data: FieldValues) => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/enrollment/getEnrollmentStaffs/${staffDetails?.id}`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: data?.name,
-          email: data?.email,
-          phoneNumber: data?.phoneNumber,
-        }),
-      });
+      const response = await fetch(
+        `/api/enrollment/getEnrollmentStaffs/${staffDetails?.id}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: data?.name,
+            email: data?.email,
+            phoneNumber: data?.phoneNumber,
+          }),
+        }
+      );
       setLoading(false);
-        const res = await response.json();
-        console.log(res)
-        router.refresh()
+      const res = await response.json();
+      router.refresh();
       return toast.success("Staffs Details Edited successfully", {
         position: "top-right",
       });

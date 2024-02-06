@@ -31,7 +31,6 @@ export async function POST(req: NextRequest) {
     (item) => (item.title as string) === (result?.data?.course as string)
   );
   if (!courseDesc) {
-    console.log("Course not found");
     return new Response(JSON.stringify("Course not found"), {
       status: 404,
     });
@@ -41,7 +40,6 @@ export async function POST(req: NextRequest) {
   let course = result?.data?.course;
 
   if (user?.role === "student") {
-    console.log("pekeikeoeo");
     if (
       courseDesc?.title === "Brunch/Lunch" ||
       courseDesc?.title === "Hotel Accomodation"

@@ -68,7 +68,7 @@ const InductionDetailSection = ({ user }: PageProps) => {
                   <li>
                     {session?.user ? (
                       <Link
-                        className="common_btn"
+                        className="common_btn "
                         href={`/enrollment/${0}?type=induction`}
                       >
                         enrol
@@ -76,7 +76,7 @@ const InductionDetailSection = ({ user }: PageProps) => {
                     ) : (
                       <div
                         onClick={() => promptRegistration()}
-                        className="common_btn"
+                        className="common_btn cursorPointer"
                       >
                         enrol
                       </div>

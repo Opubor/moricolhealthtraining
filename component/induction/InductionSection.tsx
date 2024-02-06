@@ -68,6 +68,12 @@ async function InductionSection() {
                     {item.title}
                   </Link>
                   <p className="description">{item.description}</p>
+                  <Link
+                    className="title text-primary small"
+                    href={`/induction`}
+                  >
+                    View/Enrol Course
+                  </Link>
                   <ul>
                     {/* <li className="d-flex align-items-center gap-2">
                       <i className="fa-solid fa-clock"></i>

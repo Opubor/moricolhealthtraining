@@ -57,6 +57,12 @@ const AllCourseSection = () => {
                     {item.title}
                   </Link>
                   <p className="description">{item.description}</p>
+                  <Link
+                    className="title text-primary small"
+                    href={`/courses/${item.slug}`}
+                  >
+                    View/Enrol Courses
+                  </Link>
                 </div>
               </div>
             </div>

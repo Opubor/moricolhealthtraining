@@ -63,6 +63,12 @@ const ELearning2 = () => {
                     {item.title}
                   </Link>
                   <p className="description">{item.description}</p>
+                  <Link
+                    className="title text-primary small"
+                    href={`/eLearning/${item.slug}`}
+                  >
+                    View/Enrol Course
+                  </Link>
                   <ul>
                     {/* <li>
                       <i className="fas fa-star"></i>

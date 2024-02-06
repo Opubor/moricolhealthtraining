@@ -21,7 +21,6 @@ export default async function CourseDetails({ params }) {
   ); // Use 'slug' here
   const session = await getServerSession(options);
   const user = await getUser(session?.user?.id);
-  console.log(user);
   return (
     <Layout user={user}>
       <BreadcrumbSection header="Course Details" title="Course Details" />

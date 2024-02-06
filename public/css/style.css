@@ -10398,3 +10398,7 @@ section.tf__counter_3 {
 .smileyface {
   font-size: 30px;
 }
+
+.cursorPointer{
+  cursor: pointer;
+}

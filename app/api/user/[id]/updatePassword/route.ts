@@ -1,13 +1,15 @@
 import prisma from "@/lib/prisma-client";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcrypt";
-import { TUpdatePasswordSchema, updatePasswordSchema } from "@/schema/userSchema";
+import {
+  TUpdatePasswordSchema,
+  updatePasswordSchema,
+} from "@/schema/userSchema";
 
 export async function PUT(
   req: NextRequest,
   { params }: { params: { id: number } }
 ): Promise<any> {
-  console.log("reach");
   const body: TUpdatePasswordSchema = await req.json();
   const result = updatePasswordSchema.safeParse(body);
 
