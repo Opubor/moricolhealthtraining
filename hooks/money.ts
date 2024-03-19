@@ -3,12 +3,12 @@ import next from "next";
 
 export async function money(amount: number, currency: CURRENCIES) {
   const initialRates = {
-    EUR: 0.0010, 
-    GBP: 0.00087, 
-    USD: 0.0011,
+    EUR: 0.00059,
+    GBP: 0.0005,
+    USD: 0.00064,
     NGN: 1,
-    CAD: 0.0015,
-    AUD: 0.0016,
+    CAD: 0.00087,
+    AUD: 0.00098,
   };
   let money = 0;
   if (currency === "EUR") {

@@ -506,9 +506,8 @@ function EnrollmentSection({ courseId, user }: Props) {
       <div>
         {!session && (
           <div className="small">
-            <Link href={"/sign-up"}>Register /</Link> {" "}
-            <Link href={"/sign-in"}>Sign In</Link> {" "}
-            <span>to Continue</span>
+            <Link href={"/sign-up"}>Register /</Link>{" "}
+            <Link href={"/sign-in"}>Sign In</Link> <span>to Continue</span>
           </div>
         )}
       </div>

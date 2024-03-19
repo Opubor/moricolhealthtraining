@@ -103,7 +103,7 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
                 <h3>More Bundles</h3>
                 <ul>
                   {bundles.slice(0, 5).map((item) => (
-                    <li key={item.id}>
+                    <li key={item?.id}>
                       <div className="img">
                         <img
                           src={`/${item.imgSrc}`}

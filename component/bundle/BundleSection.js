@@ -16,7 +16,7 @@ function BundleSection({ user }) {
           </div>
         </div>
         <div className="row">
-          {bundles.slice(0, 6).map((item) => (
+          {bundles.map((item) => (
             <div className="col-xl-4 col-md-6 wow fadeInUp" key={item?.id}>
               <div className="tf__single_courses">
                 <div className="tf__single_courses_img">
@@ -53,9 +53,9 @@ function BundleSection({ user }) {
                   {/* <li>
                   <i className="fas fa-user"></i> {item?.instructor}
                 </li> */}
-                  <li>
+                  {/* <li>
                     <i className="fas fa-folder-open"></i> {item?.lessons}
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="tf__single_courses_text">
                   <Link className="title" href={`/bundles/${item?.slug}`}>

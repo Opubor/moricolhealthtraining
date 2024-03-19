@@ -87,7 +87,7 @@ const CourseDetailTabContent = ({ courseData, courseContents, user }) => {
                           </Link>
                           <p className="description d-flex gap-2 align-items-center ">
                             <i className="fas fa-folder-open"></i>
-                            {data?.content}
+                            {data?.content} (Theory and Practical)
                           </p>
                           <p className="text-decoration-underline fw-bold">
                             Description
@@ -105,7 +105,7 @@ const CourseDetailTabContent = ({ courseData, courseContents, user }) => {
                               <div
                                 onClick={() => promptRegistration()}
                                 className="common_btn w-100 text-center cursorPointer"
-                                href={`/enrollment/${courseData?.id}?type=inclass`}
+                                // href={`/enrollment/${courseData?.id}?type=inclass`}
                               >
                                 enrol
                               </div>

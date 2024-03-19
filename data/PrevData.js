@@ -1608,24 +1608,24 @@ const eLearningCourses = [
     review: 35,
     date: "20 Apr 2023",
   },
-  // {
-  //   id: 4,
-  //   imgSrc: "images/infectioncontrol.jpg",
-  //   color: "orange",
-  //   slug: "infection-control",
-  //   title: "Infection Control",
-  //   category: "E-Learning",
-  //   price: "18000",
-  //   instructor: "Sarah Johnson",
-  //   lessons: "5 Objectives",
-  //   description:
-  //     "To provide information in order to practice safely and to protect individuals being supported, colleagues and self from infection",
-  //   rating: 4,
-  //   students: "1 Hour",
-  //   instructorImg: "images/team_5.jpg",
-  //   review: 37,
-  //   date: "14 Jan 2023",
-  // },
+  {
+    id: 4,
+    imgSrc: "images/infectioncontrol.jpg",
+    color: "orange",
+    slug: "infection-control",
+    title: "Infection Control",
+    category: "E-Learning",
+    price: "18000",
+    instructor: "Sarah Johnson",
+    lessons: "5 Objectives",
+    description:
+      "To provide information in order to practice safely and to protect individuals being supported, colleagues and self from infection",
+    rating: 4,
+    students: "1 Hour",
+    instructorImg: "images/team_5.jpg",
+    review: 37,
+    date: "14 Jan 2023",
+  },
   {
     id: 5,
     imgSrc: "images/foodsafety.jpg",
@@ -1823,78 +1823,6 @@ const eLearningCourses = [
     review: 37,
     date: "14 Jan 2023",
   },
-  {
-    id: 16,
-    imgSrc: "images/conflictresolution.jpg",
-    color: "orange",
-    slug: "Conflict-Resolution-and-Personal-Safety",
-    title: "Conflict Resolution and Personal Safety",
-    category: "E-Learning",
-    price: "18000",
-    instructor: "Sarah Johnson",
-    lessons: "6 Objectives",
-    description:
-      "This course provides participants with the skills and knowledge necessary to effectively manage conflicts and ensure personal safety in various environments. Through interactive sessions and practical exercises, participants will learn conflict resolution techniques, de-escalation strategies, and methods to assess and mitigate personal safety risks.",
-    rating: 4,
-    students: "2 Hours",
-    instructorImg: "images/team_5.jpg",
-    review: 37,
-    date: "14 Jan 2023",
-  },
-  {
-    id: 17,
-    imgSrc: "images/mentalhealthelearning.jpg",
-    color: "orange",
-    slug: "Mental-Health-in-the-Workplace",
-    title: "Mental Health in the Workplace",
-    category: "E-Learning",
-    price: "18000",
-    instructor: "Sarah Johnson",
-    lessons: "6 Objectives",
-    description:
-      "This course aims to increase awareness and understanding of mental health issues in the workplace and equip participants with strategies to promote a supportive and inclusive work environment. Through discussions, case studies, and practical exercises, participants will learn how to recognize signs of mental distress, offer appropriate support, and foster a culture of mental well-being.",
-    rating: 4,
-    students: "2 Hours",
-    instructorImg: "images/team_5.jpg",
-    review: 37,
-    date: "14 Jan 2023",
-  },
-  {
-    id: 18,
-    imgSrc: "images/fsnah.jpg",
-    color: "orange",
-    slug: "Food-Safety-Nutrition-and-Hydration",
-    title: "Food Safety, Nutrition and Hydration",
-    category: "E-Learning",
-    price: "18000",
-    instructor: "Sarah Johnson",
-    lessons: "6 Objectives",
-    description:
-      "This course provides comprehensive training on food safety principles, nutritional requirements, and hydration practices to ensure the provision of safe and nutritious food in various settings. Participants will learn about foodborne illnesses, proper food handling techniques, balanced nutrition guidelines, and the importance of hydration for overall health.",
-    rating: 4,
-    students: "2 Hours",
-    instructorImg: "images/team_5.jpg",
-    review: 37,
-    date: "14 Jan 2023",
-  },
-  {
-    id: 19,
-    imgSrc: "images/autismpic2.jpg",
-    color: "orange",
-    slug: "Disability-Autism-Awareness",
-    title: "Disability and Autism Awareness",
-    category: "E-Learning",
-    price: "18000",
-    instructor: "Sarah Johnson",
-    lessons: "6 Objectives",
-    description:
-      "This course aims to increase awareness and understanding of disabilities, including autism spectrum disorder, to promote inclusivity and accessibility in various environments. Participants will learn about different types of disabilities, their impact on individuals, and strategies for creating supportive and inclusive spaces for people with disabilities.",
-    rating: 4,
-    students: "2 Hours",
-    instructorImg: "images/team_5.jpg",
-    review: 37,
-    date: "14 Jan 2023",
-  },
 ];
 
 const eLearningCoursesContents = [
@@ -2066,12 +1994,12 @@ const eLearningCoursesContents = [
     id: 32,
     eLearningDataId: 4,
     content:
-      "Identify the legislation and guidance associated with infection preventionand control",
+      "Identify the legislation and guidance associated with infection preventionand contro",
   },
   {
     id: 33,
     eLearningDataId: 4,
-    content: "Describe employer and employee responsibilities",
+    content: "lDescribe employer and employee responsibilities",
   },
   {
     id: 34,
@@ -2489,138 +2417,6 @@ const eLearningCoursesContents = [
     eLearningDataId: 3333333,
     content: "Full Online package + Care Certificate",
   },
-  {
-    id: 115,
-    eLearningDataId: 16,
-    content:
-      "Understand the nature and sources of conflicts in personal and professional settings.",
-  },
-  {
-    id: 116,
-    eLearningDataId: 16,
-    content:
-      "Learn effective communication techniques to prevent and resolve conflicts.",
-  },
-  {
-    id: 117,
-    eLearningDataId: 16,
-    content:
-      "Develop strategies for de-escalating tense situations and managing aggression.",
-  },
-  {
-    id: 118,
-    eLearningDataId: 16,
-    content:
-      "Identify personal safety risks and implement measures to mitigate them.",
-  },
-  {
-    id: 119,
-    eLearningDataId: 16,
-    content:
-      "Enhance confidence and assertiveness in handling challenging situations.",
-  },
-  {
-    id: 120,
-    eLearningDataId: 16,
-    content:
-      "Acquire practical skills for maintaining personal safety in different environments.",
-  },
-  {
-    id: 121,
-    eLearningDataId: 17,
-    content:
-      "Gain knowledge about common mental health disorders and their impact on individuals and workplaces.",
-  },
-  {
-    id: 122,
-    eLearningDataId: 17,
-    content:
-      "Recognize signs and symptoms of mental distress in oneself and others.",
-  },
-  {
-    id: 123,
-    eLearningDataId: 17,
-    content:
-      "Understand legal and ethical considerations related to mental health in the workplace.",
-  },
-  {
-    id: 124,
-    eLearningDataId: 17,
-    content:
-      "Learn effective communication skills for discussing mental health concerns sensitively and confidentially.",
-  },
-  {
-    id: 125,
-    eLearningDataId: 17,
-    content:
-      "Identify strategies to reduce stigma surrounding mental health and promote a supportive organizational culture.",
-  },
-  {
-    id: 126,
-    eLearningDataId: 17,
-    content:
-      "Develop practical tools and resources for supporting colleagues experiencing mental health challenges.",
-  },
-  {
-    id: 127,
-    eLearningDataId: 18,
-    content:
-      "Understand the principles of food safety and the risks associated with foodborne illnesses.",
-  },
-  {
-    id: 128,
-    eLearningDataId: 18,
-    content:
-      "Learn proper techniques for storing, handling, and preparing food to prevent contamination.",
-  },
-  {
-    id: 129,
-    eLearningDataId: 18,
-    content:
-      "Gain knowledge of balanced nutrition principles and dietary requirements across different age groups and populations.",
-  },
-  {
-    id: 130,
-    eLearningDataId: 18,
-    content:
-      "Recognize the importance of hydration for overall health and performance.",
-  },
-  {
-    id: 131,
-    eLearningDataId: 18,
-    content:
-      "Identify strategies to promote healthy eating habits and hydration practices in various settings, such as schools, workplaces, and healthcare facilities.",
-  },
-  {
-    id: 132,
-    eLearningDataId: 18,
-    content:
-      "Develop skills to assess and address food safety and nutrition challenges in specific contexts",
-  },
-  {
-    id: 133,
-    eLearningDataId: 19,
-    content:
-      "Gain knowledge about different types of disabilities, including physical, sensory, intellectual, and developmental disabilities. Understand the characteristics and challenges associated with autism spectrum disorder.",
-  },
-  {
-    id: 134,
-    eLearningDataId: 19,
-    content:
-      "Learn about legislation, rights, and accommodations for people with disabilities. Recognize common misconceptions and stereotypes surrounding disabilities and autism.",
-  },
-  {
-    id: 135,
-    eLearningDataId: 19,
-    content:
-      "Identify strategies for creating inclusive environments and providing appropriate support to individuals with disabilities.",
-  },
-  {
-    id: 136,
-    eLearningDataId: 19,
-    content:
-      "Develop communication and interaction skills to effectively engage with people with disabilities and promote respect and dignity.",
-  },
 ];
 
 const teamData = [
@@ -2801,14 +2597,12 @@ const bundles = [
     slug: "bundle-1",
     title: "Bundle 1",
     category: "Bundle 1",
-    price: "350000",
+    price: "359550",
     lessons: "13 packages",
     description:
       "Face-to-Face Level 2 & 3 Courses + Care Certificate + Induction and Orientation Extensive training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
+    duration:
+      "Regular Classes (2 Days weekly, 5 weeks, Fridays + Saturday, 10 Hours weekly (50Hours Total)",
   },
   {
     id: 1,
@@ -2818,14 +2612,10 @@ const bundles = [
     slug: "bundle-2",
     title: "Bundle 2",
     category: "Bundle 2",
-    price: "350000",
+    price: "359550",
     lessons: "13 packages",
     description:
       "Face-to-Face Level 2 & 3 Courses + Stand Alone E-Learning Courses + Induction and Orientation Extensive training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
   },
   {
     id: 2,
@@ -2835,14 +2625,10 @@ const bundles = [
     slug: "bundle-3",
     title: "Bundle 3",
     category: "Bundle 3",
-    price: "350000",
+    price: "359550",
     lessons: "13 packages",
     description:
-      "Face-to-Face Level 2 & 3 Courses + Care Certificate + Induction and Orientation Extensive Training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
+      "Level 2 & 3 Courses + Care Certificate + Stand Alone Courses + Induction and Orientation",
   },
   {
     id: 3,
@@ -2851,14 +2637,10 @@ const bundles = [
     slug: "bundle-4",
     title: "Bundle 4",
     category: "Bundle 4",
-    price: "400000",
+    price: "359550",
     lessons: "57 packages",
     description:
-      "Face-to-Face Level 2 & 3 Award Courses + Care Certificate + Induction and Orientation Extensive Training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
+      "All Moricol In Class Courses + Care Certificate + Induction and Orientation",
   },
   {
     id: 4,
@@ -2868,115 +2650,10 @@ const bundles = [
     slug: "bundle-5",
     title: "Bundle 5",
     category: "Bundle 5",
-    price: "400000",
+    price: "359550",
     lessons: "20 packages",
     description:
-      "Face-to-Face Level 2 & 3 Award Courses + Care Certificate + Induction and Orientation Extensive Training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
-  },
-  {
-    id: 5,
-    name: "Bundle 6",
-    imgSrc: "images/bundle6.png",
-    color: "orange",
-    slug: "bundle-6",
-    title: "Bundle 6",
-    category: "Bundle 6",
-    price: "400000",
-    lessons: "20 packages",
-    description:
-      "Face-to-Face Level 2 & 3 Award Courses + Care Certificate + Stand-Alone Online Courses + Induction and Orientation Extensive Training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
-  },
-  {
-    id: 6,
-    name: "Bundle 7",
-    imgSrc: "images/bundle7.png",
-    color: "orange",
-    slug: "bundle-7",
-    title: "Bundle 7",
-    category: "Bundle 7",
-    price: "450000",
-    lessons: "20 packages",
-    description:
-      "Face-to-Face Level 2 & 3 Award Courses + Clinical Courses + Specialist Courses + Induction and Orientation Extensive Training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
-  },
-  {
-    id: 7,
-    name: "Bundle 8",
-    imgSrc: "images/bundle8.png",
-    color: "orange",
-    slug: "bundle-8",
-    title: "Bundle 8",
-    category: "Bundle 8",
-    price: "500000",
-    lessons: "20 packages",
-    description:
-      "Face-to-Face Level 2 & 3 Award Courses + Clinical Courses + Specialist Courses + Care Certificate + Induction and Orientation Extensive Training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
-  },
-  {
-    id: 8,
-    name: "Bundle 9",
-    imgSrc: "images/bundle9.png",
-    color: "orange",
-    slug: "bundle-9",
-    title: "Bundle 9",
-    category: "Bundle 9",
-    price: "450000",
-    lessons: "20 packages",
-    description:
-      "Face-to-Face Level 2 & 3 Award Courses + Stand-Alone Online Courses + Induction and Orientation Extensive Training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
-  },
-  {
-    id: 9,
-    name: "Bundle 10",
-    imgSrc: "images/bundle10.png",
-    color: "orange",
-    slug: "bundle-10",
-    title: "Bundle 10",
-    category: "Bundle 10",
-    price: "400000",
-    lessons: "20 packages",
-    description:
-      "Face-to-Face Level 2 & 3 Award Courses + Care Certificate + Induction and Orientation Extensive Training",
-    duration1:
-      "Regular Class for 5 Weeks (2 Days weekly, Fridays + Saturdays, 9am - 2pm)",
-    duration2:
-      "Master Class for 2 Weeks (5 days weekly, Monday to Friday, 9am - 2pm)",
-  },
-  {
-    id: 10,
-    name: "Bundle 11",
-    imgSrc: "images/bundle11.png",
-    color: "orange",
-    slug: "bundle-11",
-    title: "Bundle 11",
-    category: "Bundle 11",
-    price: "350000",
-    lessons: "20 packages",
-    description:
-      "All Care Certificate + Stand-Alone Online Courses + Induction and Orientation Extensive Training",
-    duration1:
-      "This is a self-pace directive training package, you will recieve learning materials to help you in them journey.",
-    duration2: "---",
+      "All Moricol E-Learning Courses + Care Certificate + Induction and Orientation",
   },
 ];
 
@@ -2991,55 +2668,101 @@ const bundleContents = [
     bundleDataId: 0,
     content: "Infection, Prevention and Control (Level 2 Classroom)",
   },
+  // {
+  //   id: 4,
+  //   bundleDataId: 0,
+  //   content: "Safe Guarding Children (Level 2 Classroom)",
+  // },
+  // {
+  //   id: 5,
+  //   bundleDataId: 0,
+  //   content: "Safe Guarding Adults (Level 2 Classroom)",
+  // },
   {
     id: 6,
     bundleDataId: 0,
     content: "Health, Safety and Fire (Level 2 Classroom)",
   },
+  // {
+  //   id: 7,
+  //   bundleDataId: 0,
+  //   content: "Equality, Diversity And Inclusion (Level 2 Classroom)",
+  // },
+
+  {
+    id: 11,
+    bundleDataId: 0,
+    content: "Food Safety (Level 3 Classroom)",
+  },
+  // {
+  //   id: 12,
+  //   bundleDataId: 0,
+  //   content: "First Aid At Work (Level 3 Classroom)",
+  // },
   {
     id: 13,
     bundleDataId: 1,
-    content: "Autism Spectrum (Level 2 Classroom) - 2 Days",
+    content: "Autism Spectrum (Level 2 Classroom)",
   },
   {
     id: 14,
     bundleDataId: 1,
-    content: "Pressure Care Management (Level 2 Classroom) - 2 Days",
+    content: "Diabetes Awareness (Level 2 Classroom)",
   },
   {
     id: 15,
     bundleDataId: 1,
-    content: "Safe Handling and Medication (Level 2 Classroom) - 6 Days",
+    content: "Epilepsy and Emergency Medication Awareness (Level 2 Classroom)",
   },
   {
     id: 16,
     bundleDataId: 1,
-    content: "Moving, Assisting and Hoisting (Level 2 Classroom) - 6 Hours",
+    content: "Catheter Care (Level 2 Classroom)",
   },
   {
     id: 17,
     bundleDataId: 1,
-    content: "Food Safety (Level 3 Classroom)",
+    content: "Oxygen Therapy (Level 2 Classroom)",
+  },
+  {
+    id: 18,
+    bundleDataId: 1,
+    content: "Dementia (Level 3 Classroom)",
+  },
+  {
+    id: 19,
+    bundleDataId: 1,
+    content: "Medication Competency and Management (Level 3 Classroom)",
+  },
+  {
+    id: 20,
+    bundleDataId: 1,
+    content: "Stroke Awareness (Level 2 Classroom)",
   },
   {
     id: 26,
     bundleDataId: 2,
-    content: "Epilepsy and Emergency Medication Awareness (Level 2 Classroom)",
+    content: "Basic Life Support (Level 2 Classroom)",
   },
   {
     id: 27,
     bundleDataId: 2,
-    content: "Catheter Care (Level 2 Classroom)",
+    content: "Safe Handling and Medication (Level 2 Classroom)",
   },
   {
     id: 28,
     bundleDataId: 2,
-    content: "Oxygen Therapy (Level 2 Classroom)",
+    content: "Understanding Mental Health (Level 2 Classroom)",
   },
   {
     id: 29,
     bundleDataId: 2,
-    content: "Dementia (Level 3 Classroom)",
+    content: "Moving, Assisting and Hoisting (Level 2 Classroom)",
+  },
+  {
+    id: 30,
+    bundleDataId: 2,
+    content: "Stoma Care (Level 2 Classroom)",
   },
   {
     id: 31,
@@ -3047,46 +2770,157 @@ const bundleContents = [
     content: "Diabetes Awareness (Level 2 Classroom)",
   },
   {
+    id: 32,
+    bundleDataId: 2,
+    content: "First Aid at Work (Level 3 Classroom)",
+  },
+  {
+    id: 33,
+    bundleDataId: 2,
+    content: "Food Safety (Level 3 Classroom)",
+  },
+
+  {
     id: 39,
     bundleDataId: 2,
-    content:
-      "Care Certificate (Online Full Pack of 15 Standards Approx. 20Hrs) Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets: Understand your Role, Your Personal Development, Duty of Care, Equality and Diversity, Work in a Person Centred way, Communication, Privacy and Dignity, Fluids and Nutrition, Awareness of Mental Health, Dementia and Learning Disabilities, Safeguarding Adults, Safegaurding Children, Basic Life Support, Health and Safety, Handling Information, Infection Prevention and Control",
+    content: "Care Certificate + Stand Alone Courses",
   },
   {
     id: 40,
     bundleDataId: 4,
-    content: "Understanding Mental Health (Level 2 Classroom)",
+    content: "Principles of Moving and Assisting",
   },
   {
     id: 41,
     bundleDataId: 4,
-    content: "Safe Handling of Medication (Level 2 Classroom)",
+    content: "Safe Handling of Medication.",
   },
   {
     id: 42,
     bundleDataId: 4,
-    content: "Moving, Assisting and Hoisting (Level 2 Classroom)",
+    content: "Dementia Awareness ",
   },
   {
     id: 43,
     bundleDataId: 4,
-    content: "Stoma Care (Level 2 Classroom)",
+    content: "Infection control",
   },
   {
     id: 44,
     bundleDataId: 4,
-    content: "First Aid at Work (Level 3 Classroom)",
+    content: "Food Safety Principles    ",
   },
+  {
+    id: 45,
+    bundleDataId: 4,
+    content: "Safe Guarding Adults    ",
+  },
+  {
+    id: 46,
+    bundleDataId: 4,
+    content: "Dysphagia Awareness",
+  },
+  {
+    id: 47,
+    bundleDataId: 4,
+    content: "Epilepsy and Emergency Medication",
+  },
+  {
+    id: 48,
+    bundleDataId: 4,
+    content: "Equality, Diversity and Inclusion ",
+  },
+  {
+    id: 49,
+    bundleDataId: 4,
+    content: "Covid-19 Infection, Prevention, Identification and Control",
+  },
+  {
+    id: 50,
+    bundleDataId: 4,
+    content: "General Data Protection Regulation (GDPR)",
+  },
+  {
+    id: 51,
+    bundleDataId: 4,
+    content: "Handling Hazardous Substance (COSHH)    ",
+  },
+  {
+    id: 52,
+    bundleDataId: 4,
+    content: "First Aid Principles",
+  },
+  {
+    id: 53,
+    bundleDataId: 4,
+    content: "Role of a Fire Marshall",
+  },
+  {
+    id: 54,
+    bundleDataId: 4,
+    content: "Health and Safety essentials",
+  },
+
+  // {
+  //   id: 61,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Basic Life Support",
+  // },
+  // {
+  //   id: 62,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Food Safety, Nutrition and Hydration",
+  // },
+  // {
+  //   id: 63,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Health, Safety and Fire",
+  // },
+  // {
+  //   id: 64,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Moving, Assisting and Hoisting",
+  // },
+  // {
+  //   id: 65,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Person-Centred Care and Support",
+  // },
+  // {
+  //   id: 66,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Fire Safety Awareness",
+  // },
+  // {
+  //   id: 67,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Diabetes Awareness",
+  // },
   {
     id: 68,
     bundleDataId: 3,
     content: "Epilepsy and Emergency Medication Awareness (Level 2 Classroom)",
   },
-  {
-    id: 69,
-    bundleDataId: 3,
-    content: "Basic Life Support (Level 2 Classroom)",
-  },
+  // {
+  //   id: 69,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Inhalers and Nebulizers",
+  // },
+  // {
+  //   id: 70,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Autism Spectrum",
+  // },
+  // {
+  //   id: 71,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Boundaries and Good Practice",
+  // },
+  // {
+  //   id: 72,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in Care Planning",
+  // },
   {
     id: 73,
     bundleDataId: 3,
@@ -3095,7 +2929,27 @@ const bundleContents = [
   {
     id: 74,
     bundleDataId: 3,
-    content: "Stoma Care (Level 2 Classroom)",
+    content: "Dementia (Level 3 Classroom)",
+  },
+  // {
+  //   id: 75,
+  //   bundleDataId: 3,
+  //   content: "Level 2 Award in End of Life Care",
+  // },
+  {
+    id: 76,
+    bundleDataId: 3,
+    content: "First Aid at Work (Level 3 Classroom)",
+  },
+  {
+    id: 77,
+    bundleDataId: 3,
+    content: "Tracheostomy (Level 3 Classroom)",
+  },
+  {
+    id: 78,
+    bundleDataId: 3,
+    content: "Food Safety (Level 3 Classroom)",
   },
   {
     id: 79,
@@ -3103,37 +2957,41 @@ const bundleContents = [
     content: "Medication Competency and Management (Level 3 Classroom)",
   },
   {
+    id: 80,
+    bundleDataId: 3,
+    content: "PEG Feeding (Level 3 Classroom)",
+  },
+  {
     id: 81,
     bundleDataId: 3,
-    content:
-      "Care Certificate (Online Full Pack of 15 Standards Approx. 20Hrs) Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets: Understand your Role, Your Personal Development, Duty of Care, Equality and Diversity, Work in a Person Centred way, Communication, Privacy and Dignity, Fluids and Nutrition, Awareness of Mental Health, Dementia and Learning Disabilities, Safeguarding Adults, Safegaurding Children, Basic Life Support, Health and Safety, Handling Information, Infection Prevention and Control",
+    content: "Care Certificate",
   },
   {
     id: 82,
     bundleDataId: 3,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
+    content: "Induction and Orientation",
   },
   {
     id: 83,
     bundleDataId: 4,
-    content:
-      "Care Certificate (Online Full Pack of 15 Standards Approx. 20Hrs) Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets: Understand your Role, Your Personal Development, Duty of Care, Equality and Diversity, Work in a Person Centred way, Communication, Privacy and Dignity, Fluids and Nutrition, Awareness of Mental Health, Dementia and Learning Disabilities, Safeguarding Adults, Safegaurding Children, Basic Life Support, Health and Safety, Handling Information, Infection Prevention and Control",
+    content: "Care Certificate",
   },
   {
     id: 84,
     bundleDataId: 4,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
+    content:
+      "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
     id: 85,
     bundleDataId: 2,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
+    content:
+      "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
     id: 86,
     bundleDataId: 1,
-    content:
-      "All Stand Alone E-Learning Courses (19 Online Mandatory Module Approx. 38Hrs) Our suite of Health & Social Care courses are all ideal for staff inductions and competency updates. All of our care sector courses are mapped to the relevant standards, such as the Care Certificate or the National Occupational Standards for Health and Social Care and the Regulated Qualifications FrameworkAll (RQF) for more experienced workers. In addition, all courses are accredited by Advantage Accreditation as a high-quality health and social care e-learning provider: Principles of Moving & Assisting, Safe Handling of medication, Dementia Awareness, Infection Control, Disability & Autism Awareness, Food Safety Principles, Food Safety Nutrition & Hydration, Safegaurding Adults, Dysphagia Awareness, Mental Health in the Workplace, Epilepsy & Emergency Medication, Equality, Diversity & Inclusion, COVID-19 Infection, Prevention, Identification & Control, General Data Protection Regulation (GDPR), Handling Hazardous Substances (COSHH), First Aid Principles, Role of a Fire Marshal, Health & Safety Essentials, Conflict Resolution & Personal Safety.",
+    content: "All Stand Alone E-Learning Courses",
   },
   {
     id: 87,
@@ -3142,253 +3000,35 @@ const bundleContents = [
       "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
   {
+    id: 90,
+    bundleDataId: 0,
+    content: "Pressure Care Management (Level 2 Class room)",
+  },
+  {
+    id: 91,
+    bundleDataId: 0,
+    content: "Safe Handling and Medication (Level 2 Class room)",
+  },
+  {
     id: 92,
     bundleDataId: 0,
-    content: "Moving Assisting and Hoisting (Level 2 Classroom)",
+    content: "Moving Assisting and Hoisting (Level 2 Class room)",
   },
   {
     id: 93,
     bundleDataId: 0,
-    content: "First Aid at Work (Level 3 Classroom)",
+    content: "First Aid at Work (Level 3 Class room)",
   },
   {
     id: 88,
     bundleDataId: 0,
-    content:
-      "Care Certificate (Online Full Pack of 15 Standards Approx. 20Hrs). Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets: Understand your Role, Your Personal Development, Duty of Care, Equality and Diversity, Work in a Person Centred way, Communication, Privacy and Dignity, Fluids and Nutrition, Awareness of Mental Health, Dementia and Learning Disabilities, Safeguarding Adults, Safegaurding Children, Basic Life Support, Health and Safety, Handling Information, Infection Prevention and Control",
+    content: "Care Certificate (Online)",
   },
   {
     id: 89,
     bundleDataId: 0,
     content:
-      "Induction and Orientation (Extensive 1-Day training/Visual Training)",
-  },
-  {
-    id: 90,
-    bundleDataId: 5,
-    content: "Basic Life Support (Level 2 Classroom)",
-  },
-  {
-    id: 91,
-    bundleDataId: 5,
-    content: "Diabetes Awareness (Level 2 Classroom)",
-  },
-  {
-    id: 92,
-    bundleDataId: 5,
-    content: "Stroke Care (Level 2 Classroom)",
-  },
-  {
-    id: 93,
-    bundleDataId: 5,
-    content: "Epilepsy and Emergency Medication Awareness (Level 2 Classroom)",
-  },
-  {
-    id: 94,
-    bundleDataId: 5,
-    content: "Food Safety (Level 3 Classroom)",
-  },
-  {
-    id: 95,
-    bundleDataId: 5,
-    content:
-      "Care Certificate (Online Full Pack of 15 Standards Approx. 20Hrs). Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets: Understand your Role, Your Personal Development, Duty of Care, Equality and Diversity, Work in a Person Centred way, Communication, Privacy and Dignity, Fluids and Nutrition, Awareness of Mental Health, Dementia and Learning Disabilities, Safeguarding Adults, Safegaurding Children, Basic Life Support, Health and Safety, Handling Information, Infection Prevention and Control",
-  },
-  {
-    id: 96,
-    bundleDataId: 5,
-    content:
-      "All E-Learning Courses (19 Online Mandatory Module Approx. 38Hrs) Our suite of Health & Social Care courses are all ideal for staff inductions and competency updates. All of our care sector courses are mapped to the relevant standards, such as the Care Certificate or the National Occupational Standards for Health and Social Care and the Regulated Qualifications FrameworkAll (RQF) for more experienced workers. In addition, all courses are accredited by Advantage Accreditation as a high-quality health and social care e-learning provider: Principles of Moving & Assisting, Safe Handling of medication, Dementia Awareness, Infection Control, Disability & Autism Awareness, Food Safety Principles, Food Safety Nutrition & Hydration, Safegaurding Adults, Dysphagia Awareness, Mental Health in the Workplace, Epilepsy & Emergency Medication, Equality, Diversity & Inclusion, COVID-19 Infection, Prevention, Identification & Control, General Data Protection Regulation (GDPR), Handling Hazardous Substances (COSHH), First Aid Principles, Role of a Fire Marshal, Health & Safety Essentials, Conflict Resolution & Personal Safety.",
-  },
-  {
-    id: 97,
-    bundleDataId: 5,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
-  },
-  {
-    id: 98,
-    bundleDataId: 6,
-    content: "Safe Handling and Medication (Level 2 Classroom)",
-  },
-  {
-    id: 99,
-    bundleDataId: 6,
-    content: "Stroke Awareness (Level 2 Classroom)",
-  },
-  {
-    id: 100,
-    bundleDataId: 6,
-    content: "Understanding Mental Health (Level 2 Classroom)",
-  },
-  {
-    id: 101,
-    bundleDataId: 6,
-    content: "Austism Spectrum (Level 2 Classroom)",
-  },
-  {
-    id: 102,
-    bundleDataId: 6,
-    content: "Pressure Care Management (Level 2 Classroom)",
-  },
-  {
-    id: 103,
-    bundleDataId: 6,
-    content: "Catheter Care (Level 2 Classroom)",
-  },
-  {
-    id: 104,
-    bundleDataId: 6,
-    content: "Oxygen Therapy (Level 2 Classroom)",
-  },
-  {
-    id: 105,
-    bundleDataId: 6,
-    content: "Stoma Care (Level 2 Classroom)",
-  },
-  {
-    id: 106,
-    bundleDataId: 6,
-    content: "PEG Feeding (Level 3 Classroom)",
-  },
-  {
-    id: 107,
-    bundleDataId: 6,
-    content: "Tracheostomy (Level 3 Classroom)",
-  },
-  {
-    id: 108,
-    bundleDataId: 6,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
-  },
-  {
-    id: 109,
-    bundleDataId: 7,
-    content: "Dementia (Level 3 Classroom)",
-  },
-  {
-    id: 110,
-    bundleDataId: 7,
-    content: "Medication Competency and Management (Level 3 Classroom)",
-  },
-  {
-    id: 111,
-    bundleDataId: 7,
-    content: "PEG Feeding (Level 3 Classroom)",
-  },
-  {
-    id: 112,
-    bundleDataId: 7,
-    content: "Tracheostomy (Level 3 Classroom)",
-  },
-  {
-    id: 113,
-    bundleDataId: 7,
-    content: "First Aid at Work (Level 3 Classroom)",
-  },
-  {
-    id: 114,
-    bundleDataId: 7,
-    content:
-      "Care Certificate (Online Full Pack of 15 Standards Approx. 20Hrs). Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets: Understand your Role, Your Personal Development, Duty of Care, Equality and Diversity, Work in a Person Centred way, Communication, Privacy and Dignity, Fluids and Nutrition, Awareness of Mental Health, Dementia and Learning Disabilities, Safeguarding Adults, Safegaurding Children, Basic Life Support, Health and Safety, Handling Information, Infection Prevention and Control",
-  },
-  {
-    id: 115,
-    bundleDataId: 7,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
-  },
-  {
-    id: 116,
-    bundleDataId: 8,
-    content: "Food Safety (Level 3 Classrom)",
-  },
-  {
-    id: 117,
-    bundleDataId: 8,
-    content: "Dementia (Level 3 Classrom)",
-  },
-  {
-    id: 118,
-    bundleDataId: 8,
-    content: "Medication Competency and Management (Level 3 Classrom)",
-  },
-  {
-    id: 119,
-    bundleDataId: 8,
-    content: "PEG Feeding (Level 3 Classrom)",
-  },
-  {
-    id: 120,
-    bundleDataId: 8,
-    content: "Tracheostomy (Level 3 Classrom)",
-  },
-  {
-    id: 121,
-    bundleDataId: 8,
-    content: "First Aid at Work (Level 3 Classrom)",
-  },
-  {
-    id: 122,
-    bundleDataId: 8,
-    content:
-      "All E-Learning Courses (19 Online Mandatory Module Approx. 38Hrs) Our suite of Health & Social Care courses are all ideal for staff inductions and competency updates. All of our care sector courses are mapped to the relevant standards, such as the Care Certificate or the National Occupational Standards for Health and Social Care and the Regulated Qualifications FrameworkAll (RQF) for more experienced workers. In addition, all courses are accredited by Advantage Accreditation as a high-quality health and social care e-learning provider: Principles of Moving & Assisting, Safe Handling of medication, Dementia Awareness, Infection Control, Disability & Autism Awareness, Food Safety Principles, Food Safety Nutrition & Hydration, Safegaurding Adults, Dysphagia Awareness, Mental Health in the Workplace, Epilepsy & Emergency Medication, Equality, Diversity & Inclusion, COVID-19 Infection, Prevention, Identification & Control, General Data Protection Regulation (GDPR), Handling Hazardous Substances (COSHH), First Aid Principles, Role of a Fire Marshal, Health & Safety Essentials, Conflict Resolution & Personal Safety.",
-  },
-  {
-    id: 123,
-    bundleDataId: 8,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
-  },
-  {
-    id: 124,
-    bundleDataId: 9,
-    content: "Understanding Mental Health (Level 2 Classroom)",
-  },
-  {
-    id: 125,
-    bundleDataId: 9,
-    content: "Diabetes Awareness(Level 2 Classroom)",
-  },
-  {
-    id: 126,
-    bundleDataId: 9,
-    content: "Health, Safety and Fire (Level 2 Classroom)",
-  },
-  {
-    id: 127,
-    bundleDataId: 9,
-    content: "Infection Prevention and Control (Level 2 Classroom)",
-  },
-  {
-    id: 128,
-    bundleDataId: 9,
-    content: "Dementia (Level 3 Classroom)",
-  },
-  {
-    id: 129,
-    bundleDataId: 9,
-    content:
-      "Care Certificate (Online Full Pack of 15 Standards Approx. 20Hrs). Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets: Understand your Role, Your Personal Development, Duty of Care, Equality and Diversity, Work in a Person Centred way, Communication, Privacy and Dignity, Fluids and Nutrition, Awareness of Mental Health, Dementia and Learning Disabilities, Safeguarding Adults, Safegaurding Children, Basic Life Support, Health and Safety, Handling Information, Infection Prevention and Control",
-  },
-  {
-    id: 130,
-    bundleDataId: 9,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
-  },
-  {
-    id: 131,
-    bundleDataId: 10,
-    content:
-      "Care Certificate (Online Full Pack of 15 Standards Approx. 20Hrs). Courses also include a resources section with access to a downloadable workbook for all 15 standards, holistic assessment sheets and workplace competency record sheets: Understand your Role, Your Personal Development, Duty of Care, Equality and Diversity, Work in a Person Centred way, Communication, Privacy and Dignity, Fluids and Nutrition, Awareness of Mental Health, Dementia and Learning Disabilities, Safeguarding Adults, Safegaurding Children, Basic Life Support, Health and Safety, Handling Information, Infection Prevention and Control. The Care Certificate is a set of standards developed jointly by health and social care organizations in the United Kingdom. It aims to provide a consistent training framework for healthcare support workers and social care workers who are new to their roles. The Care Certificate was introduced in April 2015 as a result of the Cavendish Review, which highlighted the need for improved training and support for healthcare assistants and social care workers. The Care Certificate covers a range of essential skills and knowledge that are fundamental to providing safe, effective, compassionate, and high-quality care. These include topics such as: Understanding the role of the healthcare or social care worker.Effective communication skills, Privacy and dignity, Safeguarding adults and children, Infection prevention and control, Handling information securely, Basic life support and emergency situations, Health and safety in the workplace. Equality and diversity. The Care Certificate is typically delivered through a combination of classroom training, e-learning modules, practical assessments, and workplace observations. Upon successful completion of the Care Certificate, individuals demonstrate their competence in these essential areas and are better prepared to provide care and support to patients, clients, and service users. Employers in the UK healthcare and social care sectors often require new healthcare support workers and social care workers to complete the Care Certificate as part of their induction process. Additionally, the Care Certificate serves as a foundation for further professional development and training within the health and social care workforce.",
-  },
-  {
-    id: 132,
-    bundleDataId: 10,
-    content:
-      "All E-Learning Courses (19 Online Mandatory Module Approx. 38Hrs) Our suite of Health & Social Care courses are all ideal for staff inductions and competency updates. All of our care sector courses are mapped to the relevant standards, such as the Care Certificate or the National Occupational Standards for Health and Social Care and the Regulated Qualifications FrameworkAll (RQF) for more experienced workers. In addition, all courses are accredited by Advantage Accreditation as a high-quality health and social care e-learning provider: Principles of Moving & Assisting, Safe Handling of medication, Dementia Awareness, Infection Control, Disability & Autism Awareness, Food Safety Principles, Food Safety Nutrition & Hydration, Safegaurding Adults, Dysphagia Awareness, Mental Health in the Workplace, Epilepsy & Emergency Medication, Equality, Diversity & Inclusion, COVID-19 Infection, Prevention, Identification & Control, General Data Protection Regulation (GDPR), Handling Hazardous Substances (COSHH), First Aid Principles, Role of a Fire Marshal, Health & Safety Essentials, Conflict Resolution & Personal Safety.",
-  },
-  {
-    id: 133,
-    bundleDataId: 10,
-    content: "Induction and Orientation (Extensive Full Day Visual Training)",
+      "Induction and Orientation (Extensive 1-Day training/Visual Course)",
   },
 ];
 

@@ -53,6 +53,117 @@ const InductionDetailTabSection = () => {
                 communities.
               </li>
             </ul>
+
+            <div>
+              <p className="mt-4 mb-2">
+                <span className="text-decoration-underline text-black fw-bold">
+                  INDUCTION & ORIENTATION
+                </span>{" "}
+                in healthcare are essential processes aimed at integrating new
+                employees into their roles within a healthcare organization.
+                These processes are designed to ensure that new hires have the
+                necessary knowledge, skills, and resources to effectively
+                contribute to the organization's mission of providing quality
+                patient care. Here's a breakdown of induction and orientation in
+                the context of healthcare:
+              </p>
+
+              <h6 className="fw-bold mt-2 mb-2 text-decoration-underline">
+                Induction
+              </h6>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Introduction to the Organization:
+                </span>
+                New employees are introduced to the healthcare organization, its
+                mission, vision, values, and organizational structure.
+              </p>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Policies and Procedures:{" "}
+                </span>
+                They are familiarized with the organization's policies,
+                procedures, and protocols, including those related to patient
+                care, safety, confidentiality, and compliance with regulatory
+                requirements.
+              </p>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Facility Tour:{" "}
+                </span>
+                They are given a tour of the healthcare facility, including key
+                areas such as patient care units, administrative offices, and
+                support services.
+              </p>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Introduction to Colleagues:{" "}
+                </span>
+                New employees are introduced to key staff members, including
+                supervisors, colleagues, and support staff, fostering a sense of
+                community and collaboration.
+              </p>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Job-Specific Training:{" "}
+                </span>
+                They receive job-specific training related to their roles,
+                responsibilities, and tasks. This may include training on
+                medical equipment, electronic health record systems, and
+                specialized procedures.
+              </p>
+
+              <h6 className="fw-bold mt-2 mb-2 text-decoration-underline">
+                Orientation
+              </h6>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Ongoing Training and Development:{" "}
+                </span>
+                Orientation extends beyond the initial induction phase and
+                involves ongoing training and development opportunities to
+                enhance the new employee's skills and knowledge.
+              </p>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Mentorship and Support:{" "}
+                </span>
+                New employees may be paired with mentors or assigned a support
+                system to provide guidance, answer questions, and facilitate
+                their integration into the organization.
+              </p>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Professional Development:{" "}
+                </span>
+                They are provided with information about opportunities for
+                professional development, continuing education, and career
+                advancement within the healthcare organization.
+              </p>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Performance Expectations:{" "}
+                </span>
+                Clear performance expectations and goals are communicated to new
+                employees, along with feedback mechanisms to support their
+                professional growth and success.
+              </p>
+              <p>
+                <span className="text-black text-decoration-underline">
+                  Integration into the Healthcare Team:{" "}
+                </span>
+                New employees are encouraged to actively participate in
+                team-based activities, meetings, and projects to foster
+                collaboration and communication within the healthcare team.
+              </p>
+              <p className="mt-2">
+                Overall, induction and orientation play crucial roles in
+                ensuring that new employees in healthcare settings feel welcome,
+                supported, and equipped to deliver high-quality care to patients
+                while contributing positively to the organization's goals and
+                objectives.
+              </p>
+            </div>
             <h3>Contents</h3>
             <ul>
               <li>- Cultural</li>

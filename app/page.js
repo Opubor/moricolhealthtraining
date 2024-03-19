@@ -21,6 +21,7 @@ import TeamSection2 from "@/component/team/TeamSection2";
 import { getServerSession } from "next-auth";
 import { options } from "./api/auth/[...nextauth]/options";
 import { getUser } from "@/service/userService";
+import FreeCourseSection from "@/component/freeCourse/FreeCourse";
 
 export const metadata = {
   title: "Moricol Health Training",
@@ -37,6 +38,7 @@ export default async function Home3() {
       <BannerSection3 />
       <CategorySection3 />
       <AboutSection3 style="about_3" />
+      <FreeCourseSection />
       <CourseSection2 />
       <ELearning user={user} />
       <InductionSection />

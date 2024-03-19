@@ -62,9 +62,9 @@ const AllBundlesSection = ({ user }) => {
                   {/* <li>
                     <i className="fas fa-user"></i> {item.instructor}
                   </li> */}
-                  <li>
+                  {/* <li>
                     <i className="fas fa-folder-open"></i> {item.lessons}
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="tf__single_courses_text">
                   <Link className="title" href={`/bundles/${item.slug}`}>

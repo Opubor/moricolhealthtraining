@@ -2,7 +2,7 @@ const courseAmount = [
   {
     id: 0,
     title: "Level 2 Award in Basic Life Support",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 1,
@@ -26,8 +26,8 @@ const courseAmount = [
   },
   {
     id: 5,
-    title: "Level 2 Award in Safe Handling and Medication ",
-    price: "180000",
+    title: "Level 2 Award in Safe Handling and Medication",
+    price: "100000",
   },
   {
     id: 6,
@@ -37,12 +37,12 @@ const courseAmount = [
   {
     id: 7,
     title: "Level 2 Award in Health, Safety and Fire",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 8,
-    title: "Level 2 Award in Infection Prevention and Control ",
-    price: "180000",
+    title: "Level 2 Award in Infection Prevention and Control",
+    price: "100000",
   },
   {
     id: 9,
@@ -57,7 +57,7 @@ const courseAmount = [
   {
     id: 11,
     title: "Level 2 Award in Moving, Assisting and Hoisting",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 12,
@@ -97,7 +97,7 @@ const courseAmount = [
   {
     id: 19,
     title: "Level 2 Award in Basic Life Support ",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 20,
@@ -162,17 +162,17 @@ const courseAmount = [
   {
     id: 32,
     title: "Level 2 Award in Catheter Care",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 33,
     title: "Level 2 Award in Diabetes Awareness",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 34,
     title: "Level 2 Award in Epilepsy and Emergency Medication Awareness",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 35,
@@ -187,7 +187,7 @@ const courseAmount = [
   {
     id: 37,
     title: "Level 2 Award in Oxygen Therapy",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 38,
@@ -197,22 +197,22 @@ const courseAmount = [
   {
     id: 39,
     title: "Level 2 Award in Stoma Care Awareness",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 40,
     title: "Level 3 Award in PEG Feeding",
-    price: "270000",
+    price: "200000",
   },
   {
     id: 41,
     title: "Level 3 Award in Tracheostomy",
-    price: "270000",
+    price: "200000",
   },
   {
     id: 42,
     title: "Level 2 Award in Autism Spectrum",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 43,
@@ -287,7 +287,7 @@ const courseAmount = [
   {
     id: 57,
     title: "Level 2 Award in Pressure Care Management",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 58,
@@ -302,7 +302,7 @@ const courseAmount = [
   {
     id: 60,
     title: "Level 2 Award in Stroke Awareness",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 61,
@@ -323,17 +323,17 @@ const courseAmount = [
   {
     id: 64,
     title: "Level 2 Award in Understanding Mental Health",
-    price: "180000",
+    price: "100000",
   },
   {
     id: 65,
     title: "Level 3 Award in Dementia",
-    price: "270000",
+    price: "200000",
   },
   {
     id: 66,
     title: "Level 3 Award in Medication Competency and Management",
-    price: "270000",
+    price: "200000",
   },
   {
     id: 67,
@@ -413,7 +413,7 @@ const courseAmount = [
   {
     id: 82,
     title: "Care Certificate (15 Standards)",
-    price: "135000",
+    price: "100000",
   },
   {
     id: 83,
@@ -430,11 +430,11 @@ const courseAmount = [
     title: "Dementia Awareness",
     price: "18000",
   },
-  {
-    id: 86,
-    title: "Infection Control",
-    price: "18000",
-  },
+  // {
+  //   id: 86,
+  //   title: "Infection Control",
+  //   price: "18000",
+  // },
   {
     id: 87,
     title: "Food Safety Principles",
@@ -493,27 +493,27 @@ const courseAmount = [
   {
     id: 98,
     title: "Bundle 1",
-    price: "359550",
+    price: "350000",
   },
   {
     id: 99,
     title: "Bundle 2",
-    price: "359550",
+    price: "350000",
   },
   {
     id: 100,
     title: "Bundle 3",
-    price: "359550",
+    price: "350000",
   },
   {
     id: 101,
-    title: "Bundle 4 (Specialists)",
-    price: "359550",
+    title: "Bundle 4",
+    price: "400000",
   },
   {
     id: 102,
     title: "Bundle 5",
-    price: "359550",
+    price: "400000",
   },
   {
     id: 103,
@@ -528,12 +528,12 @@ const courseAmount = [
   {
     id: 102,
     title: "Full Online Package",
-    price: "180000",
+    price: "150000",
   },
   {
     id: 104,
     title: "Full Online Package + Care Certificate",
-    price: "270000",
+    price: "240000",
   },
   {
     id: 105,
@@ -549,6 +549,56 @@ const courseAmount = [
     id: 107,
     title: "Computer Appreciation",
     price: "50000",
+  },
+  {
+    id: 108,
+    title: "Bundle 6",
+    price: "400000",
+  },
+  {
+    id: 109,
+    title: "Bundle 7",
+    price: "450000",
+  },
+  {
+    id: 110,
+    title: "Bundle 8",
+    price: "500000",
+  },
+  {
+    id: 111,
+    title: "Bundle 9",
+    price: "450000",
+  },
+  {
+    id: 112,
+    title: "Bundle 10",
+    price: "400000",
+  },
+  {
+    id: 113,
+    title: "Bundle 11",
+    price: "350000",
+  },
+  {
+    id: 114,
+    title: "Conflict Resolution and Personal Safety",
+    price: "18000",
+  },
+  {
+    id: 115,
+    title: "Mental Health in the Workplace",
+    price: "18000",
+  },
+  {
+    id: 116,
+    title: "Food Safety, Nutrition and Hydration",
+    price: "18000",
+  },
+  {
+    id: 117,
+    title: "Disability and Autism Awareness",
+    price: "18000",
   },
 ];
 

@@ -188,7 +188,7 @@ export async function POST(
         timeTable: result?.data?.timeTable as string,
         noOfUsers: result?.data?.noOfUsers,
         currency: user?.currency,
-        paymentType: "stripe",
+        paymentType: "paypal",
       },
     });
 
@@ -218,7 +218,7 @@ export async function POST(
         userId: result?.data?.userId,
         date: date.toString(),
         currency: user?.currency,
-        paymentType: "stripe",
+        paymentType: "paypal",
       },
     });
 

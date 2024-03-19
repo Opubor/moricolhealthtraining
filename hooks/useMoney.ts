@@ -32,8 +32,8 @@ function useMoney(amount: number, currency: string) {
   });
 
   const initialRates = {
-    EUR: 0.0010, 
-    GBP: 0.00087, 
+    EUR: 0.001,
+    GBP: 0.00087,
     USD: 0.0011,
     NGN: 1,
     CAD: 0.0015,
