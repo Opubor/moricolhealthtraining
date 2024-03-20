@@ -47,7 +47,6 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
 
                   <li>
                     <h4>price</h4>
-                    {/* <p>&#8358;{courseData.price}</p> */}
                     <p>
                       <Currency
                         currency={user?.currency}
@@ -139,16 +138,12 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
                         <h6 className="fw-bold mt-2">{data?.name}</h6>
                         <h5 className="fw-bold mt-2">
                           {data?.price && (
-                            <p>
-                              {/* {new Intl.NumberFormat("ja-JP", {
-                              style: "currency",
-                              currency: "NGN",
-                            }).format(data?.price)} */}
+                            <span>
                               <Currency
                                 currency={user?.currency}
                                 price={Number(data?.price)}
                               />
-                            </p>
+                            </span>
                           )}
                         </h5>
                         <div className="text-warning mt-2">
@@ -172,17 +167,13 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
                         </h6>
                         <h5 className="fw-bold mt-2">
                           {data?.price && (
-                            <p>
+                            <span>
                               <Currency
                                 currency={user?.currency}
                                 price={Number(data?.price)}
                               />{" "}
-                              {/* {new Intl.NumberFormat("ja-JP", {
-                              style: "currency",
-                              currency: "NGN",
-                            }).format(data?.price)}{" "} */}
                               {data?.extra}
-                            </p>
+                            </span>
                           )}
                         </h5>
                         <div className=" mt-2">
@@ -267,7 +258,7 @@ const BundleDetailSection = ({ courseData, courseContents, user }) => {
                   </span>
                   <h6 className="fw-bold mt-2">E-Learning Courses</h6>
                   <h5 className="fw-bold mt-2">
-                    <p>&#8358;20,000 per Course</p>
+                    <span>&#8358;20,000 per Course</span>
                   </h5>
                 </div>
               </Link>

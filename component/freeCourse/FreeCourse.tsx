@@ -52,10 +52,10 @@ async function FreeCourseSection() {
               </ul>
               <div className="tf__single_courses_text">
                 <p className="title">Infection Control</p>
-                <p className="description">
+                <p className="">
                   To provide information in order to practice safely and to
                   protect individuals being supported, colleagues and self from
-                  infection
+                  infection.
                 </p>
 
                 <div className="tf__course_overview mb-4">

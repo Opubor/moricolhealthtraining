@@ -49,11 +49,11 @@ const BundleDetailTabContent = ({ courseData, courseContents }) => {
               </li>
             </ul>
 
-            <h3>Time-Table</h3>
+            {/* <h3>Time-Table</h3>
             <ul>
               <li>{courseData?.duration1}</li>
               <li>{courseData?.duration2}</li>
-            </ul>
+            </ul> */}
 
             <h3>Bundle Features:</h3>
             <ul>

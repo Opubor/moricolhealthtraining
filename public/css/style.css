@@ -2825,7 +2825,7 @@ button {
   border-radius: 5px;
   overflow: hidden;
   transition: all linear 0.3s;
-  height: 910px;
+  height: auto;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
@@ -10399,6 +10399,6 @@ section.tf__counter_3 {
   font-size: 30px;
 }
 
-.cursorPointer{
+.cursorPointer {
   cursor: pointer;
 }
