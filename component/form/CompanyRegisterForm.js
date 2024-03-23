@@ -140,7 +140,7 @@ const RegisterForm = () => {
             <div className="tf__login_imput">
               <label>Business Type</label>
               <select
-                class="form-control"
+                className="form-control"
                 id="businessType"
                 {...register("businessType", { required: true })}
               >
@@ -185,7 +185,7 @@ const RegisterForm = () => {
             <div className="tf__login_imput">
               <label>Industry/Sector</label>
               <select
-                class="form-control"
+                className="form-control"
                 id="industrySelect"
                 {...register("industry", { required: true })}
               >

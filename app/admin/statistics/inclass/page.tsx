@@ -1,64 +1,19 @@
 import Sidebar from "@/component/Sidebar";
 import prisma from "@/lib/prisma-client";
-import Link from "next/link";
 import React from "react";
 
-const getUsers = async () => {
-  return prisma.user.findMany({});
-};
 const getEnrolledUsers = async () => {
   return prisma.enrollment.findMany({});
 };
 
 async function Page() {
-  const users = await getUsers();
   const enrollments = await getEnrolledUsers();
+
   return (
     <Sidebar>
-      <div className="container">
-        <div className="dashboard">
-          <div className="subDashboard bg-warning p-4 border rounded d-flex flex-column align-items-center justify-items-center">
-            <h4 className="fw-bold">{users?.length}</h4>
-            <p className="fw-bold">Users</p>
-          </div>
-          <div className="subDashboard bg-warning p-4 border rounded d-flex flex-column align-items-center justify-items-center">
-            <h4 className="fw-bold">{enrollments?.length}</h4>
-            <p className="fw-bold">Enrollments</p>
-          </div>
-        </div>
-      </div>
-
       {/* ===Statistics=== */}
       <div className="w-100 border-top mt-4">
-        <div className="tf__heading_area ">
-          <h5 className="mt_50">BONUS COURSE STATISTIC</h5>
-        </div>
-
-        {/* ===First Aid & Fire Safety=== */}
-        <table className="table table-striped bg-primary w-100" border={3}>
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Course</th>
-              <th scope="col">No. of registration</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">BONUS COURSE</th>
-              <td>Infection Control (Free Course)</td>
-              <td className="fw-bold">
-                {
-                  enrollments?.filter((data: any) => {
-                    return data?.course === "Infection Control (Free Course)";
-                  }).length
-                }
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div className="w-100 border-top mt-4">
+        {/* <h1>IN-CLASS PROGRAMS STATISTICS</h1> */}
         <div className="tf__heading_area ">
           <h5 className="mt_50">IN-CLASS COURSES STATISTICS</h5>
         </div>

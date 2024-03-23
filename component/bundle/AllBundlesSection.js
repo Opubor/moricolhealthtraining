@@ -40,12 +40,7 @@ const AllBundlesSection = ({ user }) => {
                   <a className={`categories ${item.color}`} href="#">
                     {item.category}
                   </a>
-                  {/* <span>
-                    {new Intl.NumberFormat("ja-JP", {
-                      style: "currency",
-                      currency: "NGN",
-                    }).format(item?.price)}
-                  </span> */}
+
                   <Currency
                     currency={user?.currency}
                     price={Number(item?.price)}
@@ -58,14 +53,7 @@ const AllBundlesSection = ({ user }) => {
                 </div>
                 {/* ============== */}
 
-                <ul className="tf__single_course_header">
-                  {/* <li>
-                    <i className="fas fa-user"></i> {item.instructor}
-                  </li> */}
-                  {/* <li>
-                    <i className="fas fa-folder-open"></i> {item.lessons}
-                  </li> */}
-                </ul>
+                <ul className="tf__single_course_header"></ul>
                 <div className="tf__single_courses_text">
                   <Link className="title" href={`/bundles/${item.slug}`}>
                     {item.title}
